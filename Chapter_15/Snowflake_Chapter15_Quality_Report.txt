@@ -1,0 +1,43 @@
+SNOWFLAKE DATA ENGINEERING — CHAPTER 15
+QUALITY ASSURANCE / EDITORIAL REVIEW COPY
+Prepared: 22 October 2026
+Chapter: Capstone: A Production-Ready Energy Data Platform
+Author: Arman Golbidi
+
+PRINT PDF CHECKS (EXECUTED)
+PDF pages: 24; folios: 265–288; page physical trim: 178 × 254 mm.
+Body type: Libertinus Serif 10.75 pt, leading 13.65 pt (~1.27).
+Code type: Libertinus Mono 8.75 pt in listings environment.
+Mirrored margins: inside 23 mm; outside 17 mm; top/bottom 19 mm.
+XeLaTeX compiled twice; no Overfull hbox warnings in final log.
+Structure: twelve numbered core sections 15.1–15.12; thirty-six subtopics;
+guided lab 15.L.1–15.L.4; 24 pages with printed folios 265–288.
+Visual contact sheet reviewed for overall composition.
+
+OFFLINE LAB (EXECUTED, STANDARD LIBRARY PYTHON)
+Test suite: 21 tests, all PASS.
+Input classification: SYNTHETIC, invented DEMO_GRID provider.
+Fixture original delivered events: 12.
+Identical duplicate deliveries: 1.
+Rejected rows: 2.
+Tombstoned keys: 1.
+Final accepted fact rows: 6.
+Total energy: 66.000 MWh.
+Source SHA-256: 6cfb7fd61e878c29e19315c3db8b796db6af858a37527ad3b4d6c3c3a3f9b616.
+Acceptance gate: ACCEPT.
+Tests cover input schema, duplicates, revisions, conflicts, UTC labels,
+nonnegative values, logical deletion, repeatable replay and output export.
+
+NOT EXECUTED / REMAINING PUBLICATION RELEASE GATES
+- No live Snowflake SQL run or Snowflake Query ID.
+- No actual Snowflake grant/security check, resource-monitor test, or metering.
+- No real Fingrid / Statistics Finland dataset was downloaded.
+- No compiled Power BI PBIX report, tenant integration or refresh test.
+- No vendor AI invocation, streaming integration, or live fault-recovery drill.
+- Referenced 17 GitHub project records are unexecuted teaching references;
+  third-party repository code has not been copied into the companion project.
+- Check exact licence, edition, regional availability, APIs, costs and rights
+  again, execute integration tests and arrange independent review before sale.
+
+Files compiled from author-supplied Chapter 14 visual template with matching
+print font stack, type dimensions, mirrored margins and running footer.

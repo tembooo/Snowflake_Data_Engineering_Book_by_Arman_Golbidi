@@ -1,0 +1,42 @@
+MASTER IMAGE-GENERATION PROMPT 01 — INSTAGRAM SQUARE BOOK INTRODUCTION (1:1)
+
+PROJECT: SNOWFLAKE DATA ENGINEERING — From Fundamentals to Production-Ready Data Pipelines
+AUTHOR: ARMAN GOLBIDI
+OUTPUT: ONE polished, finished, STATIC promotional image for an Instagram feed post.
+CANVAS: Exactly square, 1:1 ratio, target 2160 x 2160 px for a high-resolution master; must remain readable at 1080 x 1080 px.
+INPUTS: (1) The user-uploaded finished FRONT cover, “10.3.Front.png”; (2) the user-uploaded finished BACK cover, “10.4.Back.png”. These supplied images are THE authentic book-cover artwork, not loose stylistic inspiration. Both must be visible in this composition.
+
+CREATIVE BRIEF
+Produce a luxurious, editorial-quality, modern technology-book announcement. The image must immediately communicate that a real English-language technical BOOK is being introduced, not a generic Snowflake software advertisement, SaaS dashboard, or fashion portrait. Feature the front and back of the SAME paperback, using the supplied images as intact, faithful cover textures. Make a convincing premium matte paperback product visualization against an elegantly restrained, grayscale Helsinki Cathedral / granite-steps-inspired setting drawn from the uploaded artwork. Preserve the existing front-cover photograph with its color subject and black-and-white cathedral; do not regenerate the man's face, coat, hair, sunglasses, or pose.
+
+COMPOSITION
+- Design a sophisticated two-book editorial arrangement in the center: larger front-cover book in the foreground on the RIGHT or just right of center, with its entire title “SNOWFLAKE DATA ENGINEERING,” “180+” and author credit plainly visible; the BACK-cover book slightly smaller, behind and to the LEFT, visibly identifiable as the reverse of the same publication.
+- Keep actual cover images in the genuine 178:254 proportion. No stretching, melting, swapped cover sides, or altered typography. The books may be rendered as believable slender 3D softcover objects with realistic edges and soft studio shadows. Do not invent an illustrated spine, extra logos, or barcode details.
+- Provide negative space for a restrained editorial headline, not a busy sales flyer. Do not obscure the main cover photograph or its face. The back cover can be smaller so its microtext does not pretend to be readable at Instagram-feed scale.
+- Incorporate very subtle cyan data-pipeline line art at the background edges only; the book must remain the hero.
+- Use an atmospheric grayscale background with stone steps and recognizable neoclassical geometry echoing Helsinki Cathedral; a dark navy gradient can support readability. Keep photographic background grayscale, with color confined to the author's image already printed on the front cover and to graphic navy/cyan accents.
+
+EXACT ADDITIONAL MARKETING COPY (ALL IN ENGLISH; DO NOT ADD EXTRA CLAIMS)
+Eyebrow near top, small but legible: “BOOK PREVIEW”
+Short headline in the safe negative space: “SNOWFLAKE DATA ENGINEERING”
+Subheadline, one or two concise lines: “From Fundamentals to Production-Ready Data Pipelines”
+One supporting line at the bottom or side, clearly distinct from text printed on the book: “15 Chapters  •  181 Curated GitHub Repository References”
+Optional very small supporting line IF space allows: “SQL • Snowpark Python • dbt • Power BI • Cortex AI”
+Optional author label if the image needs it: “ARMAN GOLBIDI”
+
+IMPORTANT ACCURACY NOTE FOR ART DIRECTION
+The front-cover artwork already contains “180+ REAL-WORLD PROJECTS.” Preserve that artwork as uploaded, as a WORKING COVER MOCKUP. Do NOT add marketing copy saying 180+ projects have all been taught, personally tested, deployed, or verified. The editorial directory currently lists 181 discovered GitHub repository references; some are not executed or license-cleared. The honest standalone promotional claim is “181 Curated GitHub Repository References,” subject to prepublication validation. Do not write “now on sale,” “bestseller,” “official Snowflake publication,” “certified,” or “endorsed.” This is an independent educational book preview.
+
+TYPOGRAPHY, COLOR, AND PRODUCTION
+- Modern, premium, clean sans-serif hierarchy; large typography easily readable in a mobile feed thumbnail.
+- Palette: deep charcoal #101923, ink navy #0B2638, restrained electric-cyan #50D1F4, white #F5F8FB; avoid excessive neon glow.
+- Strong contrast and disciplined spacing. Keep important text and all book edges approximately 90–120 px inside the square canvas; no watermarks.
+- Lighting should be elegant studio-light-on-matte-paper, with realistic physical reflections but NOT plastic or glossy book covers.
+- No invented QR codes or ISBNs. The original back artwork has printed QR/barcode-like elements; do not enlarge them, recreate them as working codes, or imply that they scan. Render its lower-right region non-prominently or at a slight angle/soft focus.
+- Do not redesign, retype, replace, translate, recolor, or hallucinate text on either provided book cover. Use faithful compositing rather than regenerating cover contents where possible. Do not substitute new faces.
+
+NEGATIVE PROMPT
+No extra books, no unrelated props (coffee cups, keyboards, laptops unless exceptionally subtle), no huge logos, no fake publisher identity, no invented reviews or ratings, no stock-photo people, no neon sci-fi scene, no generic futuristic city, no cropped title, no distorted book geometry, no duplicate subjects, no overlaid text on author's eyes, and no nonsensical letters.
+
+FINAL OUTPUT
+Generate ONE square, static Instagram-feed promotional artwork ONLY; no collage panels, no alternate options, no UI chrome, no simulated Instagram app screenshot. Keep the 2 supplied cover artworks visually faithful. This is a digital promotion concept; proof actual marketing claims and book status before public release.

@@ -1,0 +1,9 @@
+-- DANGER: All statements intentionally commented.
+-- Verify exact sandbox ownership and absence of shared production dependencies.
+-- Remove only objects created for this lab, with manager approval and evidence retained.
+-- DROP VIEW IF EXISTS ENERGY_LAB.GOLD.FCT_ENERGY_HOURLY;
+-- DROP VIEW IF EXISTS ENERGY_LAB.SILVER.V_VALID_EVENTS;
+-- DROP TABLE IF EXISTS ENERGY_LAB.BRONZE.EVENT_LEDGER;
+-- DROP STAGE IF EXISTS ENERGY_LAB.BRONZE.STG_EVENT_CSV;
+-- DROP FILE FORMAT IF EXISTS ENERGY_LAB.BRONZE.FF_EVENT_CSV;
+-- Do NOT drop schemas/databases without an independently reviewed inventory.

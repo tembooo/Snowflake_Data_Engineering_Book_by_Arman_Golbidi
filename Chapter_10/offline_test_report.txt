@@ -1,0 +1,21 @@
+test_broken_measure_quarantined (test_pipeline.Chapter10Contracts.test_broken_measure_quarantined) ... ok
+test_conflicting_equal_revision_blocks (test_pipeline.Chapter10Contracts.test_conflicting_equal_revision_blocks) ... ok
+test_delivery_count (test_pipeline.Chapter10Contracts.test_delivery_count) ... ok
+test_duplicate_replays (test_pipeline.Chapter10Contracts.test_duplicate_replays) ... ok
+test_gold_reconciles_with_state (test_pipeline.Chapter10Contracts.test_gold_reconciles_with_state) ... ok
+test_grand_total (test_pipeline.Chapter10Contracts.test_grand_total) ... ok
+test_idempotent_replay (test_pipeline.Chapter10Contracts.test_idempotent_replay) ... ok
+test_invalid_revision_quarantined (test_pipeline.Chapter10Contracts.test_invalid_revision_quarantined) ... ok
+test_missing_business_key_quarantined (test_pipeline.Chapter10Contracts.test_missing_business_key_quarantined) ... ok
+test_rejected_invalid (test_pipeline.Chapter10Contracts.test_rejected_invalid) ... ok
+test_release_gate_accepts (test_pipeline.Chapter10Contracts.test_release_gate_accepts) ... ok
+test_release_gate_rejects_unit_change (test_pipeline.Chapter10Contracts.test_release_gate_rejects_unit_change) ... ok
+test_revision_correction (test_pipeline.Chapter10Contracts.test_revision_correction) ... ok
+test_timestamp_not_local (test_pipeline.Chapter10Contracts.test_timestamp_not_local) ... ok
+test_tombstone (test_pipeline.Chapter10Contracts.test_tombstone) ... ok
+test_visible_current_state (test_pipeline.Chapter10Contracts.test_visible_current_state) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.008s
+
+OK

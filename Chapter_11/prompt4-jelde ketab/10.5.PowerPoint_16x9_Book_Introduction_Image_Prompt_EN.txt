@@ -1,0 +1,57 @@
+MASTER IMAGE-GENERATION PROMPT 03 — POWERPOINT BOOK INTRODUCTION VISUAL (16:9)
+
+PROJECT: SNOWFLAKE DATA ENGINEERING — From Fundamentals to Production-Ready Data Pipelines
+AUTHOR: ARMAN GOLBIDI
+OUTPUT: ONE finished STATIC image to insert into a widescreen PowerPoint introduction/presentation slide. Do not create a PPTX file or a mockup of a laptop or slide editor.
+CANVAS: Exactly 16:9 landscape, target 3840 x 2160 px master (minimum 1920 x 1080 px). Compose as a real presentation slide, not a cropped Instagram design.
+INPUT REFERENCE ARTWORK: The user-uploaded genuine FRONT book cover “10.3.Front.png” and genuine BACK book cover “10.4.Back.png”. Both must appear. Preserve their exact graphic design, wording, original author photograph, selective-color editorial style, and 178:254 cover ratio.
+
+PURPOSE
+Design the opening slide for presenting an independently authored English-language, planned ~300-page Snowflake Data Engineering technical book to an academic, engineering, publishing, or professional audience. It should instantly communicate title, authorship, coverage and the scale of its curated practical references. A premium conference-keynote aesthetic is desired: authoritative, minimal, clear from a projector or a shared-screen call, not a text-dense marketing flyer.
+
+EXACT STRUCTURAL LAYOUT
+- Full-bleed 16:9 landscape slide with charcoal/navy background and subtle grayscale Helsinki Cathedral silhouette, stone-step texture, and atmospheric cloudy sky inspired by the actual book covers.
+- LEFT 54–58% of slide: flat, distraction-free content field with generous negative space; charcoal/navy translucent gradient to ensure text readability.
+- RIGHT 42–46% of slide: two photorealistic 3D paperback representations on a discreet architectural stone surface, the FRONT cover in front and the BACK cover clearly visible behind at a complementary angle. Scale both large enough to be recognized as front and back of ONE book; do not change either cover image, invent an extra book, or crop the front title.
+- For emphasis, angle the front book modestly (approximately 5–12 degrees) and the back book oppositely so each original artwork is visible. Natural shadows and matte paper finish, no excessive perspective distortion or glossy shine.
+- Small restrained cyan abstract source → ingestion → transformation → analytics line diagram may run along a corner or lower edge; it is a decorative conceptual motif, not a factual chart.
+- Use generous presentation safe margins (around 110–150 px at 3840 x 2160 proportions, scaled as appropriate). Avoid essential text touching slide borders.
+
+EXACT VISIBLE ENGLISH COPY
+Small header: “BOOK INTRODUCTION”
+Main title (large, projector-legible, preferably broken into two lines):
+“SNOWFLAKE”
+“DATA ENGINEERING”
+Subtitle (under title): “From Fundamentals to Production-Ready Data Pipelines”
+One compact contextual statement: “A practical guide to architecting, building, and operating modern data pipelines on Snowflake.”
+Three key feature rows, each with a very small clear icon if desired:
+“15 CHAPTERS — Fundamentals to production-oriented systems”
+“180+ CURATED GITHUB PROJECT REFERENCES”
+“SQL • SNOWPARK PYTHON • DBT • POWER BI • CORTEX AI”
+Author/footer: “ARMAN GOLBIDI”
+Optional small independence line if space permits: “Independent educational publication — not affiliated with or endorsed by Snowflake Inc.”
+No more than the above; avoid copying paragraphs from the back cover onto the PowerPoint slide.
+
+ACCENT EMPHASIS
+- Highlight “180+” as an oversized, tasteful CYAN typographic number in the left-side feature stack, with the precise qualifier “CURATED GITHUB PROJECT REFERENCES” adjacent and readable.
+- Ensure the actual supplied front cover, which contains an “180+ REAL-WORLD PROJECTS” WORKING headline, remains faithfully reproduced; do not extrapolate or amplify that draft claim with false prose. The source directory maps 181 discovered repositories, and not all are verified as run, licensable, and taught in full.
+- This is a book introduction, so do not fabricate printing date, book sales, awards, review stars, endorsements, ISBN, publishers, price, availability, or exact print-ready status.
+
+BRAND AND PHOTOGRAPHY PRESERVATION
+- Preserve the author appearing on the printed front-cover image; do NOT regenerate a separate or changed face, outfit, hairstyle, or pose.
+- Preserve the grayscale Helsinki Cathedral setting behind the book artwork; DO NOT color the sky or building. The only photographic natural color belongs to the author's figure already printed on the cover, with the navy/cyan promotional graphic accents permitted.
+- Maintain visual consistency with the user-supplied covers' typography: confident bold white SNOWFLAKE, cyan DATA ENGINEERING, slate/charcoal atmospheric background, thin technical line drawings, and restrained modern sans-serif lettering.
+- Render the back cover faithfully without making its pre-existing fake/placeholder-like QR or ISBN elements dominant; do not generate fresh scannable-looking QR graphics or barcodes. Final release assets require verified codes.
+- As the slide is meant for viewing at a distance, the left-side heading should be oversized and the body should consist of a short statement and at most three distinct feature rows.
+
+TECHNICAL DELIVERY
+- Single 16:9 flattened image. No PowerPoint application UI, no sample slide number, no speaker notes, no presentation borders, no watermark, no collage grid, no extra variations.
+- Professional contrast suitable for both a projector and a laptop. No tiny body copy.
+- If embedded book-cover lettering cannot be recreated correctly, composite the supplied bitmap images directly instead of regenerating text; otherwise maintain clean recognizable front and back artwork as printed.
+- This is a presentation image, not a print-cover production PDF. Do not add trim, bleed guides or printer registration marks.
+
+NEGATIVE PROMPT
+No generic cloud-computing stock illustration replacing the covers, no fictional publisher or Snowflake endorsement, no invented data metrics, no stock portrait, no doubled author, no changed facial identity, no colorful Helsinki backdrop, no neon sci-fi, no crowded charts, no large fake barcode or QR, no mismatched book cover proportions, no illegible title, no cropped book corners, and no 3D presentation device mockup.
+
+FINAL INSTRUCTION
+Create ONE landscape 16:9 premium presentation-slide ARTWORK, featuring BOTH supplied book cover images and the exact marketing text above, ready for insertion into PowerPoint as a single image.

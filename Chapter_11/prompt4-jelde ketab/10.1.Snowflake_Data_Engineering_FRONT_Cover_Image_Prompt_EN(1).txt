@@ -1,0 +1,111 @@
+================================================================================
+MASTER IMAGE-GENERATION PROMPT — FRONT BOOK COVER (ENGLISH)
+================================================================================
+PROJECT: Snowflake Data Engineering — From Fundamentals to Production-Ready Data Pipelines
+AUTHOR: Arman Golbidi
+OUTPUT: ONE finished FRONT-COVER image, portrait, WITHOUT back cover or spine
+REFERENCE: The user's uploaded original photograph of the author seated on the broad stone steps in front of Helsinki Cathedral, Helsinki, Finland
+BOOK: English-language, 300-page planned technical paperback; matte finish
+TRIM: 178 mm (width) × 254 mm (height), approximately 7 × 10 inches
+
+IMPORTANT SOURCE-GROUNDING NOTE:
+This book's 15-chapter editorial blueprint covers Snowflake architecture, SQL, batch and semi-structured ingestion, Snowpipe and streaming, Streams/Tasks/Dynamic Tables, Snowpark Python, dbt/ETL/ELT, Power BI, query tuning, security/governance/cost, Cortex AI, and an end-to-end Finland energy-data capstone. Its research directory currently lists 181 discovered GitHub repositories, assigned across the chapters. These are not yet all individually executed, licensed for reuse, or transformed into completed taught projects. The requested "180+ REAL-WORLD PROJECTS" slogan is therefore an editorial MOCKUP headline until substantiated. Do not represent the book or its examples as officially endorsed by Snowflake.
+
+YOUR TASK
+Create an extraordinary yet believable, elegant, high-end front cover that merges a premium editorial photograph with authoritative technical-book design. Treat the provided reference image as the authoritative source of the man's face, clothing, pose, architectural location, and selective-color effect. The finished image must be a REAL FLAT BOOK-COVER ARTWORK, not a 3D book mockup, a framed poster, a photograph of a book, or a spread.
+
+1. FORMAT, PROPORTIONS, AND OUTPUT QUALITY
+- Front-cover trim ratio: width : height = 178 : 254 (approximately 0.7008).
+- Portrait-oriented composition, with the entire design using the full rectangle.
+- Target print resolution: 300 dpi, approximately 2102 × 3000 pixels at TRIM SIZE.
+- If the printing service requires 3.175 mm external bleed on every outer edge, prepare a separate bleed-enabled version approximately 2177 × 3075 pixels. Background imagery, never critical text, must extend through bleed. Do not add crop marks inside the artwork.
+- Position all readable text at least 12–15 mm INSIDE the eventual trim boundaries (more if necessary for aesthetics).
+- Keep important facial details, the head silhouette, and every necessary title element well away from trim and bleed.
+- Crisp photography, elegant fine detail, clean straight baselines, flawless typesetting, no stretching or warping.
+- The page-interior margins (22–25 mm inner, 16–18 mm outer), body font (10.5–11 pt), code font (8.5–9 pt), and body line spacing (1.25–1.35) concern INSIDE pages, not the cover. Do NOT force those text specifications onto the cover.
+
+2. MANDATORY PHOTOGRAPHIC IDENTITY PRESERVATION
+- Use the uploaded photograph as an image-editing / image-composition source, not as a vague style reference.
+- Preserve the EXACT same man and his recognizable facial appearance as closely as technically possible: hairstyle and swept-back dark hair, full beard and mustache, jaw, nose, lips, facial proportions, skin texture, sunglasses, and age appearance.
+- Keep the black rectangular sunglasses, beard, clothing and facial expression intact. Do not beautify, redraw, replace, de-age, or introduce an invented identity.
+- Keep him SEATED on the Helsinki Cathedral stone steps in a strong, natural, confident pose with legs apart, both shoes clearly present, hands in the same positions, and anatomically realistic fingers.
+- Preserve the distinctive muted slate-blue / steel-blue oversized trench coat, white shirt, dark green striped tie, black trousers, and black leather lace-up shoes. Preserve their authentic colors and realistic fabric texture.
+- The figure is the ONLY photographic subject in natural full color. Avoid cartoon effects or artificially saturated colors.
+- Do not add a different person, duplicate his face, distort limbs, change shoes, replace the setting, or invent unrelated accessories.
+- Do not place an opaque title across his eyes or recognizable facial features.
+
+3. EXACT SETTING AND SELECTIVE COLOR
+- The visible setting MUST be the same iconic Helsinki Cathedral stone staircase and its white neoclassical cathedral architecture as seen in the user's reference image, in Helsinki, Finland.
+- Preserve the cathedral's domes, columns, façade, statues, and broad granite steps to the extent visible, their scale and architectural credibility, with an appropriate editorial perspective.
+- The ENTIRE environmental scene remains BLACK AND WHITE: sky, clouds, buildings, architecture, background visitors, and stone stairs MUST NOT acquire natural colors.
+- Allow a subtle darkening/gradient or low-opacity charcoal panel behind cover text for contrast, but the location must remain unmistakable.
+- Preserve the editorial selective-color treatment: the author's coat, shirt, tie, skin, hair, glasses, and shoes remain naturally colored; everything in the environment stays grayscale.
+- The uploaded source is square. EXTEND / OUTPAINT the composition vertically for the portrait trim while maintaining the authentic scene, seated pose, full footwear, and realistic architecture. Do not simply crop off his legs or shoes to fit the cover.
+- Do not change the location to Paris, London, a futuristic city, a studio or a generic stock-photo campus.
+
+4. EXACT FRONT-COVER COPY — ENGLISH ONLY
+Use the following exact spellings and punctuation, with the line arrangement chosen for maximum impact:
+
+TOP EYEBROW (small and elegant):
+"CLOUD DATA PLATFORMS  •  SQL  •  PYTHON"
+
+PRIMARY TITLE (the largest title typography, maximum thumbnail readability):
+"SNOWFLAKE"
+"DATA ENGINEERING"
+
+OFFICIAL WORKING SUBTITLE (directly under primary title in smaller type):
+"From Fundamentals to Production-Ready Data Pipelines"
+
+HERO NUMERICAL CALLOUT — VERY LARGE, UNMISSABLE, AND EASY TO READ:
+"180+"
+
+TEXT IMMEDIATELY UNDER THE NUMBER, LARGE AND BOLD:
+"REAL-WORLD PROJECTS"
+
+SUPPORTING QUALIFIER (small but readable, visually subordinate to the number):
+"GitHub references and practical learning resources"
+
+AUTHOR CREDIT (lower region, visible and not covered by the figure):
+"ARMAN GOLBIDI"
+
+IMPORTANT EDITORIAL GATE: The requested "180+ REAL-WORLD PROJECTS" wording is authorized only as an illustrative WORKING COVER CONCEPT. The research catalogue confirms 181 discovered GitHub repositories, NOT 181 fully taught, end-to-end-tested projects. Before generating any FINAL COMMERCIAL cover, check whether the full claim became true. If not, replace the callout with the verified wording:
+"180+"
+"CURATED GITHUB PROJECT REFERENCES"
+Alternatively use "181 CURATED GITHUB REPOSITORIES" if the directory still contains 181 verified links at publication. Never present untested references as completed lessons. Keep the same large, prominent "180+" numerical treatment in either version.
+
+Do not include "First Edition" unless the author explicitly confirms an edition label. Do not invent a publisher name, imprint, review quote, prize, ISBN, publication year, or endorsement. Do not use Snowflake's official brand logo or suggest official affiliation.
+
+5. EDITORIAL COMPOSITION AND VISUAL HIERARCHY
+- The cover must be recognizably a TECHNOLOGY/ENGINEERING BOOK first, and a sophisticated portrait cover second; do not let it resemble only a fashion advertisement.
+- Introduce an elegantly structured layout with the headline above the author's head or in a well-designed vertical negative-space field, without masking important architectural landmarks.
+- "SNOWFLAKE" and "DATA ENGINEERING" are visually dominant, possibly separated across two bold lines, in a confident modern sans-serif (Inter, Helvetica Neue, Söhne, or a similar licensable contemporary type style).
+- Make "180+" a secondary focal point: enormous, clear, crisp, maybe within a minimalist high-contrast dark navy or off-white rectangle positioned in a clean area that does NOT obscure the face, hands, or shoes.
+- Smaller subtitle is readable but does not compete with the large title and numeric callout.
+- Anchor "ARMAN GOLBIDI" near the lower portion with a clean baseline and clear contrast; do not overlap shoes.
+- Use a purposeful grid, generous whitespace, disciplined typography, and restrained premium editorial hierarchy.
+- Establish continuity with a corresponding back cover: charcoal/ink navy typography panels, desaturated grayscale architecture, subtle teal or steel-blue accent rules.
+
+6. DATA ENGINEERING GRAPHIC LANGUAGE — SUBTLE, NOT GENERIC SCI-FI
+- Introduce a restrained technical motif (maximum about 10–15% of the visual intensity) in the negative space: elegant thin white/cyan pipeline routes, source → ingest → transform → warehouse → analytics node diagram, subtle SQL-table schematic grid, or small data-flow network.
+- Use architecturally coherent diagrams with very small restrained visual weight. No fabricated data charts implying actual experimental results.
+- Never obstruct the subject, cathedral, primary title, subtitle, or 180+ number.
+- Do not add random binary streams, neon circuit boards, holographic skyscrapers, flying technology symbols, intrusive particle storms, overwhelming stock icons, or unrelated brand logos.
+
+7. COLOR, FINISH, AND TYPOGRAPHY
+- Photo background: true grayscale / black-and-white, visually rich in midtones.
+- Author: muted natural color (primarily coat's slate blue, dark green tie, skin tone).
+- Text: predominantly white/ivory or ink navy depending on actual contrast; teal/steel-blue used sparingly.
+- Premium matte paperback aesthetic, tactile and contemporary rather than glossy or reflective.
+- Ensure WCAG-like strong readability visually: never place pale letters over similarly pale cathedral masonry without a controlled contrast treatment.
+- No misspelled names, random extra text, letters turned into strange symbols, fake barcodes, broken typographic spacing, or misaligned words.
+
+8. NEGATIVE PROMPT / PROHIBITIONS
+No identity changes. No fake city. No colored architecture. No cropped shoes. No duplicate limbs, distorted fingers, asymmetric glasses, plastic skin, blurry face, or watermarks. No logos of publishers that have not agreed to publish the book. No fake Snowflake endorsement. No fabricated numeric claims beyond the author-approved mockup wording. No visible guides, ruler annotations, bleed lines, white outer border, spine, or back cover. No 3D mockup.
+
+9. OUTPUT AND REVIEW
+- Produce ONE distinct flat front-cover image and no additional panels.
+- Ensure the EXACT title, subtitle, "180+" message, and author's name are spelled correctly and placed cleanly.
+- If the image generator cannot produce reliable high-resolution lettering, prioritize an excellent photographic COVER BACKGROUND and provide clean placeholders; the final typography must later be overlaid with vector text in a layout tool rather than publishing flawed AI text.
+- Treat generated art as a concept proof. Verify licensed photography rights, typography, proof dimensions, printing template, claim accuracy, and official/nonofficial brand status before printing.
+
+GENERATE THE FRONT COVER NOW, USING THE UPLOADED REFERENCE PHOTOGRAPH.

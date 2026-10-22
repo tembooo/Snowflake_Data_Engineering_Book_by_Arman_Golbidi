@@ -1,0 +1,3 @@
+source_code,metric,interval_start_utc,value_mwh
+SOLAR_FI,generation_mwh,2026-01-15 01:00:00,13.000
+SOLAR_FI,generation_mwh,2026-01-15 03:00:00,N/A

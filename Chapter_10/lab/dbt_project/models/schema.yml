@@ -1,0 +1,35 @@
+version: 2
+seeds:
+  - name: energy_revisions
+    description: 'Twelve synthetic deliveries with deliberate invalid and replay events.'
+models:
+  - name: stg_energy_events
+    description: 'Accepted syntactically and semantically valid, distinct event deliveries.'
+    columns:
+      - name: event_id
+        data_tests: [not_null, unique]
+      - name: operation
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['UPSERT', 'DELETE']
+  - name: int_energy_current
+    description: 'Latest accepted nondeleted business keys.'
+    columns:
+      - name: provider
+        data_tests: [not_null]
+      - name: technology
+        data_tests: [not_null]
+      - name: interval_utc
+        data_tests: [not_null]
+      - name: energy_mwh
+        data_tests: [not_null]
+  - name: fct_energy_hourly
+    description: 'Synthetic accepted energy in MWh by UTC interval and technology.'
+    columns:
+      - name: interval_utc
+        data_tests: [not_null]
+      - name: technology
+        data_tests: [not_null]
+      - name: energy_mwh
+        data_tests: [not_null]

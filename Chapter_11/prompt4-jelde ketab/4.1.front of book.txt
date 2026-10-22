@@ -1,0 +1,106 @@
+می خوام که الان پشت و روی جلد کتاب برای من پرامپت بنویسی و اینجوری باشه که این عکس که می گذارم روی جلد کتاب باشه که عکس خودم 
+بک گراند هم این باشه 
+بک گراند عکس همین سیاه و سفید باشه 
+و شخص هم همین جوری رنگی باشه 
+
+مکان هم همین باشه 
+و اینکه سایز و اطلاعات دیگر هم که در پایین هست 
+
+
+#############################################################
+ویژگی	پیشنهاد
+اندازه صفحه	۱۷۸ × ۲۵۴ میلی‌متر
+فونت متن انگلیسی	۱۰٫۵ تا ۱۱ پوینت
+فونت کدها	۸٫۵ تا ۹ پوینت
+فاصله خطوط متن	۱٫۲۵ تا ۱٫۳۵
+حاشیه داخلی	۲۲ تا ۲۵ میلی‌متر
+حاشیه بیرونی	۱۶ تا ۱۸ میلی‌متر
+حاشیه بالا و پایین	۱۸ تا ۲۲ میلی‌متر
+کاغذ	سفید مات، حدود ۸۰ تا ۹۰ گرم
+جلد	نرم (Paperback)، با روکش مات
+
+
+
+###############################################
+کتاب من در این سایز هستش یک عکس جلد کتاب می خوام و یک عکس هم برای پشت جلد کتاب می خوام 
+###############################################
+
+برای عکس روی کتاب این ها باشه 
+###########################################
+
+عنصر	اهمیت و توضیح
+عنوان اصلی کتاب	بزرگ‌ترین و برجسته‌ترین متن جلد، قابل خواندن در تصویر بندانگشتی
+زیرعنوان (Subtitle)	توضیح دقیق موضوع و کاربرد عملی کتاب
+نام نویسنده	در بخش پایین جلد با اندازه متناسب
+تصویر یا گرافیک تخصصی	نمودار Pipeline، جریان داده، معماری Cloud یا شبکه داده
+ویژگی متمایز	مانند Hands-On Projects یا Real-World Case Studies
+شماره ویرایش	فقط اگر کتاب واقعاً ویرایش مشخصی داشته باشد
+لوگوی ناشر	در صورت وجود ناشر یا برند انتشاراتی واقعی
+
+######################################################
+
+
+و برای پشت کتاب هم این ها هست  که این نمونه هستش و  متناسب با اطلاعاتی که در سایز فایل ها دادم این را هم کامل کن 
+
+######################################################
+# DATA ENGINEERING IN PRACTICE
+
+**Build Reliable Data Pipelines. Engineer Scalable Platforms. Solve Real-World Data Challenges.**
+
+Modern data engineering goes far beyond moving data from one system to another. It requires designing reliable architectures, building scalable pipelines, ensuring data quality, and delivering trusted information for analytics and AI.
+
+*Data Engineering in Practice* takes a hands-on, engineering-focused approach to the technologies, patterns, and decisions behind modern data systems.
+
+### WHAT YOU WILL LEARN
+
+- Design and implement robust ETL and ELT data pipelines.
+- Master practical SQL and Python for data processing.
+- Understand data warehouses, data lakes, and lakehouse architectures.
+- Explore batch processing, streaming, and orchestration.
+- Apply data quality, testing, observability, and governance practices.
+- Build cloud-based data solutions and production-oriented workflows.
+
+### FROM THEORY TO PRACTICE
+
+Explore practical engineering exercises, real-world case studies, architectural examples, and companion GitHub resources designed to connect technical concepts with hands-on implementation.
+
+### WHO SHOULD READ THIS BOOK?
+
+Designed for aspiring and practicing Data Engineers, Analytics Engineers, Software Engineers, Data Analysts, and university students seeking a structured understanding of modern data engineering.
+
+### ABOUT THE AUTHOR
+
+Arman Golbidi is a Data Engineer with professional experience in Azure, Python, SQL, Power BI, and data analytics. He holds an MSc in Data-Centric Engineering from LUT University, Finland. His background combines practical data platform development, analytics engineering, and applied machine learning.
+
+**COMPANION RESOURCES**
+
+Source code • Practical exercises • GitHub projects
+
+[QR CODE — PROJECT REPOSITORY]
+
+[ISBN / BARCODE AREA]
+
+#####################################################################
+
+کتاب هم کاملا به صورت انگلیسی هستش و 
+اینکه الان برای من بیا و پرامپت را بنویس و بفرست 
+یک پرامپت برای روی جلد و یک پرامپت هم برای پشت جلد 
+
+#####################################################################
+می خوام روی جلد هم بیگم بیش از 180 پروژه واقعی هم تدریس شده و این 180 به صورت کاملا واضح باشه 
+
+#####################################################################
+
+دقت کن الان باید دو تا پرامپت بهم بدی 
+
+بنویس و بفرست 
+
+
+
+پرامپت را با دقت بنویس و بفرست هر دو را در دو فایل تکس جدا گانه
+
+
+
+پرامپت های تولید عکس برای این کتاب را برای من در دوفایل تکس جداگانه تولید کن و برای من بفرست 
+
+که این پرامپت ها را بعدم برات بفرستم و بر اساس اون ها برای من عکس تولید کنی برای روی جلد و پشت جلد کتابم

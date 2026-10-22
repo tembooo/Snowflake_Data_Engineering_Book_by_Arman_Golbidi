@@ -1,0 +1,12 @@
+{
+  "delivered": 12,
+  "accepted_events": 9,
+  "replays": 1,
+  "rejected": 2,
+  "visible_rows": 6,
+  "tombstone_keys": 1,
+  "total_mwh": "66.000",
+  "unit": "MWh",
+  "data": "SYNTHETIC",
+  "cloud_executed": false
+}

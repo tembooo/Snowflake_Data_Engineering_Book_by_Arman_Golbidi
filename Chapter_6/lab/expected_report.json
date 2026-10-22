@@ -1,0 +1,82 @@
+{
+  "physical_lines": 4,
+  "accepted_envelopes": 2,
+  "syntax_rejected": 1,
+  "contract_rejected": 1,
+  "accepted_readings": 6,
+  "accepted_total_mwh": "97.500",
+  "quarantine": [
+    {
+      "line": 3,
+      "reason": "contract",
+      "detail": "mwh must be numeric at index 0"
+    },
+    {
+      "line": 4,
+      "reason": "syntax",
+      "detail": "Expecting value: line 1 column 86 (char 85)"
+    }
+  ],
+  "readings": [
+    {
+      "source_line": 1,
+      "envelope_id": "demo-2026-01-15T10Z",
+      "provider": "synthetic-fi",
+      "observed_at_utc": "2026-01-15T10:00:00Z",
+      "technology": "wind",
+      "energy_mwh": "21.25",
+      "array_position": 0,
+      "schema_version": 1
+    },
+    {
+      "source_line": 1,
+      "envelope_id": "demo-2026-01-15T10Z",
+      "provider": "synthetic-fi",
+      "observed_at_utc": "2026-01-15T10:00:00Z",
+      "technology": "solar",
+      "energy_mwh": "12.50",
+      "array_position": 1,
+      "schema_version": 1
+    },
+    {
+      "source_line": 1,
+      "envelope_id": "demo-2026-01-15T10Z",
+      "provider": "synthetic-fi",
+      "observed_at_utc": "2026-01-15T10:00:00Z",
+      "technology": "hydro",
+      "energy_mwh": "18.00",
+      "array_position": 2,
+      "schema_version": 1
+    },
+    {
+      "source_line": 2,
+      "envelope_id": "demo-2026-01-15T11Z",
+      "provider": "synthetic-fi",
+      "observed_at_utc": "2026-01-15T11:00:00Z",
+      "technology": "wind",
+      "energy_mwh": "19.00",
+      "array_position": 0,
+      "schema_version": 2
+    },
+    {
+      "source_line": 2,
+      "envelope_id": "demo-2026-01-15T11Z",
+      "provider": "synthetic-fi",
+      "observed_at_utc": "2026-01-15T11:00:00Z",
+      "technology": "solar",
+      "energy_mwh": "13.00",
+      "array_position": 1,
+      "schema_version": 2
+    },
+    {
+      "source_line": 2,
+      "envelope_id": "demo-2026-01-15T11Z",
+      "provider": "synthetic-fi",
+      "observed_at_utc": "2026-01-15T11:00:00Z",
+      "technology": "hydro",
+      "energy_mwh": "13.75",
+      "array_position": 2,
+      "schema_version": 2
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "fixture_type": "AUTHOR_CREATED_SYNTHETIC",
+  "file_count": 2,
+  "bronze_rows": 8,
+  "numeric_valid_rows": 7,
+  "quarantined_rows": 1,
+  "superseded_rows": 1,
+  "accepted_business_keys": 6,
+  "accepted_total_mwh": "97.500",
+  "quarantine": [
+    {
+      "filename": "energy_r2.csv",
+      "line": 3,
+      "reasons": [
+        "NONNUMERIC_MWH"
+      ],
+      "raw": {
+        "source_code": "SOLAR_FI",
+        "metric": "generation_mwh",
+        "interval_start_utc": "2026-01-15 03:00:00",
+        "value_mwh": "N/A"
+      }
+    }
+  ],
+  "accepted_rows": [
+    {
+      "key": [
+        "SOLAR_FI",
+        "generation_mwh",
+        "2026-01-15 00:00:00"
+      ],
+      "revision": 1,
+      "mwh": "10.000",
+      "file": "energy_r1.csv"
+    },
+    {
+      "key": [
+        "SOLAR_FI",
+        "generation_mwh",
+        "2026-01-15 01:00:00"
+      ],
+      "revision": 2,
+      "mwh": "13.000",
+      "file": "energy_r2.csv"
+    },
+    {
+      "key": [
+        "SOLAR_FI",
+        "generation_mwh",
+        "2026-01-15 02:00:00"
+      ],
+      "revision": 1,
+      "mwh": "11.500",
+      "file": "energy_r1.csv"
+    },
+    {
+      "key": [
+        "WIND_FI",
+        "generation_mwh",
+        "2026-01-15 00:00:00"
+      ],
+      "revision": 1,
+      "mwh": "20.000",
+      "file": "energy_r1.csv"
+    },
+    {
+      "key": [
+        "WIND_FI",
+        "generation_mwh",
+        "2026-01-15 01:00:00"
+      ],
+      "revision": 1,
+      "mwh": "21.000",
+      "file": "energy_r1.csv"
+    },
+    {
+      "key": [
+        "WIND_FI",
+        "generation_mwh",
+        "2026-01-15 02:00:00"
+      ],
+      "revision": 1,
+      "mwh": "22.000",
+      "file": "energy_r1.csv"
+    }
+  ]
+}

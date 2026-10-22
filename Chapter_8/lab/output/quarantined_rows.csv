@@ -1,0 +1,2 @@
+event_id,provider,technology,interval_utc,revision,energy_mwh,operation
+A11,fingrid,SOLAR,2026-10-21T10:00:00Z,3,-1.000,UPSERT

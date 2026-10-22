@@ -1,0 +1,39 @@
+SNOWFLAKE DATA ENGINEERING — CHAPTER 05 QUALITY / RELEASE REPORT
+Date: 22 October 2026
+Author: Arman Golbidi
+Manuscript language: English
+Title: Batch Data Ingestion and Loading
+
+PAGE AND TYPOGRAPHY
+- 20 PDF pages, numbered 77 through 96 in planned 300-page volume.
+- Trim: 178 x 254 mm (PDF page 504.57 x 720 pt).
+- Main font: Libertinus Serif, nominal 10.75 pt / 13.65 pt = 1.27 baseline ratio.
+- Listings font: Libertinus Mono, 8.75 pt / 10.7 pt.
+- Mirrored margins: inside 23 mm, outside 17 mm, top/bottom 19 mm.
+- XeLaTeX compiled twice without LaTeX errors or overfull text boxes.
+- 20-page contact sheet inspected for headings, code, figures, and page numbers.
+- All original sections 5.1–5.9 and 5.L, plus each subtopic 5.x.1–.3 / 5.L.1–.4 present.
+
+VERIFICATION STATUS
+- Official Snowflake docs consulted October 22, 2026.
+- No cloud Snowflake account used; SQL listed as UNEXECUTED.
+- Code scripts are original, use synthetic fixture, not copied from external GitHub.
+- Python offline source test: 5/5 tests passed.
+- Source manifest SHA-256 digests generated for two files.
+- Expected: files=2, bronze source rows=8, one semantic invalid, one superseded
+  revision, accepted business keys=6, accepted total=97.500 MWh.
+- Python output independently computed the expected figure.
+- No actual Finnish public dataset ingested or copyrighted data copied.
+- No GitHub reference projects reexecuted; third-party license/reuse check remains pending.
+
+CRITICAL SNOWFLAKE CAVEATS
+- VALIDATION_MODE is not supported for COPY with SELECT transformations;
+  syntax and semantic validation are deliberately separate.
+- COPY file-load history helps with duplicates but is not business-level idempotency.
+- FORCE=TRUE can reload files and create duplicate business records.
+- Source timestamp, retrieval time, scan timestamp and acceptance time are distinct.
+- Current Snowflake documentation, account edition/region, permissions, and
+  source repo licenses must be rechecked before commercial publication.
+
+RELEASE STATUS: TYPESet technical manuscript draft, NOT integration-tested,
+NOT yet reviewed by an independent domain expert or copyeditor.

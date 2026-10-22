@@ -1,0 +1,10 @@
+-- REVIEW-ONLY CLEANUP. NO ACTIVE DROP STATEMENTS.
+-- Run only in disposable BOOK_CH04 after independent confirmation.
+-- DROP VIEW IF EXISTS book_ch04.v_daily_energy;
+-- DROP TABLE IF EXISTS book_ch04.fact_energy_hourly;
+-- DROP TABLE IF EXISTS book_ch04.dim_date_utc;
+-- DROP TABLE IF EXISTS book_ch04.dim_metric;
+-- DROP TABLE IF EXISTS book_ch04.dim_source;
+-- DROP TABLE IF EXISTS book_ch04.stg_energy_accepted;
+-- DROP TABLE IF EXISTS book_ch04.raw_energy;
+-- ALTER WAREHOUSE <YOUR_LAB_WAREHOUSE> SUSPEND;

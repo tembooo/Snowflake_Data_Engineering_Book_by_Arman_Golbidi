@@ -1,0 +1,21 @@
+test_35_rows (test_offline.Chapter14BaselineTests.test_35_rows) ... ok
+test_duplicate_rejected (test_offline.Chapter14BaselineTests.test_duplicate_rejected) ... ok
+test_fixed_split (test_offline.Chapter14BaselineTests.test_fixed_split) ... ok
+test_injected_anomaly_flag (test_offline.Chapter14BaselineTests.test_injected_anomaly_flag) ... ok
+test_last_value_lag (test_offline.Chapter14BaselineTests.test_last_value_lag) ... ok
+test_mae_rejects_bad_length (test_offline.Chapter14BaselineTests.test_mae_rejects_bad_length) ... ok
+test_negative_rejected (test_offline.Chapter14BaselineTests.test_negative_rejected) ... ok
+test_no_future_leakage (test_offline.Chapter14BaselineTests.test_no_future_leakage) ... ok
+test_nonzero_mae (test_offline.Chapter14BaselineTests.test_nonzero_mae) ... ok
+test_positive (test_offline.Chapter14BaselineTests.test_positive) ... ok
+test_provenance (test_offline.Chapter14BaselineTests.test_provenance) ... ok
+test_roundtrip (test_offline.Chapter14BaselineTests.test_roundtrip) ... ok
+test_seasonal_lag (test_offline.Chapter14BaselineTests.test_seasonal_lag) ... ok
+test_uncontaminated_no_anomaly (test_offline.Chapter14BaselineTests.test_uncontaminated_no_anomaly) ... ok
+test_utc_dates (test_offline.Chapter14BaselineTests.test_utc_dates) ... ok
+test_wrong_provenance_rejected (test_offline.Chapter14BaselineTests.test_wrong_provenance_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.010s
+
+OK

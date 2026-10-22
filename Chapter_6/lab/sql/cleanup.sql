@@ -1,0 +1,6 @@
+-- Manual cleanup template. Not executed by default.
+-- Temporary tables disappear at session end.
+-- Confirm ownership and schema before uncommenting anything:
+-- DROP TABLE IF EXISTS CH06_SILVER;
+-- DROP TABLE IF EXISTS CH06_BRONZE_JSON;
+-- Suspend any warehouse you started explicitly for this lab.

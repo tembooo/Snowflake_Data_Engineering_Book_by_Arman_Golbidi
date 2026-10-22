@@ -1,0 +1,16 @@
+name: 'finland_energy_ch10'
+version: '1.0.0'
+config-version: 2
+profile: 'finland_energy_ch10'
+model-paths: ['models']
+seed-paths: ['seeds']
+test-paths: ['tests']
+clean-targets: ['target', 'dbt_packages']
+models:
+  finland_energy_ch10:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

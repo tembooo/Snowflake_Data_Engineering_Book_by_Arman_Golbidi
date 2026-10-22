@@ -1,0 +1,15 @@
+{
+  "interval_utc": "2026-03-01T10:00:00Z",
+  "generation_mwh": "66.000",
+  "consumption_mwh": "60.000",
+  "net_mwh": "6.000",
+  "wind_share_pct": "21.21212121212121212121212121",
+  "generation_coverage": "6/6",
+  "row_count": 6,
+  "limitations": [
+    "synthetic single interval",
+    "not a real Finnish grid measurement",
+    "consumption separate illustrative source",
+    "Power BI/Snowflake untested"
+  ]
+}

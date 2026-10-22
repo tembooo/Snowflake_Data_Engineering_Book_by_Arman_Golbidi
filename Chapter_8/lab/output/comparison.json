@@ -1,0 +1,13 @@
+{
+  "input_rows": 12,
+  "accepted_unique_events": 10,
+  "duplicate_deliveries": 1,
+  "quarantined_rows": 1,
+  "committed_source_offset": 10,
+  "simulated_failures_retried": 1,
+  "latest_keys_including_tombstone": 7,
+  "visible_keys": 6,
+  "total_mwh": "66.000",
+  "procedural_equals_snapshot": true,
+  "cloud_execution": "NOT TESTED"
+}

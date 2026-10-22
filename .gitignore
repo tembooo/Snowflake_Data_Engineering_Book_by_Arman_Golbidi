@@ -1,0 +1,29 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Never commit secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+
+# LaTeX build output (keep the checked-in PDF assets)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS/editor artefacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

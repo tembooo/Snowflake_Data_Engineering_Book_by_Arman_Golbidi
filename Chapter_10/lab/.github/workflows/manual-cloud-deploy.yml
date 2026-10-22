@@ -1,0 +1,24 @@
+# INTENTIONALLY NOT AN AUTOMATIC CLOUD DEPLOYMENT.
+# Needs secret manager, permission-limited identity, env approval and tested dbt version.
+name: Chapter 10 manual cloud approval template
+on:
+  workflow_dispatch:
+    inputs:
+      approved:
+        description: 'Enter APPROVED after owner review and spend approval'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  gated-preview:
+    if: ${{ inputs.approved == 'APPROVED' }}
+    environment: snowflake-lab-manual-approval
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Safety note
+        run: |
+          echo 'No cloud SQL is executed by this template.'
+          echo 'Configure identity, checked dbt adapter, scoped schema, spend and cleanup first.'
+          echo 'Then use an approved separate integration job and record query IDs.'

@@ -1,0 +1,17 @@
+test_conflicting_revision_rejected (test_snowpark.EnergyPipelineContractTests.test_conflicting_revision_rejected) ... ok
+test_duplicate_delivery (test_snowpark.EnergyPipelineContractTests.test_duplicate_delivery) ... ok
+test_input_count (test_snowpark.EnergyPipelineContractTests.test_input_count) ... ok
+test_invalid_rejected (test_snowpark.EnergyPipelineContractTests.test_invalid_rejected) ... ok
+test_latest_revision_wins (test_snowpark.EnergyPipelineContractTests.test_latest_revision_wins) ... ok
+test_missing_field_rejected (test_snowpark.EnergyPipelineContractTests.test_missing_field_rejected) ... ok
+test_negative_rejected (test_snowpark.EnergyPipelineContractTests.test_negative_rejected) ... ok
+test_replay_does_not_change_result (test_snowpark.EnergyPipelineContractTests.test_replay_does_not_change_result) ... ok
+test_tombstone (test_snowpark.EnergyPipelineContractTests.test_tombstone) ... ok
+test_total_is_correct (test_snowpark.EnergyPipelineContractTests.test_total_is_correct) ... ok
+test_utc_required (test_snowpark.EnergyPipelineContractTests.test_utc_required) ... ok
+test_visible_rows (test_snowpark.EnergyPipelineContractTests.test_visible_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.005s
+
+OK

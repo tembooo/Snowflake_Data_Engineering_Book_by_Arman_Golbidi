@@ -1,0 +1,10 @@
+[
+  {
+    "event_id": "f-011",
+    "reason": "invalid_measure_or_revision"
+  },
+  {
+    "event_id": "f-012",
+    "reason": "invalid_measure_or_revision"
+  }
+]

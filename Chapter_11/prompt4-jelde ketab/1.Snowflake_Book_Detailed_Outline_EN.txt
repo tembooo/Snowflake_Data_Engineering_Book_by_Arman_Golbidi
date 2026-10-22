@@ -1,0 +1,1025 @@
+SNOWFLAKE DATA ENGINEERING — ENGLISH MASTER TABLE OF CONTENTS AND WRITING BLUEPRINT
+From Fundamentals to Production-Ready Data Pipelines
+Author: Arman Golbidi | Language: English | Planned publication: Finland
+Editorial blueprint v3.0 — 21 October 2026 | Derived from the author-supplied outline v2.0
+====================================================================================================
+STATUS AND EDITORIAL RULES
+- This is the detailed production outline, not a completed 300-page manuscript.
+- Exact target: 8 preliminary pages + 280 chapter pages + 12 appendix pages = 300 pages.
+- All numbered sections preserve the sequence and page budget of the supplied outline.
+- Page references are editorial targets until typesetting; if page count changes, recompute ranges.
+- All book prose, teaching exercises, captions, examples, and deliverables must be in English.
+- Preserve a single editorial language style (choose UK or US English before drafting).
+- Full reproducible code, large datasets, and extensive labs live in a versioned companion repository.
+- Finnish legal and publishing requirements are governed by the separate universal principles file.
+- Feature claims, APIs, costs, editions, regions, and example outputs require pre-publication checks.
+
+I. EXACT 300-PAGE ALLOCATION
+----------------------------------------------------------------------------------------------------
+001–008 |  8 pages | Front matter
+009–020 | 12 pages | Chapter 01: Introduction to Snowflake and Modern Data Engineering
+021–038 | 18 pages | Chapter 02: Snowflake Architecture: Storage, Compute, and Services
+039–056 | 18 pages | Chapter 03: Setting Up Snowflake and Development Environments
+057–076 | 20 pages | Chapter 04: Snowflake SQL and Data Modeling
+077–096 | 20 pages | Chapter 05: Batch Data Ingestion and Loading
+097–112 | 16 pages | Chapter 06: JSON and Semi-Structured Data
+113–132 | 20 pages | Chapter 07: Snowpipe, Streaming, and Real-Time Ingestion
+133–150 | 18 pages | Chapter 08: Streams, Tasks, and Dynamic Tables
+151–170 | 20 pages | Chapter 09: Data Engineering with Snowpark Python
+171–190 | 20 pages | Chapter 10: ETL/ELT Pipelines, dbt, and Delivery Workflows
+191–208 | 18 pages | Chapter 11: Analytics Engineering and Power BI Integration
+209–226 | 18 pages | Chapter 12: Query Performance and Warehouse Optimization
+227–248 | 22 pages | Chapter 13: Security, Governance, Reliability, and Cost
+249–264 | 16 pages | Chapter 14: Snowflake Cortex AI and Machine Learning
+265–288 | 24 pages | Chapter 15: Capstone: A Production-Ready Energy Data Platform
+289–300 | 12 pages | Appendices, bibliography, and index
+TOTAL = 300 pages. CHAPTERS = 15. CHAPTER BUDGET = 280 pages.
+
+II. FRONT MATTER — PAGES 001–008 (8 PAGES)
+----------------------------------------------------------------------------------------------------
+001 | Half title/title page; author, edition, publishing imprint or publisher if known.
+002 | Copyright notice; ISBN placeholders per format; attribution; independent/unofficial product disclaimer.
+003 | Preface explaining purpose, original contribution, limitations, and intended outcomes.
+004 | Reader profiles, exact prerequisites, expected prior SQL/Python experience, and learning paths.
+005 | How to read chapters, conventions for code, warnings, exercises, and difficulty labels.
+006 | Companion repository, data provenance, release tag, reproducibility and correction channels.
+007 | Safety and cost controls, least-privilege setup, cloud-billing and cleanup overview.
+008 | Chapter map, dependency graph, learning outcomes, and introduction to the running capstone.
+Note: In a final print edition, the main table of contents may require additional preliminary space; the 8-page plan must be adjusted at proof stage without misrepresenting final pagination.
+
+III. REUSABLE CHAPTER PEDAGOGY
+----------------------------------------------------------------------------------------------------
+- Allocate 1 introductory page per chapter for objectives, audience, prerequisites, important terms, and scenario.
+- Allocate the specified number of core section pages to numbered content and decision-focused examples.
+- Reserve 2 pages per chapter for the guided lab, recap, and exercises; Chapter 15 reserves 3 pages.
+- Each major section provides: concept -> why it matters -> design trade-off -> short example -> error case -> check.
+- Each executable example identifies prerequisites, permission, versions, test data, expected result, expense, and safe cleanup.
+- Where a full lab does not fit, link to the tagged repository version rather than silently omitting reproducibility.
+- End each chapter with 3–5 concept questions, 2 practical exercises, 1 architectural decision task, and acceptance checks.
+- Keep running-case changes auditable in the repository with dedicated artifacts and proof of test execution.
+
+
+====================================================================================================
+CHAPTER 01 | INTRODUCTION TO SNOWFLAKE AND MODERN DATA ENGINEERING
+BOOK PAGES 009–020 | CHAPTER BUDGET: 12 PAGES
+Learning objective: Understand where Snowflake fits, differentiate analytics architectures, and justify technology choices.
+Prerequisites: No previous Snowflake knowledge; elementary SQL helps.
+Internal chapter allocation: 1-page introduction + 9 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  1.1  The evolution of modern data platforms  [TARGET: 2 page(s)]
+     1.1.1  On-premises systems and traditional data warehouses.
+     1.1.2  Elastic cloud analytics and separated workloads.
+     1.1.3  Evolving responsibilities of the data engineer.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.2  Data warehouses, lakes, lakehouses, and data clouds  [TARGET: 1 page(s)]
+     1.2.1  Data warehouses and data lakes.
+     1.2.2  Lakehouse and data-cloud concepts.
+     1.2.3  Selecting architecture by workload rather than marketing labels.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.3  OLTP versus OLAP: workloads and design choices  [TARGET: 1 page(s)]
+     1.3.1  Transactional versus analytical access patterns.
+     1.3.2  Read/write characteristics and latency.
+     1.3.3  Selecting a store for energy-meter use cases.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.4  Snowflake ecosystem and core use cases  [TARGET: 1 page(s)]
+     1.4.1  Core platform components and SQL/Python roles.
+     1.4.2  Structured versus semi-structured processing.
+     1.4.3  Business intelligence, data sharing, and AI use cases.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.5  The end-to-end data engineering lifecycle  [TARGET: 1 page(s)]
+     1.5.1  Source discovery and data contracts.
+     1.5.2  Ingestion, transformation, and validation.
+     1.5.3  Monitoring, quality, and maintenance.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.6  Batch, streaming, and analytics architectures  [TARGET: 1 page(s)]
+     1.6.1  Batch, micro-batch, and streaming models.
+     1.6.2  Freshness and end-to-end latency metrics.
+     1.6.3  Cost, complexity, and latency trade-offs.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.7  When Snowflake is (and is not) the right choice  [TARGET: 1 page(s)]
+     1.7.1  Strengths in BI, ELT, and governed sharing.
+     1.7.2  Limitations, pricing, and vendor lock-in.
+     1.7.3  Fair comparison criteria for alternatives.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.8  Introducing the Finland Energy Analytics capstone  [TARGET: 1 page(s)]
+     1.8.1  Stakeholders and business problem.
+     1.8.2  Energy generation/consumption indicators and time grain.
+     1.8.3  Project roadmap across the book.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  1.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     1.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     1.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     1.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     1.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Define an energy analytics problem, stakeholder requirements, a first KPI catalogue, and an architecture context diagram.
+Repository deliverables: problem_statement.md; requirements.md; architecture_context.svg
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 02 | SNOWFLAKE ARCHITECTURE: STORAGE, COMPUTE, AND SERVICES
+BOOK PAGES 021–038 | CHAPTER BUDGET: 18 PAGES
+Learning objective: Explain the execution path of a query and make defensible architecture and cost decisions.
+Prerequisites: Chapter 1.
+Internal chapter allocation: 1-page introduction + 15 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  2.1  The three architectural layers  [TARGET: 1 page(s)]
+     2.1.1  Storage, virtual warehouses, and cloud services.
+     2.1.2  Layer responsibilities and relative isolation.
+     2.1.3  Tracing a data and command flow.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.2  Storage organization and micro-partitions  [TARGET: 1 page(s)]
+     2.2.1  Micro-partitions and metadata.
+     2.2.2  Pruning and load-order effects.
+     2.2.3  Comparison with manually managed partitioning.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.3  Virtual warehouses and compute isolation  [TARGET: 1 page(s)]
+     2.3.1  Warehouse roles, start/stop, and auto-suspend.
+     2.3.2  Workload isolation for BI and ELT.
+     2.3.3  Compute resizing versus expense.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.4  Cloud services, metadata, and query processing  [TARGET: 3 page(s)]
+     2.4.1  Identity and authorization control.
+     2.4.2  Query compilation, optimization, and metadata.
+     2.4.3  Managed services versus user-managed compute.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.5  Query pruning, caching, and data access  [TARGET: 3 page(s)]
+     2.5.1  Micro-partition pruning.
+     2.5.2  Result reuse and data/cache behavior.
+     2.5.3  Cache misses and fair comparison experiments.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.6  Concurrency and multi-cluster warehouses  [TARGET: 1 page(s)]
+     2.6.1  Queueing and throughput under concurrency.
+     2.6.2  Multi-cluster warehouse use cases and edition limits.
+     2.6.3  Why more clusters do not guarantee faster single queries.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.7  Time Travel, Fail-safe, and data retention  [TARGET: 2 page(s)]
+     2.7.1  Time Travel recovery paths.
+     2.7.2  Fail-safe scope and operational boundaries.
+     2.7.3  Retention choices by object type and edition.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.8  Cloud regions, deployment models, and limitations  [TARGET: 2 page(s)]
+     2.8.1  Cloud provider, deployment region, and data residency.
+     2.8.2  Availability differences across regions.
+     2.8.3  Data transfer cost and environment separation.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.9  Reference architectures and design trade-offs  [TARGET: 1 page(s)]
+     2.9.1  Batch-first versus streaming designs.
+     2.9.2  Snowflake-managed storage versus external data.
+     2.9.3  Native, Iceberg, and hybrid table considerations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  2.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     2.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     2.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     2.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     2.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Investigate Query Profile, distinguish storage from compute, and draw a baseline medallion architecture.
+Repository deliverables: architecture_v1.svg; explain_query.sql; tradeoffs.md
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 03 | SETTING UP SNOWFLAKE AND DEVELOPMENT ENVIRONMENTS
+BOOK PAGES 039–056 | CHAPTER BUDGET: 18 PAGES
+Learning objective: Provision a repeatable, least-privilege, cost-controlled learning environment.
+Prerequisites: Chapters 1–2; basic SQL and command-line experience.
+Internal chapter allocation: 1-page introduction + 15 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  3.1  Accounts, organizations, editions, and regions  [TARGET: 1 page(s)]
+     3.1.1  Organizations versus accounts.
+     3.1.2  Edition and region selection.
+     3.1.3  Trial account restrictions and initial cost estimate.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.2  Getting started with Snowsight  [TARGET: 1 page(s)]
+     3.2.1  Interface orientation and object browser.
+     3.2.2  Worksheets and Query History.
+     3.2.3  Recording UI screenshots with a capture date.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.3  Databases, schemas, tables, and warehouses  [TARGET: 3 page(s)]
+     3.3.1  Creating databases, schemas, and tables.
+     3.3.2  Naming conventions and object ownership.
+     3.3.3  Small warehouses and auto-suspend.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.4  Users, roles, and basic grants  [TARGET: 1 page(s)]
+     3.4.1  Role-based access and grants.
+     3.4.2  Execution roles versus ownership roles.
+     3.4.3  Negative access tests for least privilege.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.5  SQL worksheets, Snowflake CLI, and Git workflows  [TARGET: 3 page(s)]
+     3.5.1  Worksheets and repeatable queries.
+     3.5.2  Snowflake CLI configuration.
+     3.5.3  Git changes, reviews, and pull requests.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.6  Connecting Python and SQL development tools  [TARGET: 2 page(s)]
+     3.6.1  Python Connector and connection verification.
+     3.6.2  Secret storage and environment variables.
+     3.6.3  Controlled connection lifecycle and clean exit.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.7  Naming conventions and dev/test/prod separation  [TARGET: 1 page(s)]
+     3.7.1  Object naming rules.
+     3.7.2  DEV/TEST/PROD separation.
+     3.7.3  Preventing accidental production operations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.8  Budgets, resource monitors, and cost guardrails  [TARGET: 2 page(s)]
+     3.8.1  Supported Budgets and alerting.
+     3.8.2  Resource Monitor scope for user-managed warehouses.
+     3.8.3  Cost response and emergency stop procedures.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.9  Reusable environment bootstrap scripts  [TARGET: 1 page(s)]
+     3.9.1  Idempotent environment DDL.
+     3.9.2  Parameterization and environment files.
+     3.9.3  Safe teardown and audit trail.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  3.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     3.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     3.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     3.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     3.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Create test roles, a small warehouse, a development database, and a safe bootstrap/cleanup routine.
+Repository deliverables: bootstrap.sql; permissions.sql; cleanup.sql; .env.example
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 04 | SNOWFLAKE SQL AND DATA MODELING
+BOOK PAGES 057–076 | CHAPTER BUDGET: 20 PAGES
+Learning objective: Build a coherent analytical dimensional model from validated energy observations.
+Prerequisites: Chapters 2–3; basic SQL.
+Internal chapter allocation: 1-page introduction + 17 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  4.1  Snowflake SQL syntax and data types  [TARGET: 3 page(s)]
+     4.1.1  Primitive types and temporal types.
+     4.1.2  Snowflake SQL dialect distinctions.
+     4.1.3  CAST, TRY_CAST, and NULL behavior.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.2  Filtering, joins, aggregations, and subqueries  [TARGET: 2 page(s)]
+     4.2.1  SELECT, JOIN, and filters.
+     4.2.2  GROUP BY, HAVING, and subqueries.
+     4.2.3  Duplicate rows and incorrect join cardinality.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.3  Common table expressions and window functions  [TARGET: 2 page(s)]
+     4.3.1  Readable common table expressions.
+     4.3.2  ROW_NUMBER, LAG, and rolling averages.
+     4.3.3  QUALIFY and query-plan awareness.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.4  Working with dates, time zones, and time series  [TARGET: 1 page(s)]
+     4.4.1  UTC versus Finland local time.
+     4.4.2  Daylight-saving transitions.
+     4.4.3  Time buckets, lagged features, and irregular intervals.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.5  Tables, views, and materialized views  [TARGET: 1 page(s)]
+     4.5.1  Permanent, temporary, and transient tables.
+     4.5.2  Views versus materialized views.
+     4.5.3  Maintenance cost and feature restrictions.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.6  Fact tables, dimensions, and star schemas  [TARGET: 1 page(s)]
+     4.6.1  Choosing fact-table grain.
+     4.6.2  Fact/dimension modeling and star schemas.
+     4.6.3  Energy/power units and additive measures.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.7  Keys, surrogate identifiers, and slowly changing dimensions  [TARGET: 1 page(s)]
+     4.7.1  Natural versus surrogate keys.
+     4.7.2  Slowly changing dimensions types 1 and 2.
+     4.7.3  Constraint enforcement caveats by table type.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.8  Data validation and SQL testing patterns  [TARGET: 3 page(s)]
+     4.8.1  Null, uniqueness, and range checks.
+     4.8.2  Transformation reconciliation.
+     4.8.3  SQL testing anti-patterns and corrections.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.9  Naming, documentation, and maintainable SQL  [TARGET: 3 page(s)]
+     4.9.1  Readable SQL and explanatory comments.
+     4.9.2  Data dictionary and lineage.
+     4.9.3  Naming policy and peer review.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  4.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     4.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     4.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     4.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     4.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Implement energy fact and calendar/source dimension models with reproducible tests.
+Repository deliverables: model.sql; sql-tests/; data_dictionary.md
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 05 | BATCH DATA INGESTION AND LOADING
+BOOK PAGES 077–096 | CHAPTER BUDGET: 20 PAGES
+Learning objective: Load reproducible files with validation, audit trails, error handling, and rerun safety.
+Prerequisites: Chapters 3–4.
+Internal chapter allocation: 1-page introduction + 17 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  5.1  Data source assessment and ingestion requirements  [TARGET: 3 page(s)]
+     5.1.1  Source endpoints, formats, and refresh intervals.
+     5.1.2  Availability, API quota, and dataset licensing.
+     5.1.3  Freshness requirements and service objectives.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.2  File formats: CSV, JSON, Parquet, and others  [TARGET: 2 page(s)]
+     5.2.1  Creating reusable file-format objects.
+     5.2.2  Encodings, headers, delimiters, and quotations.
+     5.2.3  Choosing CSV versus columnar Parquet.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.3  Internal and external stages  [TARGET: 2 page(s)]
+     5.3.1  Internal versus external stages.
+     5.3.2  Storage integrations and object access.
+     5.3.3  Credential safety and file path conventions.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.4  Loading data with COPY INTO  [TARGET: 3 page(s)]
+     5.4.1  COPY INTO with named formats.
+     5.4.2  Duplicate-file loading behavior.
+     5.4.3  Loading history and parsing options.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.5  File validation and rejected-record handling  [TARGET: 1 page(s)]
+     5.5.1  VALIDATION_MODE and ON_ERROR.
+     5.5.2  Rejected-record quarantine.
+     5.5.3  Actionable ingestion error reports.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.6  Schema evolution, metadata, and provenance  [TARGET: 3 page(s)]
+     5.6.1  Source-file and ingestion timestamp metadata.
+     5.6.2  Schema drift and versioned contracts.
+     5.6.3  Auditable provenance of transformed records.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.7  Idempotency, deduplication, and load auditing  [TARGET: 1 page(s)]
+     5.7.1  Exactly-once expectations versus practical idempotency.
+     5.7.2  Detecting duplicates and replayed loads.
+     5.7.3  Audit identifiers and reconciliation checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.8  Python-assisted batch ingestion  [TARGET: 1 page(s)]
+     5.8.1  Python scripts for retrieval and staging.
+     5.8.2  Batching, retry/backoff, and rate limits.
+     5.8.3  Secret handling and idempotent invocations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.9  Recovery procedures and ingestion monitoring  [TARGET: 1 page(s)]
+     5.9.1  Recovery point selection and reprocessing.
+     5.9.2  Observability dashboards and alerts.
+     5.9.3  Cleanup, retention, and operational handover.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  5.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     5.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     5.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     5.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     5.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Load licensed Finnish energy data into the bronze layer and verify row-count and provenance checks.
+Repository deliverables: file_formats.sql; load_batch.sql; audit_queries.sql; source_manifest.csv
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 06 | JSON AND SEMI-STRUCTURED DATA
+BOOK PAGES 097–112 | CHAPTER BUDGET: 16 PAGES
+Learning objective: Transform nested and evolving API payloads into stable analytical data.
+Prerequisites: Chapters 4–5.
+Internal chapter allocation: 1-page introduction + 13 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  6.1  Semi-structured data and the VARIANT type  [TARGET: 3 page(s)]
+     6.1.1  Semi-structured payloads and VARIANT.
+     6.1.2  Parsing types and nested values.
+     6.1.3  Choosing schema-on-read versus early normalization.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.2  OBJECT and ARRAY structures  [TARGET: 2 page(s)]
+     6.2.1  Constructing OBJECT values.
+     6.2.2  Constructing ARRAY values.
+     6.2.3  Safe traversal and array/object type inspection.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.3  Parsing, inspecting, and validating JSON  [TARGET: 1 page(s)]
+     6.3.1  PARSE_JSON and TRY_PARSE_JSON.
+     6.3.2  Invalid payload detection.
+     6.3.3  Test fixtures for valid and malformed JSON.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.4  Querying nested keys and paths  [TARGET: 1 page(s)]
+     6.4.1  Path notation for nested attributes.
+     6.4.2  Casting nested values.
+     6.4.3  Null, missing, and unexpected type handling.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.5  Unnesting arrays with FLATTEN and LATERAL  [TARGET: 1 page(s)]
+     6.5.1  FLATTEN table function.
+     6.5.2  LATERAL usage and row cardinality.
+     6.5.3  Deep arrays and array position preservation.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.6  Handling schema drift and missing values  [TARGET: 1 page(s)]
+     6.6.1  Compatible schema changes.
+     6.6.2  Defaulting versus quarantining records.
+     6.6.3  Tracking missing fields and attribute drift.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.7  Parquet, mixed-format sources, and normalization  [TARGET: 1 page(s)]
+     6.7.1  Columnar Parquet payloads.
+     6.7.2  Reconciling mixed schemas.
+     6.7.3  Typed silver-layer normalization.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.8  Performance and modeling considerations  [TARGET: 3 page(s)]
+     6.8.1  Selective projection and flattening cost.
+     6.8.2  Pruning limits with nested attributes.
+     6.8.3  Documented modeling and performance decisions.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  6.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     6.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     6.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     6.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     6.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Parse, flatten, validate, and normalize sample energy API payloads into a silver model.
+Repository deliverables: json_ingestion.sql; flatten_transform.sql; sample_api_payload.json
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 07 | SNOWPIPE, STREAMING, AND REAL-TIME INGESTION
+BOOK PAGES 113–132 | CHAPTER BUDGET: 20 PAGES
+Learning objective: Select file-based or row-based continuous ingestion by latency, reliability, and cost.
+Prerequisites: Chapters 3, 5 and 6.
+Internal chapter allocation: 1-page introduction + 17 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  7.1  Batch versus near-real-time versus streaming  [TARGET: 3 page(s)]
+     7.1.1  Throughput and latency definitions.
+     7.1.2  Batch/micro-batch/streaming design choices.
+     7.1.3  Cost and failure-mode trade-offs.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.2  Snowpipe architecture and auto-ingest concepts  [TARGET: 1 page(s)]
+     7.2.1  Snowpipe files and pipes.
+     7.2.2  Auto-ingest workflow.
+     7.2.3  File arrival and ingestion visibility.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.3  Cloud event notifications and staged files  [TARGET: 1 page(s)]
+     7.3.1  Cloud events and queue notifications.
+     7.3.2  Storage stage integration.
+     7.3.3  Duplicate notifications and delivery guarantees.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.4  Snowpipe Streaming fundamentals  [TARGET: 3 page(s)]
+     7.4.1  Snowpipe Streaming architecture.
+     7.4.2  Row-based ingestion versus file-based Snowpipe.
+     7.4.3  Supported interfaces and availability checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.5  SDK-based and API-based streaming workflows  [TARGET: 3 page(s)]
+     7.5.1  SDK ingestion setup.
+     7.5.2  Authentication, channels, and offset handling.
+     7.5.3  Error handling and reconnect strategy.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.6  Event ordering, duplicates, and late-arriving data  [TARGET: 2 page(s)]
+     7.6.1  Ordering and out-of-order timestamps.
+     7.6.2  Duplicate records and idempotent writes.
+     7.6.3  Late-arrival corrections and watermarks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.7  Schema changes and failure recovery  [TARGET: 1 page(s)]
+     7.7.1  Schema evolution during ingestion.
+     7.7.2  Interrupted stream recovery.
+     7.7.3  Replay, dead-letter, and safety practices.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.8  Openflow and connector-based ingestion overview  [TARGET: 1 page(s)]
+     7.8.1  When connector-based ingestion helps.
+     7.8.2  Openflow concepts and deployment boundaries.
+     7.8.3  Connector version, infrastructure, and cost constraints.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.9  Latency, monitoring, throughput, and cost  [TARGET: 2 page(s)]
+     7.9.1  Measuring event-to-table freshness.
+     7.9.2  Pipeline throughput and backpressure.
+     7.9.3  Comparing credit and serverless costs.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  7.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     7.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     7.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     7.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     7.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Simulate a telemetry feed, measure freshness, and exercise replay and failure scenarios.
+Repository deliverables: streaming_simulator.py; snowpipe_setup.sql; freshness_checks.sql
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 08 | STREAMS, TASKS, AND DYNAMIC TABLES
+BOOK PAGES 133–150 | CHAPTER BUDGET: 18 PAGES
+Learning objective: Build incremental pipelines using the right procedural or declarative pattern.
+Prerequisites: Chapters 5–7.
+Internal chapter allocation: 1-page introduction + 15 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  8.1  Change data capture and incremental updates  [TARGET: 3 page(s)]
+     8.1.1  Change data capture concepts.
+     8.1.2  Update, delete, and insert semantics.
+     8.1.3  Incremental correctness and replay assumptions.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.2  Change tracking with Streams  [TARGET: 2 page(s)]
+     8.2.1  Stream offsets and consumption.
+     8.2.2  Change metadata and consumption boundaries.
+     8.2.3  Data retention and stale streams.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.3  Scheduling jobs and task dependency graphs  [TARGET: 1 page(s)]
+     8.3.1  Scheduled tasks and graphs.
+     8.3.2  Task dependencies and failure handling.
+     8.3.3  Monitoring retries and runaway schedules.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.4  Incremental MERGE and upsert design  [TARGET: 1 page(s)]
+     8.4.1  MERGE match conditions.
+     8.4.2  Deterministic deduplication.
+     8.4.3  Idempotent upsert tests.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.5  Defining transformations with Dynamic Tables  [TARGET: 2 page(s)]
+     8.5.1  Creating Dynamic Tables.
+     8.5.2  Declarative transformation semantics.
+     8.5.3  Eligibility and feature-support checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.6  Refresh modes, target lag, and dependencies  [TARGET: 1 page(s)]
+     8.6.1  Target lag interpretation.
+     8.6.2  Incremental and full refresh considerations.
+     8.6.3  Graph dependencies and scheduling impacts.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.7  Dynamic Tables versus Streams/Tasks versus views  [TARGET: 2 page(s)]
+     8.7.1  Declarative versus procedural pipelines.
+     8.7.2  Streams/Tasks versus Dynamic Tables versus views.
+     8.7.3  Operational, cost, and maintenance trade-offs.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.8  Recovery, backfills, and pipeline observability  [TARGET: 2 page(s)]
+     8.8.1  Backfill and repair playbooks.
+     8.8.2  Detecting freshness regressions.
+     8.8.3  Lineage, query history, and observability.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.9  Incremental transformation design exercise  [TARGET: 1 page(s)]
+     8.9.1  Selecting the pattern for two workloads.
+     8.9.2  Documenting acceptance criteria.
+     8.9.3  Comparing correctness, latency, and cost.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  8.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     8.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     8.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     8.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     8.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Implement comparable incremental transformations and document their trade-offs and recovery procedures.
+Repository deliverables: incremental_stream_task.sql; dynamic_table.sql; comparison.md
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 09 | DATA ENGINEERING WITH SNOWPARK PYTHON
+BOOK PAGES 151–170 | CHAPTER BUDGET: 20 PAGES
+Learning objective: Implement testable Python-based transformations and understand where execution happens.
+Prerequisites: Chapters 3–6; working Python knowledge.
+Internal chapter allocation: 1-page introduction + 17 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  9.1  Where Snowpark fits in the platform  [TARGET: 3 page(s)]
+     9.1.1  Snowpark's role in data engineering.
+     9.1.2  Python execution boundaries.
+     9.1.3  Choosing SQL, Snowpark, or external compute.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.2  Python sessions and connection management  [TARGET: 1 page(s)]
+     9.2.1  Session creation and options.
+     9.2.2  Authentication and role/warehouse selection.
+     9.2.3  Connection shutdown and security controls.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.3  DataFrames, expressions, and lazy evaluation  [TARGET: 3 page(s)]
+     9.3.1  Snowpark DataFrames and transformations.
+     9.3.2  Lazy evaluation and action triggers.
+     9.3.3  Inspecting execution plans and generated SQL.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.4  Transformations, joins, and aggregations  [TARGET: 1 page(s)]
+     9.4.1  Filtering, joining, and grouping.
+     9.4.2  Data type/casting checks.
+     9.4.3  Validation of transformation output.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.5  User-defined functions and stored procedures  [TARGET: 1 page(s)]
+     9.5.1  UDFs, UDTFs, and stored procedures.
+     9.5.2  Use cases and execution environments.
+     9.5.3  Permissions, packaging, and limitations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.6  Dependencies, packaging, and code organization  [TARGET: 1 page(s)]
+     9.6.1  Dependency pinning and compatibility.
+     9.6.2  Modular Python project layout.
+     9.6.3  Environment and artifact management.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.7  Local development and automated testing  [TARGET: 1 page(s)]
+     9.7.1  Unit tests independent of live services.
+     9.7.2  Integration tests in a test account.
+     9.7.3  CI secrets and expensive-test controls.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.8  Snowpark performance and execution trade-offs  [TARGET: 3 page(s)]
+     9.8.1  Data movement and execution locality.
+     9.8.2  Cost/latency comparisons.
+     9.8.3  Avoiding Python-level anti-patterns.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.9  Production-oriented Python pipeline patterns  [TARGET: 3 page(s)]
+     9.9.1  Reusable functions and logging.
+     9.9.2  Retries, idempotency, and cleanup.
+     9.9.3  Monitoring, versioning, and production operations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  9.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     9.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     9.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     9.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     9.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Use Snowpark DataFrames to clean, enrich, and test energy observations.
+Repository deliverables: snowpark_pipeline.py; test_snowpark.py; pyproject.toml
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 10 | ETL/ELT PIPELINES, DBT, AND DELIVERY WORKFLOWS
+BOOK PAGES 171–190 | CHAPTER BUDGET: 20 PAGES
+Learning objective: Deliver governed transformation models with tests, lineage, and safe deployment.
+Prerequisites: Chapters 4, 8 and 9.
+Internal chapter allocation: 1-page introduction + 17 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  10.1  ETL versus ELT: architecture and trade-offs  [TARGET: 3 page(s)]
+     10.1.1  ETL versus ELT execution paths.
+     10.1.2  Pushdown and platform trade-offs.
+     10.1.3  Selecting a design for maintainability.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.2  Bronze, silver, and gold transformation layers  [TARGET: 2 page(s)]
+     10.2.1  Raw bronze ingestion.
+     10.2.2  Validated silver transformation.
+     10.2.3  Business-ready gold marts.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.3  Structuring a dbt project for Snowflake  [TARGET: 2 page(s)]
+     10.3.1  Core dbt project structure.
+     10.3.2  Snowflake profiles and targets.
+     10.3.3  Separation of development and deployment.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.4  Models, sources, tests, and documentation  [TARGET: 1 page(s)]
+     10.4.1  Source declarations and models.
+     10.4.2  Data tests and documented lineage.
+     10.4.3  Build failures and acceptance criteria.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.5  Incremental models and snapshot strategies  [TARGET: 1 page(s)]
+     10.5.1  Incremental model configuration.
+     10.5.2  Snapshot and change-history techniques.
+     10.5.3  Rebuild, reprocess, and schema drift.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.6  Native and external orchestration options  [TARGET: 1 page(s)]
+     10.6.1  Native orchestration options.
+     10.6.2  External schedulers and dependencies.
+     10.6.3  Choosing based on reliability and operations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.7  Git branching, CI/CD, and environments  [TARGET: 1 page(s)]
+     10.7.1  Branch-based change controls.
+     10.7.2  Automated validation in CI.
+     10.7.3  Deployment environments and change approvals.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.8  Data contracts, quality gates, and observability  [TARGET: 3 page(s)]
+     10.8.1  Data contracts and schema expectations.
+     10.8.2  Freshness and observability.
+     10.8.3  Quality gates, ownership, and alerting.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.9  Deployment, rollback, and release checklists  [TARGET: 3 page(s)]
+     10.9.1  Release checklists and migration safety.
+     10.9.2  Rollback strategy and change logs.
+     10.9.3  Handover documentation and incident response.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  10.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     10.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     10.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     10.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     10.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Build a dbt-based transformation package with quality gates and controlled releases.
+Repository deliverables: dbt_project/; .github/workflows/; deployment_runbook.md
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 11 | ANALYTICS ENGINEERING AND POWER BI INTEGRATION
+BOOK PAGES 191–208 | CHAPTER BUDGET: 18 PAGES
+Learning objective: Publish trusted KPIs and explain the performance/refresh implications of BI connectivity.
+Prerequisites: Chapters 4–5 and 10.
+Internal chapter allocation: 1-page introduction + 15 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  11.1  Analytics engineering and serving-layer design  [TARGET: 2 page(s)]
+     11.1.1  Serving layer and consumption requirements.
+     11.1.2  Stakeholder questions and decision support.
+     11.1.3  Semantic and physical design responsibilities.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.2  Defining trusted metrics and KPI contracts  [TARGET: 2 page(s)]
+     11.2.1  Metric definitions, units, and aggregation grain.
+     11.2.2  Ownership and consistency checks.
+     11.2.3  KPI contract changes and review.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.3  Snowflake connectors and BI integration  [TARGET: 2 page(s)]
+     11.3.1  Supported Snowflake connectivity.
+     11.3.2  Credential and gateway considerations.
+     11.3.3  Refresh, user identity, and permissions.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.4  Power BI import and DirectQuery considerations  [TARGET: 1 page(s)]
+     11.4.1  Import versus DirectQuery trade-offs.
+     11.4.2  Model size, latency, and costs.
+     11.4.3  Choosing a mode for energy data.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.5  Semantic modeling and refresh strategies  [TARGET: 1 page(s)]
+     11.5.1  Dimensional relationships and DAX semantics.
+     11.5.2  Dataset refresh frequency.
+     11.5.3  Freshness and lineage validation.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.6  Building energy analytics dashboards  [TARGET: 1 page(s)]
+     11.6.1  Generation/consumption KPIs.
+     11.6.2  Meaningful visuals and filters.
+     11.6.3  Interpretation cautions and data completeness.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.7  Dashboard performance and query behavior  [TARGET: 3 page(s)]
+     11.7.1  Generated SQL and pushdown behavior.
+     11.7.2  Performance troubleshooting.
+     11.7.3  Refresh reliability and user-perceived delay.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.8  Data-sharing patterns and operational handoff  [TARGET: 3 page(s)]
+     11.8.1  Governed sharing and access policies.
+     11.8.2  Report documentation and ownership.
+     11.8.3  Operational acceptance and maintenance.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  11.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     11.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     11.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     11.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     11.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Design a Power BI semantic model and a documented energy dashboard.
+Repository deliverables: semantic_model_spec.md; metrics_catalogue.md; powerbi_report/
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 12 | QUERY PERFORMANCE AND WAREHOUSE OPTIMIZATION
+BOOK PAGES 209–226 | CHAPTER BUDGET: 18 PAGES
+Learning objective: Diagnose slow queries with repeatable measurements before increasing compute.
+Prerequisites: Chapters 2, 4 and 11.
+Internal chapter allocation: 1-page introduction + 15 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  12.1  A structured performance troubleshooting workflow  [TARGET: 3 page(s)]
+     12.1.1  Hypotheses and reproducible tests.
+     12.1.2  Correctness before speed.
+     12.1.3  Isolating the performance bottleneck.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.2  Query History and Query Profile  [TARGET: 2 page(s)]
+     12.2.1  Query History metadata.
+     12.2.2  Query Profile operators and scans.
+     12.2.3  Reading spilled data and queuing indicators.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.3  Micro-partition pruning and clustering  [TARGET: 2 page(s)]
+     12.3.1  Micro-partition elimination.
+     12.3.2  Clustering key trade-offs.
+     12.3.3  Measuring pruning and maintenance overhead.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.4  Warehouse sizing and concurrency management  [TARGET: 2 page(s)]
+     12.4.1  Warehouse size versus throughput.
+     12.4.2  Multi-cluster and queueing.
+     12.4.3  Cost-normalized capacity planning.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.5  Caching behavior and materialized results  [TARGET: 1 page(s)]
+     12.5.1  Result cache and warehouse-local cache.
+     12.5.2  Controlled warm/cold experiments.
+     12.5.3  Materialization versus recomputation.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.6  Query acceleration and search optimization concepts  [TARGET: 1 page(s)]
+     12.6.1  Query acceleration options.
+     12.6.2  Search optimization and suitable predicates.
+     12.6.3  Edition/cost and support checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.7  Improving joins, filters, and aggregations  [TARGET: 1 page(s)]
+     12.7.1  Join cardinality and filter pushdown.
+     12.7.2  Aggregation and column selection.
+     12.7.3  Rewriting without changing semantics.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.8  Benchmarking performance, credits, and latency  [TARGET: 3 page(s)]
+     12.8.1  Workload definition and dataset snapshots.
+     12.8.2  Median/p95, credits, and repeat counts.
+     12.8.3  Limitations and benchmark report.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  12.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     12.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     12.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     12.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     12.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Benchmark representative energy queries and document correctness, latency, and credit consumption.
+Repository deliverables: benchmark_queries.sql; benchmark_results.csv; tuning_report.md
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 13 | SECURITY, GOVERNANCE, RELIABILITY, AND COST
+BOOK PAGES 227–248 | CHAPTER BUDGET: 22 PAGES
+Learning objective: Operate data products with least privilege, clear governance, incident handling, and cost controls.
+Prerequisites: Chapters 3, 5, 10 and 12.
+Internal chapter allocation: 1-page introduction + 19 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  13.1  Security architecture and least privilege  [TARGET: 3 page(s)]
+     13.1.1  Threat boundaries and trust assumptions.
+     13.1.2  Privilege minimization.
+     13.1.3  Separation of duties and audits.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.2  Role-based access control and role hierarchies  [TARGET: 2 page(s)]
+     13.2.1  Role hierarchy design.
+     13.2.2  Object ownership and grants.
+     13.2.3  Permission regression tests.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.3  Authentication, secrets, and network controls  [TARGET: 1 page(s)]
+     13.3.1  SSO and key-based authentication options.
+     13.3.2  Secret rotation and vaulting.
+     13.3.3  Network and endpoint controls.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.4  Masking policies, row access, and classification  [TARGET: 1 page(s)]
+     13.4.1  Dynamic data masking.
+     13.4.2  Row access policies.
+     13.4.3  Classification and authorized test users.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.5  Tags, lineage, auditing, and data sharing  [TARGET: 3 page(s)]
+     13.5.1  Tags and lineage provenance.
+     13.5.2  Access audit and usage history.
+     13.5.3  Secure sharing and policy enforcement.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.6  Privacy, retention, and compliance basics  [TARGET: 1 page(s)]
+     13.6.1  Personal data handling.
+     13.6.2  Retention and deletion.
+     13.6.3  GDPR and legal review triggers.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.7  Compute, storage, serverless, and AI cost drivers  [TARGET: 3 page(s)]
+     13.7.1  Virtual warehouse compute cost.
+     13.7.2  Storage, serverless, and AI cost categories.
+     13.7.3  Unit economics and cost attribution.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.8  Budgets, monitoring, and workload guardrails  [TARGET: 1 page(s)]
+     13.8.1  Resource Monitors and their scope.
+     13.8.2  Budgets and alert response.
+     13.8.3  Stop conditions and cost incident handling.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.9  Operational reliability, recovery, and incident response  [TARGET: 1 page(s)]
+     13.9.1  Recoverability, backups, and limits.
+     13.9.2  Runbook-driven incident response.
+     13.9.3  RPO/RTO and testing recovery drills.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.10  Governance and platform runbooks  [TARGET: 3 page(s)]
+     13.10.1  Governance ownership assignments.
+     13.10.2  Audit evidence and recurring reviews.
+     13.10.3  Platform operating procedures and checklists.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  13.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     13.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     13.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     13.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     13.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Apply access policies, run negative-access tests, estimate costs, and create an operational runbook.
+Repository deliverables: security_policies.sql; security_tests.sql; cost_register.csv; incident_runbook.md
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 14 | SNOWFLAKE CORTEX AI AND MACHINE LEARNING
+BOOK PAGES 249–264 | CHAPTER BUDGET: 16 PAGES
+Learning objective: Evaluate AI use cases rigorously while accounting for data safety, region, edition, and charges.
+Prerequisites: Chapters 9, 11–13; basic ML vocabulary.
+Internal chapter allocation: 1-page introduction + 13 pages of numbered sections + 2-page lab/review.
+Numbered sections and exact development agenda:
+  14.1  AI/ML use cases in a modern data platform  [TARGET: 2 page(s)]
+     14.1.1  Suitable AI workloads versus ordinary SQL.
+     14.1.2  Value, risk, and data constraints.
+     14.1.3  Define a defensible evaluation baseline.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.2  Cortex AI capabilities and availability caveats  [TARGET: 1 page(s)]
+     14.2.1  Cortex feature families.
+     14.2.2  Region, edition, and preview status.
+     14.2.3  Model-specific data residency considerations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.3  AI SQL functions and evaluation principles  [TARGET: 2 page(s)]
+     14.3.1  AI SQL function semantics.
+     14.3.2  Prompt/input design.
+     14.3.3  Quality, failure, and evaluation cases.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.4  Search, retrieval, and natural-language analytics concepts  [TARGET: 1 page(s)]
+     14.4.1  Search and retrieval concepts.
+     14.4.2  Evidence attribution and hallucination risk.
+     14.4.3  Natural-language analytics limitations.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.5  Data preparation and feature engineering with Snowpark  [TARGET: 2 page(s)]
+     14.5.1  Cleaning time series with Snowpark.
+     14.5.2  Feature windows and leakage avoidance.
+     14.5.3  Train/validation/test splits.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.6  Forecasting and anomaly detection use cases  [TARGET: 1 page(s)]
+     14.6.1  Seasonal and naive baseline models.
+     14.6.2  Forecasting and anomaly scenarios.
+     14.6.3  Evaluation metrics and confidence reporting.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.7  Model evaluation, security, and responsible AI  [TARGET: 2 page(s)]
+     14.7.1  Data governance and access to models.
+     14.7.2  Human review and reproducibility.
+     14.7.3  Risks, limitations, and model cards.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.8  Token usage, compute charges, and AI cost controls  [TARGET: 2 page(s)]
+     14.8.1  Token and model charges.
+     14.8.2  Credit usage and region-specific rates.
+     14.8.3  Guardrails, alerts, and budget checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  14.L  Guided lab, chapter review, and exercises  [TARGET: 2 pages]
+     14.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     14.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     14.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     14.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Compare a simple forecasting or anomaly baseline with an optional AI extension.
+Repository deliverables: ml_baseline.py; model_card.md; ai_eval_cases.csv
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+CHAPTER 15 | CAPSTONE: A PRODUCTION-READY ENERGY DATA PLATFORM
+BOOK PAGES 265–288 | CHAPTER BUDGET: 24 PAGES
+Learning objective: Integrate all chapters into a reproducible, secure, observable, reviewable solution.
+Prerequisites: Chapters 1–14.
+Internal chapter allocation: 1-page introduction + 20 pages of numbered sections + 3-page lab/review.
+Numbered sections and exact development agenda:
+  15.1  Business scenario, assumptions, and acceptance criteria  [TARGET: 2 page(s)]
+     15.1.1  Business scenario and stakeholder decisions.
+     15.1.2  Dataset assumptions and limitations.
+     15.1.3  Explicit acceptance and review criteria.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.2  Source selection, architecture, and data contracts  [TARGET: 3 page(s)]
+     15.2.1  Fingrid and Statistics Finland source options.
+     15.2.2  Dataset licensing, snapshots, and provenance.
+     15.2.3  Architecture and versioned data contracts.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.3  Reproducible environment and repository structure  [TARGET: 2 page(s)]
+     15.3.1  Environment automation and roles.
+     15.3.2  Folder structure and immutable dependencies.
+     15.3.3  Test fixtures and cleanup procedures.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.4  Batch and continuous ingestion design  [TARGET: 1 page(s)]
+     15.4.1  Reliable batch ingestion.
+     15.4.2  Optional continuous ingestion.
+     15.4.3  Audit metadata and replay checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.5  Bronze-to-silver data quality and transformations  [TARGET: 3 page(s)]
+     15.5.1  Raw bronze lineage.
+     15.5.2  Silver standardization and DST handling.
+     15.5.3  Completeness, uniqueness, and range tests.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.6  Gold marts, KPIs, and incremental refreshes  [TARGET: 1 page(s)]
+     15.6.1  Gold star schema and published KPIs.
+     15.6.2  Incremental refresh correctness.
+     15.6.3  Stakeholder acceptance checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.7  Python components, tests, and CI/CD  [TARGET: 1 page(s)]
+     15.7.1  Reusable Python components.
+     15.7.2  Unit and integration test matrix.
+     15.7.3  CI/CD safety and release tags.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.8  Power BI dashboards and optional AI extension  [TARGET: 1 page(s)]
+     15.8.1  BI semantic model and dashboards.
+     15.8.2  Optional AI baseline and extended model.
+     15.8.3  Privacy, performance, and interpretability.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.9  Access controls, performance, and cost budget  [TARGET: 3 page(s)]
+     15.9.1  Least-privilege access review.
+     15.9.2  Query tuning and credit accounting.
+     15.9.3  Budget and cost-failure checks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.10  Monitoring, failure drills, and operational handover  [TARGET: 1 page(s)]
+     15.10.1  Freshness monitors and alerting.
+     15.10.2  Simulated incident and recovery.
+     15.10.3  Handover, RPO/RTO, and operating runbooks.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.11  Documentation, architecture decision records, and demo  [TARGET: 1 page(s)]
+     15.11.1  Architecture decision records.
+     15.11.2  README and usage instructions.
+     15.11.3  Reproducible five-minute demonstration.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.12  Project review and future improvements  [TARGET: 1 page(s)]
+     15.12.1  Peer review and limitations.
+     15.12.2  Product improvements and future extensions.
+     15.12.3  Retrospective evidence and final acceptance.
+     Section completion standard: an accurate explanation, a decision criterion, an example or trace, and a verifiable learning check.
+  15.L  Guided lab, chapter review, and exercises  [TARGET: 3 pages]
+     15.L.1  Prerequisites, inputs, environment, permissions, and cost guardrails.
+     15.L.2  Step-by-step procedure with selected code and actual or clearly illustrative results.
+     15.L.3  Expected result, assertions, common failure diagnosis, rollback, and cleanup.
+     15.L.4  Foundation exercise, practitioner exercise, production-design question, and scoring rubric.
+Lab brief: Deliver the full Finland Energy Analytics repository, tested demonstrations, reports, and runbooks.
+Repository deliverables: project/; README.md; architecture_decisions/; test_results/; operations/
+Minimum review evidence: expected output or invariant; test proof; limitations; assumptions; exact release tag.
+Editorial gate: verify vendor/version-specific features and cite authoritative references before printing.
+
+====================================================================================================
+IV. APPENDICES, REFERENCE MATERIAL, AND INDEX — PAGES 289–300 (12 PAGES)
+----------------------------------------------------------------------------------------------------
+289–290 | Appendix A: SQL, CLI, and Snowflake object quick reference (2 pages).
+291–292 | Appendix B: Python, Snowpark, dbt, and test recipe index (2 pages).
+293–294 | Appendix C: Troubleshooting matrix and frequently encountered errors (2 pages).
+295–296 | Appendix D: Alphabetical glossary and acronym definitions (2 pages).
+297–298 | Bibliography, formal data acknowledgements, and further reading (2 pages).
+299–300 | Compact analytical index, corrections link, and companion repository navigation (2 pages).
+If the reference list or index grows beyond budget, transfer expanded technical bibliographies to the companion site and keep a meaningful, typeset in-book index.
+
+V. CROSS-CHAPTER TRACEABILITY AND EDITORIAL GATES
+----------------------------------------------------------------------------------------------------
+- Requirements and scenario (Ch. 1) -> architecture (Ch. 2) -> account and environment (Ch. 3).
+- Dimensional model (Ch. 4) -> safe batch ingestion (Ch. 5) -> nested payload handling (Ch. 6).
+- Continuous ingestion (Ch. 7) -> incremental transformations (Ch. 8) -> Snowpark Python (Ch. 9).
+- ELT and deployment (Ch. 10) -> governed BI layer (Ch. 11) -> reproducible tuning (Ch. 12).
+- Security, privacy and cost controls (Ch. 13) -> evaluated optional AI (Ch. 14) -> production capstone (Ch. 15).
+- Never present fabricated benchmark data as results of an actual Snowflake execution.
+- Never paste live account details, keys, personal records, customer data or unlicensed datasets into examples.
+- Before each chapter is accepted: technical facts verified; full lab executed; references checked; English edited; rights logged; page budget reviewed.
+- The companion book-wide governance policy is: Book_Writing_Principles_Finland_Universal_EN.txt.
+
+VI. AUTHORITATIVE STARTING SOURCES AND VERIFICATION LINKS
+----------------------------------------------------------------------------------------------------
+Snowflake architecture: https://docs.snowflake.com/en/user-guide/intro-key-concepts
+Snowflake data loading: https://docs.snowflake.com/en/user-guide/data-load-overview
+Snowpark Python: https://docs.snowflake.com/en/developer-guide/snowpark/python/index
+Dynamic Tables: https://docs.snowflake.com/en/user-guide/dynamic-tables-about
+Snowflake cost controls: https://docs.snowflake.com/en/user-guide/cost-controlling
+Fingrid open data: https://data.fingrid.fi/en/
+Statistics Finland open data: https://stat.fi/en/services/statistical-data-services/open-data-and-interfaces
+National Library of Finland ISBN: https://www.kansalliskirjasto.fi/en/services/finlands-national-isbn-agency/isbn
+National Library of Finland legal deposit: https://www.kansalliskirjasto.fi/en/legal-deposit-services/printed-materials-and-recordings
+Traficom e-book accessibility: https://saavutettavuusvaatimukset.fi/en/service-specific-requirements-and-obligations
+All links require a final live check and dated verification before the manuscript is released.
+
+VALIDATION: 15 chapters; 134 numbered teaching sections; 402 explicitly named sub-subsections; 300 target pages.
+END OF ENGLISH MASTER OUTLINE

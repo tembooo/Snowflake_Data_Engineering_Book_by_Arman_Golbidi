@@ -1,0 +1,16 @@
+{
+  "roles": {
+    "BOOK13_ANALYST": {"inherits": ["BOOK13_GOLD_READER"], "actions": []},
+    "BOOK13_GOLD_READER": {"inherits": [], "actions": ["SELECT:GOLD.GENERATION_DAILY"]},
+    "BOOK13_LOADER": {"inherits": [], "actions": ["INSERT:RAW.METER_EVENT"]},
+    "BOOK13_STEWARD": {"inherits": ["BOOK13_GOLD_READER"], "actions": ["UNMASK:GOLD.CONTACT_CONTEXT.CONTACT_EMAIL"]}
+  },
+  "approved_tests": [
+    ["BOOK13_ANALYST", "SELECT:GOLD.GENERATION_DAILY", true],
+    ["BOOK13_ANALYST", "SELECT:RAW.METER_EVENT", false],
+    ["BOOK13_ANALYST", "INSERT:RAW.METER_EVENT", false],
+    ["BOOK13_LOADER", "INSERT:RAW.METER_EVENT", true],
+    ["BOOK13_LOADER", "CREATE:USER", false],
+    ["BOOK13_STEWARD", "UNMASK:GOLD.CONTACT_CONTEXT.CONTACT_EMAIL", true]
+  ]
+}

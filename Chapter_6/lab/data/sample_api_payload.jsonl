@@ -1,0 +1,4 @@
+{"schema_version":1,"provider":"synthetic-fi","envelope_id":"demo-2026-01-15T10Z","observed_at_utc":"2026-01-15T10:00:00Z","unit":"MWh","observations":[{"tech":"wind","mwh":21.25},{"tech":"solar","mwh":12.50},{"tech":"hydro","mwh":18.00}]}
+{"schema_version":2,"provider":"synthetic-fi","envelope_id":"demo-2026-01-15T11Z","observed_at_utc":"2026-01-15T11:00:00Z","unit":"MWh","measurements":[{"tech":"wind","mwh":19.00},{"tech":"solar","mwh":13.00},{"tech":"hydro","mwh":13.75}],"source":{"system":"book-fixture"}}
+{"schema_version":2,"provider":"synthetic-fi","envelope_id":"demo-reject-missing","observed_at_utc":"2026-01-15T12:00:00Z","unit":"MWh","measurements":[{"tech":"wind","mwh":null},{"tech":"solar","mwh":2.00},{"tech":"hydro","mwh":3.00}]}
+{"schema_version":2,"provider":"synthetic-fi","envelope_id":"broken","measurements":[

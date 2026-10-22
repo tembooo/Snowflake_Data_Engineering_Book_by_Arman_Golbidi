@@ -1,0 +1,8 @@
+raw_id,source_code,metric_code,interval_text,mwh_text,loaded_at_utc
+1,SOLAR_FI,generation_mwh,2026-01-15 00:00:00,10.000,2026-01-15 00:10:00
+2,WIND_FI,generation_mwh,2026-01-15 00:00:00,20.000,2026-01-15 00:11:00
+3,SOLAR_FI,generation_mwh,2026-01-15 01:00:00,12.500,2026-01-15 01:10:00
+4,WIND_FI,generation_mwh,2026-01-15 01:00:00,21.000,2026-01-15 01:11:00
+5,SOLAR_FI,generation_mwh,2026-01-15 02:00:00,11.500,2026-01-15 02:10:00
+6,WIND_FI,generation_mwh,2026-01-15 02:00:00,22.000,2026-01-15 02:11:00
+7,SOLAR_FI,generation_mwh,2026-01-15 01:00:00,13.000,2026-01-15 03:00:00

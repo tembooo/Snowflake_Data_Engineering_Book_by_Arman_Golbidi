@@ -1,0 +1,42 @@
+SNOWFLAKE DATA ENGINEERING — CHAPTER 10 — QUALITY & VERIFICATION REPORT
+Author: Arman Golbidi
+Title: ETL/ELT Pipelines, dbt, and Delivery Workflows
+Production checkpoint: 22 October 2026
+
+LAYOUT
+XeLaTeX compilation: SUCCESS (two passes)
+Total PDF pages: 20
+Printed manuscript page labels: 171–190 (all sequential)
+Trim dimensions: 178 x 254 mm (each PDF page checked)
+Body font: Libertinus Serif, 10.75 pt, baseline 13.65 pt, ratio 1.27
+Code font: Libertinus Mono, 8.75 pt, listing baseline 10.7 pt
+Inside / outside margins: 23 / 17 mm; top / bottom: 19 / 19 mm
+Horizontal overfull warnings: NONE in final XeLaTeX log
+All numbered subsections: 31 found in extracted PDF text (27 core + 4 lab)
+Figures, tables and code: visually reviewed by page contact sheet
+
+OFFLINE LAB EVIDENCE
+Offline execution: SUCCESS, stdlib Python, synthetic input only
+Input deliveries: 12
+Duplicate deliveries: 1
+Rejected invalid events: 2
+Unique accepted events: 9
+Tombstoned keys: 1
+Visible current facts: 6
+Total accepted energy: 66.000 MWh
+Release gate: ACCEPT
+Python unittest: 16 tests PASS; see offline_test_report.txt
+
+UNVERIFIED / MUST BE REVIEWED BEFORE COMMERCIAL PUBLICATION
+Snowflake cloud execution: NOT RUN, no credentials used
+Snowflake SQL/dbt project execution: NOT RUN; installation/version/adapter not verified
+dbt SQL and YAML: authored for educational review, NOT integration certified
+GitHub third-party projects: NOT RUN, reproduction licenses NOT CLEARED
+CI/CD hosted run: NOT RUN; examples require review, approved secrets and action SHA pinning
+No latency/cost benchmark claims are asserted from this offline fixture.
+Independent technical, copyediting, rights and accessibility reviews remain outstanding.
+
+RELEASE ARTIFACTS
+Snowflake_Data_Engineering_Chapter_10.tex
+Snowflake_Data_Engineering_Chapter_10.pdf
+Snowflake_Chapter10_LaTeX_PDF_and_Lab.zip

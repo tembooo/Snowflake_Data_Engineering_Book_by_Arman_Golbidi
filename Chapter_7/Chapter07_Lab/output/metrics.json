@@ -1,0 +1,11 @@
+{
+  "source_events": 9,
+  "attempts": 10,
+  "bronze_rows": 8,
+  "quarantined_rows": 1,
+  "silver_rows": 6,
+  "silver_total_mwh": 66.0,
+  "median_bronze_freshness_seconds": 27.0,
+  "max_bronze_freshness_seconds": 485,
+  "last_committed_offset": 8
+}

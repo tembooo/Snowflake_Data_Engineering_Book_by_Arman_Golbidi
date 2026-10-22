@@ -1,0 +1,19 @@
+name: Chapter 10 offline contracts
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4  # Pin to reviewed SHA for a production release
+      - name: Python
+        uses: actions/setup-python@v5 # Pin to reviewed SHA
+        with:
+          python-version: '3.11'
+      - name: Run no-cloud oracle
+        working-directory: lab
+        run: |
+          python offline_oracle.py
+          python -m unittest discover -s . -p 'test_*.py' -v

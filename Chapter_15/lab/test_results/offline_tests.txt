@@ -1,0 +1,29 @@
+test_conflict_blocks (test_capstone.CapstoneTests.test_conflict_blocks) ... /mnt/data/snowflake_ch15_build/lab/project/tests/test_capstone.py:37: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/data/snowflake_ch15_build/lab/project/data/energy_revisions.csv' mode='r' encoding='UTF-8'>
+  p=Path(td)/'conflict.csv'; rows=list(csv.DictReader(BASE.open()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_contract_drift (test_capstone.CapstoneTests.test_contract_drift) ... ok
+test_delivery_count (test_capstone.CapstoneTests.test_delivery_count) ... ok
+test_deterministic_replay (test_capstone.CapstoneTests.test_deterministic_replay) ... ok
+test_duplicate (test_capstone.CapstoneTests.test_duplicate) ... ok
+test_export (test_capstone.CapstoneTests.test_export) ... ok
+test_gating_pass (test_capstone.CapstoneTests.test_gating_pass) ... ok
+test_hydrogen_not_invented (test_capstone.CapstoneTests.test_hydrogen_not_invented) ... ok
+test_manifest_digest (test_capstone.CapstoneTests.test_manifest_digest) ... ok
+test_negative_quarantine (test_capstone.CapstoneTests.test_negative_quarantine) ... ok
+test_no_test_metric (test_capstone.CapstoneTests.test_no_test_metric) ... ok
+test_nonnegative (test_capstone.CapstoneTests.test_nonnegative) ... ok
+test_revision_zero_quarantine (test_capstone.CapstoneTests.test_revision_zero_quarantine) ... ok
+test_six_visible (test_capstone.CapstoneTests.test_six_visible) ... ok
+test_tampered_gate (test_capstone.CapstoneTests.test_tampered_gate) ... ok
+test_tombstone (test_capstone.CapstoneTests.test_tombstone) ... ok
+test_total (test_capstone.CapstoneTests.test_total) ... ok
+test_two_rejected (test_capstone.CapstoneTests.test_two_rejected) ... ok
+test_unique_keys (test_capstone.CapstoneTests.test_unique_keys) ... ok
+test_utc (test_capstone.CapstoneTests.test_utc) ... ok
+test_wind_revision (test_capstone.CapstoneTests.test_wind_revision) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.006s
+
+OK

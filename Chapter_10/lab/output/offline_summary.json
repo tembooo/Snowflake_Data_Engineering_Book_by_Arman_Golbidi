@@ -1,0 +1,18 @@
+{
+  "delivered": 12,
+  "duplicate_deliveries": 1,
+  "rejected": 2,
+  "tombstoned_keys": 1,
+  "accepted_unique_events": 9,
+  "visible_rows": 6,
+  "total_mwh": "66.000",
+  "unit": "MWh",
+  "source": "SYNTHETIC",
+  "snowflake_executed": false,
+  "dbt_executed": false,
+  "cloud_approved": false,
+  "release_gate": {
+    "status": "ACCEPT",
+    "violations": []
+  }
+}

@@ -1,0 +1,49 @@
+Snowflake Data Engineering - Chapter 11 QUALITY REPORT
+Date: 22 October 2026
+Author attribution: Arman Golbidi
+Chapter: Analytics Engineering and Power BI Integration
+Book-page range: 191-208
+Pages: 18
+Physical trim: 178 x 254 mm (verified actual 178.001 x 254.000 mm)
+Text: 10.75 pt with 13.65 pt leading (~1.27)
+Code: 8.75 pt
+Margins: inner 23 mm, outer 17 mm, top 19 mm, bottom 19 mm
+XeLaTeX: PASS (two passes, zero overfull hbox notices)
+PDF visual review: contact sheet of all 18 pages visually inspected
+Sections present: 11.1 - 11.8, 11.L; 24 regular + 4 lab topic headings verified
+Manuscript source bytes: 54763; PDF bytes: 144388
+SHA256 PDF: dae3b361734fdb555461ae8138b17ebcca16ce32e3415a6205015717659b8908
+Lab Python tests: PASS (15/15, offline standard-library)
+Fixture generation: 6 rows, 66.000 MWh (reused from Chapter 10 synthetic Gold)
+Additional synthetic consumption: 1 row, 60.000 MWh
+Calculated illustrative net position: +6.000 MWh
+Wind share illustrative: 21.2121 percent
+Data classification: SYNTHETIC, not a true Finland grid data observation
+Actual Snowflake SQL: NOT EXECUTED
+Actual Power BI connection/DAX/visual: NOT EXECUTED
+Real PBIX/PBIP file: NOT CREATED; only reproducible report spec/templates
+External GitHub P121-P134: REFERENCED, NOT EXECUTED, LICENSE/REUSE REVIEW PENDING
+Final production readiness: technical/cloud run + independent reviewer + licence/security review required
+
+Offline test log:
+test_consumption (test_metrics.TestMetrics.test_consumption) ... ok
+test_duplicate_consumption_rejected (test_metrics.TestMetrics.test_duplicate_consumption_rejected) ... ok
+test_duplicate_rejected (test_metrics.TestMetrics.test_duplicate_rejected) ... ok
+test_missing_technology_rejected (test_metrics.TestMetrics.test_missing_technology_rejected) ... ok
+test_negative_rejected (test_metrics.TestMetrics.test_negative_rejected) ... ok
+test_net (test_metrics.TestMetrics.test_net) ... ok
+test_nonnumeric_rejected (test_metrics.TestMetrics.test_nonnumeric_rejected) ... ok
+test_output_row_count (test_metrics.TestMetrics.test_output_row_count) ... ok
+test_six_technologies (test_metrics.TestMetrics.test_six_technologies) ... ok
+test_snapshot_grain (test_metrics.TestMetrics.test_snapshot_grain) ... ok
+test_timezone_rejected (test_metrics.TestMetrics.test_timezone_rejected) ... ok
+test_total (test_metrics.TestMetrics.test_total) ... ok
+test_unavailable_consumption_not_zero (test_metrics.TestMetrics.test_unavailable_consumption_not_zero) ... ok
+test_unknown_technology_rejected (test_metrics.TestMetrics.test_unknown_technology_rejected) ... ok
+test_wind_share (test_metrics.TestMetrics.test_wind_share) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.002s
+
+OK
+

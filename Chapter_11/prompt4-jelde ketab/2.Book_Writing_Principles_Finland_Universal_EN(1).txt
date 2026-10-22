@@ -1,0 +1,872 @@
+UNIVERSAL BOOK WRITING, REVIEW, AND PUBLISHING PRINCIPLES
+Finland-based publication and English-language international editions
+REUSABLE MASTER POLICY — applies to present and future books in any subject area
+Maintainer: Arman Golbidi | Edition 2.0 | Research checkpoint: 21 October 2026
+============================================================================================================
+PURPOSE, SCOPE, AND HOW TO APPLY THIS MASTER DOCUMENT
+- The present file is a reusable publishing framework, not a Snowflake-only checklist and not an individual book outline.
+- Use the universal editorial standards for EVERY book; activate only relevant optional genre and product modules.
+- For every new title, create a short Book-Specific Profile recording scope, audience, length, language variety, format, publisher, sources, and review plan.
+- This master policy is written entirely in English. English manuscripts published from Finland do not become Finnish-language manuscripts merely because of the publisher location.
+- Finnish legal and commercial issues are documented in their own section; rules marked LEGAL FACT require a fresh pre-publication check.
+- Where law or contractual obligations vary with facts (retail channel, product type, nationality, publisher location, VAT status), confirm the applicability rather than assuming it.
+- Labels: [LEGAL FACT] = grounded rule; [VERIFY CASE] = conditional compliance check; [QUALITY STANDARD] = the author’s editorial rule; [OPTIONAL] = only for relevant genres.
+- This is editorial and research guidance, not individualized legal, tax, or immigration advice. Finnish/Swedish legislation controls over unofficial English translations.
+- The Snowflake manuscript has its own companion: Snowflake_Book_Detailed_Outline_EN.txt. Other books receive different outlines but retain this policy.
+- Check the authoritative sources at the end of this document again before signing a publishing contract, sending files to print, or offering a commercial product.
+
+============================================================================================================
+01 | BOOK IDENTITY, PROMISE, AND MARKET POSITIONING
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+01.01 Define the transformation promised to the reader in one defensible sentence; avoid empty superlatives.
+01.02 Identify a primary reader persona, relevant secondary personas, buying motivations, and reader limitations.
+01.03 State what will be learned, experienced, or understood, and what is explicitly outside scope.
+01.04 Study comparable books, their audience reviews, table of contents, strengths, weaknesses, and publication dates.
+01.05 Document genuine differentiation: explanation, evidence, narrative voice, originality, usability, or source access.
+01.06 Define book category and genre consistently across proposal, jacket copy, metadata, and retail classification.
+01.07 Decide whether the work is original nonfiction, academic reference, textbook, professional guide, fiction, biography, or a hybrid.
+01.08 Draft a one-page positioning statement and test it with at least three target readers when possible.
+01.09 Avoid unauthorized claims of endorsement, association, academic approval, or publisher affiliation.
+01.10 Adopt a working title and subtitle; verify potential trademark confusion and already-published title collisions.
+
+============================================================================================================
+02 | READER RESEARCH AND INCLUSIVE AUDIENCE DESIGN
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+02.01 Specify assumed baseline knowledge, language proficiency, equipment, and accessibility needs.
+02.02 Map difficult concepts and the vocabulary the reader needs before encountering them.
+02.03 Write a reader journey from opening pages to the promised outcome; flag prerequisite gaps.
+02.04 Include distinct paths only when they solve real differences in reader readiness.
+02.05 Choose explanation and illustration styles that do not rely on a narrow cultural background.
+02.06 Use clear language without concealing necessary technical precision or scientific uncertainty.
+02.07 Avoid stereotypes and unsupported assumptions about geography, disability, income, or education.
+02.08 Obtain reader feedback from people similar to the actual audience rather than only colleagues.
+02.09 For advanced books, provide an entry roadmap and definitions instead of pretending prerequisite knowledge is universal.
+02.10 Document scope decisions that protect beginners from overload and protect experts from superficiality.
+
+============================================================================================================
+03 | PROJECT-SPECIFIC BOOK PROFILE AND CHANGE CONTROL
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+03.01 Create a Book Profile for each new project with title, topic, genre, audience, purpose, and content boundaries.
+03.02 Record author and publisher roles, place of publication, distribution channels, target languages, and formats.
+03.03 Set realistic page or word targets; a strict 300-page target is a Snowflake-specific choice, not a universal rule.
+03.04 Specify UK English or US English, spelling dictionary, citation system, heading capitalization, and typography.
+03.05 List authoritative sources, reviewers, licensed datasets/images, and planned companion resources.
+03.06 Set chapter owners, review deadlines, version IDs, issue-tracking procedure, and release checkpoints.
+03.07 Maintain a decision log; changes to premise, genre, pagination, rights, or planned audience need an explicit record.
+03.08 Preserve old drafts and a readable change history in version control or a reliable document-management system.
+03.09 Separate approved manuscript claims from brainstorming, unverified suggestions, and future additions.
+03.10 For later books, copy only this profile template and activate the relevant optional modules.
+
+============================================================================================================
+04 | OUTLINE, CONTENT ARCHITECTURE, AND PAGE BUDGET
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+04.01 Design the table of contents as a logical progression, not an unordered catalogue of ideas.
+04.02 Assign to every chapter a purpose, outcome, key arguments or scenes, and place in the whole work.
+04.03 Map subsection dependencies so a reader does not need unexplained knowledge from later chapters.
+04.04 Provide a realistic budget for front matter, body, references, index, and back matter; verify its arithmetic.
+04.05 Treat planned page ranges as estimates until final typesetting, unless the publisher specifies a firm production constraint.
+04.06 Reserve room for citations, diagrams, tables, exercises, acknowledgements, and index entries.
+04.07 Reduce redundancy through cross-references; do not force important topics into implausibly short sections.
+04.08 Move appropriate full source code, raw datasets, and auxiliary exercises into a stable companion repository for technical texts.
+04.09 For fiction or narrative nonfiction, budget by beats, acts, scenes, or narrative units rather than arbitrary miniature subsections.
+04.10 Set a content-freeze date and a procedure for resolving late scope changes.
+
+============================================================================================================
+05 | EVIDENCE, CLAIM TAXONOMY, AND VERIFICATION
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+05.01 Classify claims as primary-source fact, interpreted finding, empirical observation, expert opinion, scenario assumption, or fictional element.
+05.02 Build a claim ledger: claim ID, manuscript location, source, page/URL, access date, confidence, reviewer, and verification status.
+05.03 Trace every numerical or historical fact to inspectable evidence; do not cite material that only appears to support it.
+05.04 When a result is obtained by the author, disclose procedure, sample, context, and limitations.
+05.05 Distinguish actual measurements from illustrative simulations, synthetic numbers, and hypothetical examples.
+05.06 Avoid claims such as guaranteed, always, best, risk-free, and legally compliant without proof and qualifications.
+05.07 For controversial claims, seek independent high-quality corroboration and present relevant uncertainty fairly.
+05.08 Prefer original documents and methods papers to summaries when interpreting technical or policy assertions.
+05.09 Check whether facts were current at writing time but have expired by publication time.
+05.10 A fluent AI-generated statement is not itself evidence, and fabricated citations are an immediate release blocker.
+
+============================================================================================================
+06 | CITATION HIERARCHY AND BIBLIOGRAPHY
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+06.01 Prefer original legislation, regulator instructions, standard documents, official technical documentation, and primary research where relevant.
+06.02 Use peer-reviewed literature and scholarly monographs for scientific methods, their evidence quality, and historical context.
+06.03 Use journalism and expert analysis for attributed context, not as an unexamined substitute for primary evidence.
+06.04 Treat forums, social posts, and blogs as dated community opinion unless their empirical evidence can be verified.
+06.05 Choose one citation style for the full work (author–date, numbered, footnotes, or a publisher-required style).
+06.06 Cite both quotations and paraphrased material; indicate page or section wherever this helps the reader locate the support.
+06.07 Maintain full bibliographic metadata: author, title, organization, edition, publication/update date, DOI/ISBN/URL and access date where appropriate.
+06.08 Confirm each DOI, URL, author spelling, title, and year; never infer missing bibliographic details.
+06.09 Link figures, tables, and reproduced excerpts to a separate rights ledger as well as to their bibliographic sources.
+06.10 Use a reference manager or reproducible bibliography file and run a broken-link and duplicate-reference audit.
+
+============================================================================================================
+07 | RESEARCH METHOD AND FAIRNESS
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+07.01 Write the research question and inclusion/exclusion criteria before gathering material where feasible.
+07.02 Record search dates, databases, query terms, selection decisions, and known blind spots for research-heavy nonfiction.
+07.03 Differentiate exploratory reading from systematic review; do not call a process systematic unless it meets an explicit protocol.
+07.04 Represent competing interpretations proportionately to the supporting evidence without false equivalence.
+07.05 Check denominator, base rate, uncertainty, sampling, and causal inference in all statistical statements.
+07.06 Identify conflicts of interest, promotional sources, sponsored evidence, and methodological weaknesses.
+07.07 Explain negative findings and evidence gaps rather than inventing a neat conclusion.
+07.08 If interviews are used, record consent, accuracy-check procedures, source protection, and permissions.
+07.09 For memoir and biography, separate personal recollection, documents, quotations, and reconstruction.
+07.10 Record a dated research audit trail that an independent reviewer can inspect.
+
+============================================================================================================
+08 | CHAPTER AND SECTION WRITING BLUEPRINT
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+08.01 Begin a nonfiction chapter with its question, stakes, prerequisites if relevant, and intended learning outcome.
+08.02 Establish the key concepts before presenting specialized methods or exceptions.
+08.03 For each important choice, compare alternatives, assumptions, costs, and limitations.
+08.04 Support abstract concepts with one precise example, worked calculation, diagram, scenario, or documented case.
+08.05 Identify frequent misconceptions, edge cases, and what can go wrong in practice.
+08.06 Clearly distinguish steps the reader should execute from illustrative or pseudocode-only passages.
+08.07 End with a concise synthesis, reflection or practice questions, and a bridge to the next chapter.
+08.08 Adapt the blueprint for fiction: dramatic question, scene goal, conflict, consequence, and emotional continuity.
+08.09 Define expected artifacts for how-to books and interpretive outcomes for analytic or narrative books.
+08.10 Keep cross-chapter terminology and promises consistent in the manuscript.
+
+============================================================================================================
+09 | ENGLISH-LANGUAGE STYLE GUIDE
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+09.01 Choose British or American English and consistently apply it to spelling, punctuation, dates, and quotations.
+09.02 Use descriptive headings with one capitalization rule across the manuscript and online resources.
+09.03 Prefer clear subject-verb sentences; preserve nuance where complexity genuinely requires it.
+09.04 Expand acronyms at first use, and define specialized terminology in a controlled glossary.
+09.05 Use consistent capitalization of proper names, command names, units, variables, and product names.
+09.06 Check the placement and rendering of references, citations, footnotes, equations, and code symbols.
+09.07 Avoid hype, unexplained jargon, filler, repetition, and misleading expressions such as simply click.
+09.08 Use inclusive phrasing while retaining contextually necessary distinctions in scientific and narrative work.
+09.09 Test edited prose with a subject specialist and an intended nonexpert reader where both are appropriate.
+09.10 Employ a native-level or professional English copyeditor for a final consistency pass when feasible.
+
+============================================================================================================
+10 | SCIENTIFIC AND TECHNICAL ACCURACY
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+10.01 Verify definitions, equations, units, boundary conditions, algorithms, version numbers, and diagrams.
+10.02 Write reproducible derivations and show assumptions rather than skipping critical reasoning steps.
+10.03 Distinguish theoretical properties from empirical behavior under a measured workload.
+10.04 For products and services, record platform/version, edition, region, feature status, and observation date.
+10.05 Never describe beta or preview availability as universal or permanent.
+10.06 State dataset size, data generation procedure, and hardware/software environment for numerical results.
+10.07 Include failure cases, counterexamples, and limitations alongside strengths.
+10.08 Do not present a vendor's public roadmap as a contractual guarantee of future capability.
+10.09 Request an independent technical review of calculations, security-sensitive material, and code.
+10.10 Mark details that should be reverified immediately before production or print approval.
+
+============================================================================================================
+11 | EXECUTABLE EXAMPLES AND COMPANION MATERIALS
+CLASSIFICATION: OPTIONAL MODULE FOR TECHNICAL / HOW-TO BOOKS
+------------------------------------------------------------------------------------------------------------
+11.01 Every runnable code sample must have a source file in the versioned repository or a documented downloadable archive.
+11.02 Supply dependency versions, operating assumptions, input fixtures, expected outputs, and cleanup commands.
+11.03 Mark pseudocode clearly so the reader never mistakes explanatory fragments for tested commands.
+11.04 Keep private credentials, personal identifiers, and sensitive company data out of both text and version control history.
+11.05 Use parameterized inputs, least privilege, and safe defaults for destructive commands or billable services.
+11.06 Implement unit, integration, smoke, and regression checks appropriate to the software artifact.
+11.07 Use small deterministic inputs for introductory examples and tolerances for stochastic results.
+11.08 Record expensive prerequisites and offer a low-cost or offline alternative where possible.
+11.09 Provide a complete setup -> run -> validate -> tear-down workflow that a new reviewer can follow.
+11.10 Tag the repository to correspond exactly to the released edition rather than pointing only to a moving main branch.
+
+============================================================================================================
+12 | EXPERIMENTS, BENCHMARKS, CHARTS, AND CALCULATIONS
+CLASSIFICATION: OPTIONAL MODULE FOR EMPIRICAL / TECHNICAL BOOKS
+------------------------------------------------------------------------------------------------------------
+12.01 Define a specific hypothesis, baseline, outcome metric, and relevance to the reader.
+12.02 Record sample size, measurement conditions, repetitions, parameters, and collection dates.
+12.03 Preserve raw observations and transformation code when licensing, privacy, and size allow.
+12.04 Show units, uncertainty ranges, axis scales, comparison baselines, and relevant confounders.
+12.05 Do not mix cached and uncached timings, different hardware, or different workloads without disclosure.
+12.06 Never improve performance by silently sacrificing correctness or using noncomparable outputs.
+12.07 Publish failed or null results when they affect the book's recommendations.
+12.08 Disclose selection effects, reproducibility constraints, and threats to validity.
+12.09 Label all invented or toy datasets as synthetic or illustrative, including illustrative financial figures.
+12.10 Recheck every chart against source values before press-ready PDF export.
+
+============================================================================================================
+13 | PRIVACY, CONFIDENTIAL SOURCES, AND DATA PROTECTION
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+13.01 Inventory any personal data, interviews, account details, customer datasets, screenshots, or identifiable stories.
+13.02 Minimize personal information and define a defensible lawful basis for handling personal data where the GDPR applies.
+13.03 Avoid treating pseudonyms as irreversible anonymization; identify residual reidentification risks.
+13.04 Seek consent or other appropriate rights where legally necessary, especially for photos and interviews.
+13.05 Protect unpublished manuscripts, sources, and reader mailing-list data with access controls and backups.
+13.06 Use synthetic examples when real personal data have no essential educational value.
+13.07 Review confidentiality agreements and institutional permissions before reproducing employer or client material.
+13.08 Include a privacy notice and appropriate processing arrangements for a direct-to-consumer newsletter or web store if applicable.
+13.09 Check data storage, international transfers, retention, and deletion for personal-data workflows.
+13.10 Refer special cases to qualified privacy counsel rather than claiming every historical or journalistic publication has the same GDPR handling.
+
+============================================================================================================
+14 | SENSITIVE, REGULATED, AND HIGH-STAKES CONTENT
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+14.01 Identify whether the book gives medical, legal, financial, safety-critical, or similar high-impact advice.
+14.02 Obtain topic-qualified independent professional review and verify authoritative standards at the correct jurisdiction and date.
+14.03 Differentiate educational context from individualized professional services and diagnosis.
+14.04 Do not imply a general disclaimer cures inaccurate, negligent, or unsafe substantive content.
+14.05 Include contraindications, limitations, emergency pathways, and uncertainty when genuinely relevant.
+14.06 Check that exercises, laboratory demonstrations, and procedural instructions do not expose readers to unreasonable danger.
+14.07 Avoid publishing unsafe real credentials, exploitable production instructions, or dangerous physical handling steps as default examples.
+14.08 Use extra scrutiny for advice involving children, protected populations, regulated products, or personal data.
+14.09 Maintain a correction priority for safety-critical errors and a rapid public errata mechanism.
+14.10 Validate the final manuscript against relevant professional practice and consumer-protection standards.
+
+============================================================================================================
+15 | ILLUSTRATIONS, TABLES, DIAGRAMS, AND MEDIA
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+15.01 Each visual must answer a specific reader question or carry indispensable narrative meaning.
+15.02 Number and title charts and tables consistently, with captions, sources, and explanatory footnotes.
+15.03 Prefer editable vector source assets and keep print-resolution originals in the asset repository.
+15.04 Show units, legend, time window, data provenance, and uncertainty for quantitative visuals.
+15.05 Ensure diagrams remain meaningful in grayscale and do not encode critical differences solely in color.
+15.06 Redact names, addresses, email addresses, account numbers, tokens, and secrets from screenshots.
+15.07 Track image authorship, owner, license, territorial and format permissions, credit language, and expiration dates.
+15.08 Obtain written rights for third-party covers, photos, paintings, diagrams, and substantial illustrations when required.
+15.09 Use original diagrams for explanation, but still cite a distinct source if the underlying design or facts come from it.
+15.10 Do not assume a Google Images result, official webpage, or social-media image is free to reproduce.
+
+============================================================================================================
+16 | ACCESSIBILITY AND INCLUSIVE FORMATTING
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+16.01 Use correct semantic heading hierarchy, tagged structure when supported, and meaningful navigation landmarks.
+16.02 Write effective alternative text for meaningful images; mark genuinely decorative visuals appropriately.
+16.03 Give tables true header relationships and avoid making important data an inaccessible bitmap.
+16.04 Test reflow, font enlargement, screen-reader navigation, text selection, and keyboard controls in relevant digital formats.
+16.05 Use readable contrast, typographic hierarchy, distinct link text, and line spacing.
+16.06 Provide text alternatives to essential information embedded in video or audio where relevant.
+16.07 Use accessible EPUB production and validate against EPUB Accessibility 1.1 and applicable standards.
+16.08 Test exported PDF navigation/bookmarks, selectable text, and reading order; do not assert PDF/UA compliance without testing.
+16.09 Create accessibility metadata and a truthful accessibility statement where it is required.
+16.10 For Finland/EU commercial e-book distribution, apply the jurisdiction-specific obligations in sections 39–43 below.
+
+============================================================================================================
+17 | ETHICAL AND ACCOUNTABLE USE OF AI TOOLS
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+17.01 Treat AI outputs as provisional source material requiring human editorial and factual verification.
+17.02 Keep identifiable authorial responsibility for accuracy, originality, rights clearance, and final approval.
+17.03 Log significant AI roles in drafting, editing, research, translation, code generation, or illustration production.
+17.04 Verify every AI-suggested citation against an actual document; reject invented DOIs, fabricated quotations, and false page numbers.
+17.05 Avoid uploading confidential manuscripts, personal data, or contract-protected content to unapproved AI services.
+17.06 Check a publisher or distributor's disclosure rules for AI-generated text, images, narration, or translations.
+17.07 Distinguish machine-assisted editing from fully machine-generated content if the platform or contract requires this.
+17.08 Keep provenance of generated visuals and respect the rights of people depicted and third-party materials.
+17.09 Do not assign authorship or scholarly credibility to AI tools in place of responsible human contributors.
+17.10 Adopt a transparent, accurate AI-use note when meaningful AI contributions would matter to readers or partners.
+
+============================================================================================================
+18 | COPYRIGHT, PERMISSIONS, AND TRADEMARK DILIGENCE
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+18.01 Assume third-party creative expression is protected until an applicable license, statutory exception, or permission supports use.
+18.02 Separate rights for text, code, datasets, graphics, maps, photographs, interviews, translations, and recorded audio.
+18.03 Store written licenses and permissions showing scope, medium, edition, duration, language, territory, and credit terms.
+18.04 Do not confuse attribution with permission; credit alone usually does not confer a right to reproduce copyrighted work.
+18.05 Use quotation exceptions only when the statutory conditions and the purpose of quotation support them.
+18.06 Verify the conditions of Creative Commons and other licenses, including commercial use and share-alike requirements.
+18.07 Check compatibility of licensed components before combining them into a paid book or public repository.
+18.08 Do not imply sponsorship from a product name, logo, institution, or vendor; use accurate independent-work disclaimers.
+18.09 Review potential title/brand confusion and cover-image rights before distribution.
+18.10 Maintain a rights ledger and remove unresolved third-party material before final print approval.
+
+============================================================================================================
+19 | PUBLISHING CONTRACTS AND AUTHORSHIP AGREEMENTS
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+19.01 Identify the legal publisher, imprint, author, contributors, and any coauthor or ghostwriting arrangements.
+19.02 Review grants of print, e-book, audio, translation, adaptation, territory, and sublicensing rights separately.
+19.03 Inspect exclusivity, term, out-of-print/reversion triggers, and rights retained for future works or courses.
+19.04 Define royalty calculation basis, discounting, returns, accounting periods, and payment timing.
+19.05 Agree on responsibilities for editing, marketing, rights permissions, legal review, indexes, proofs, accessibility, and deposits.
+19.06 Check warranties, indemnities, liability caps, and dispute-resolution clauses carefully before signing.
+19.07 Specify who controls final edits, title/cover decisions, supplemental materials, and error corrections.
+19.08 Provide rules for derivative works, updates, translations, new editions, and companion website ownership.
+19.09 If contributors or editors own original illustrations or text, obtain appropriate publication rights in writing.
+19.10 Seek a Finnish publishing lawyer or competent adviser for commercially consequential contract provisions.
+
+============================================================================================================
+20 | EDITORIAL REVIEW LAYERS
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+20.01 Developmental edit: verify the book's promise, scope, flow, omissions, repetition, and reader journey.
+20.02 Subject-matter review: verify arguments, calculations, terminology, evidence and technical statements.
+20.03 Copyedit: correct grammar, punctuation, spelling, style, citations, and internal consistency.
+20.04 Sensitivity or domain-context review: use qualified readers when content involves represented communities or vulnerable persons.
+20.05 Fact-check: match key claims and quotes to primary evidence with recorded corrections.
+20.06 Proofread: check the locked layout, page breaks, typographic errors, captions, tables, and cross-references.
+20.07 For a textbook, conduct learner usability testing of representative chapters and exercises.
+20.08 For fiction, use beta readers to evaluate plot, character consistency, pacing, and structural logic.
+20.09 Maintain a severity system: blocker, major, minor, and editorial preference; assign owners and due dates.
+20.10 No release proceeds while unresolved accuracy, rights, safety, or privacy blockers remain.
+
+============================================================================================================
+21 | INDEPENDENT REVIEW AND REPRODUCIBILITY
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+21.01 A reviewer should be able to locate all evidence without needing the author to explain undocumented steps.
+21.02 Include a reviewer packet: current manuscript, issue tracker, sources, test evidence, rights ledger, and open questions.
+21.03 Confirm that representative examples, calculations, or directions work from a clean environment where practical.
+21.04 Use a second reviewer for consequential claims and for areas outside the author's primary expertise.
+21.05 Record disagreements and the resolution rationale; do not erase the existence of significant disputes.
+21.06 Require reviewers to distinguish factual corrections from stylistic preferences.
+21.07 Capture final reviewer sign-off with manuscript edition, review date, and exclusions.
+21.08 Disclose in-book peer review only if actual independent peers reviewed the work in the claimed manner.
+21.09 Clearly separate invited editorial feedback from formal academic peer review.
+21.10 Credit contributors only with permission and with accurate role descriptions.
+
+============================================================================================================
+22 | EXERCISES AND LEARNING ASSESSMENT
+CLASSIFICATION: OPTIONAL MODULE FOR TEXTBOOKS / GUIDES
+------------------------------------------------------------------------------------------------------------
+22.01 Each exercise must test a previously stated learning objective rather than introduce an unexplained feature.
+22.02 Give the starting state, necessary equipment or data, time/effort expectation, and success criteria.
+22.03 Provide at least one worked example for especially difficult procedures or calculations.
+22.04 Write tasks at foundation, applied, and advanced levels when the audience benefits from tiering.
+22.05 Publish a reference answer, rubric, or evaluation checklist where appropriate.
+22.06 Reward sound reasoning and correct constraints, not just one arbitrary implementation.
+22.07 Mark optional exercises that require paid services, sensitive data, or specialized hardware.
+22.08 Test that a learner can follow the instructions without access to the author's private setup.
+22.09 For noninstructional titles, replace exercises with discussion prompts, reading guides, or no exercises at all.
+22.10 Check exercise copyright and dataset sharing permissions independently of the manuscript.
+
+============================================================================================================
+23 | DATA, SOURCE ARCHIVES, AND COMPANION REPOSITORIES
+CLASSIFICATION: OPTIONAL MODULE FOR DATA / TECHNICAL / RESEARCH BOOKS
+------------------------------------------------------------------------------------------------------------
+23.01 List every external data source with creator, acquisition date, license, geographic coverage, units, and update frequency.
+23.02 Preserve snapshots or hashes when the applicable license allows archival redistribution.
+23.03 Store raw data separately from transformed data and document every significant preprocessing step.
+23.04 Provide a readme describing setup, provenance, quality checks, expected outputs, and known missing values.
+23.05 Publish only datasets for which redistribution rights have been verified; otherwise give lawful access instructions.
+23.06 Publish code under a deliberate license and the book's prose under its own publication terms.
+23.07 Do not assume a code license covers its embedded images, third-party dependencies, or datasets.
+23.08 Add issue templates for bugs, errata, security issues, and questions about exercises or datasets.
+23.09 Version companion resources together with each book edition and preserve accessible release archives.
+23.10 Include a maintenance end date or support policy instead of promising perpetual availability.
+
+============================================================================================================
+24 | LAYOUT, TYPOGRAPHY, AND PRINT PRODUCTION
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+24.01 Obtain trim size, binding, bleed, safe-area, spine, color-profile, embedded-font, and paper specifications from the printer.
+24.02 Create page templates and a hierarchy for part titles, chapter openers, running headers, footers, and body type.
+24.03 Choose fonts and licenses suitable for both printed and electronic distribution.
+24.04 Check orphan/widow lines, hyphenation, paragraph breaks, long URLs, table splits, equations, and wide code blocks.
+24.05 Ensure source files and export PDFs include embedded fonts and adequate image resolution as required by the printer.
+24.06 Use a print-ready PDF with correct crop/bleed settings; validate it with the specific print service.
+24.07 Test grayscale legibility for charts and graphics if economical black-and-white editions are planned.
+24.08 Inspect sample spreads and the final physical proof for binding, margins, color shifts, page order, and cut-off text.
+24.09 Keep reader-facing page numbers synchronized with printed contents, cross-references, tables, and indexes.
+24.10 Save master source, print PDF, accessible digital outputs, and deterministic build notes as distinct artifacts.
+
+============================================================================================================
+25 | E-BOOK AND DIGITAL PRODUCTION
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+25.01 Specify which products are sold: PDF, reflowable EPUB, fixed-layout EPUB, audiobook, or subscription access.
+25.02 Define format-specific acceptance criteria, supported reading applications, and accessibility metadata.
+25.03 Use real text, heading semantics, table markup, and navigation; avoid rasterizing the entire e-book.
+25.04 Test EPUB on at least two reading engines and an assistive-technology workflow where feasible.
+25.05 Use valid metadata: title, author, language, identifiers, publication date, rights, and accessibility properties.
+25.06 Check link stability, resource download access, images, mathematical notation, and internal anchors.
+25.07 Ensure DRM decisions do not block legally required assistive features in applicable markets.
+25.08 Do not treat a visually attractive PDF as proof that an e-book meets accessibility obligations.
+25.09 Maintain separate build outputs, ISBNs when applicable, and revision records for each product format.
+25.10 Test purchase-to-download and offline-use behavior before public release.
+
+============================================================================================================
+26 | FRONT MATTER AND BACK MATTER COMPLETENESS
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+26.01 Front matter: half title/title page, author/publisher identification, copyright page, ISBN information where used.
+26.02 Preface or introduction: why the book exists, audience, assumptions, contributions and known limitations.
+26.03 Table of contents: consistent chapter and section names, accurate links or page numbers.
+26.04 Credits: image attribution, contributor roles, licensed material acknowledgements, and funding statements.
+26.05 For technical books: prerequisites, version notes, setup warnings, and reproducibility instructions.
+26.06 Back matter: bibliography, glossary, appendix material, and genuinely useful index where appropriate.
+26.07 Provide a stable correction page or errata URL and edition/printing date.
+26.08 Include any legally or contractually required product notices, warnings, or publisher metadata.
+26.09 Do not invent an ISBN, DOI, endorsement, publisher, reviewer, or affiliation before it exists.
+26.10 Proof all preliminary pages against the publisher's requirements and the final release manifest.
+
+============================================================================================================
+27 | METADATA, DISCOVERABILITY, AND TRUTHFUL MARKETING
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+27.01 Maintain canonical title, subtitle, authors, edition, publication date, keywords, categories, language, and formats.
+27.02 Write a specific and truthful description that reflects the actual manuscript, not intended chapters never completed.
+27.03 Use accurate author biography and professional credentials without exaggeration.
+27.04 Verify retailer keywords, search categories, format labels, and sample previews against publication terms.
+27.05 Credit contributors, cover illustrators, designers, and translators according to contracts and custom.
+27.06 Avoid misleading comparisons or unverifiable claims about rankings, endorsements, sales, or official status.
+27.07 Confirm trademark use in metadata and cover art, especially for product-based technical books.
+27.08 State compatibility/version cutoffs where a reader may depend on time-sensitive instructions.
+27.09 Prepare an accessible public description and a cover image that remains legible in thumbnail size.
+27.10 Maintain metadata parity across the ISBN agency, distributor feeds, website, and actual imprint page.
+
+============================================================================================================
+28 | BUDGETING, OPERATIONS, AND COMMERCIAL RISK
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+28.01 Prepare a per-format budget for editing, illustrations, professional review, rights clearance, indexing, design, and proofs.
+28.02 Include ISBN administration workflow, distribution fees, printing, legal deposits, storage, shipping, and returns.
+28.03 Calculate break-even at plausible price and sales scenarios, including taxes, payment fees, and retailer margins.
+28.04 Identify who is responsible for invoicing, VAT, accounting, fulfillment, refunds, and buyer support.
+28.05 Document risks of currency conversion, cross-border shipping, and e-book platform policies.
+28.06 Do not promise readers a fixed third-party product price if it changes over time.
+28.07 Assess insurance, contractual liability, and cash-flow implications as warranted by the project.
+28.08 Use a contingency budget for revisions, reprints, legal queries, or production defects.
+28.09 Clearly distinguish commercial objectives from academic impact, public education, and open licensing goals.
+28.10 Reapprove the price model when edition, publisher, tax status, or sales territory changes.
+
+============================================================================================================
+29 | VERSIONING, CORRECTION POLICY, AND MAINTENANCE
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+29.01 Attach a clear edition identifier and publication date to manuscript, companion files, and reader-facing documentation.
+29.02 Maintain an issue tracker with error severity, affected pages or chapters, reproducibility evidence, and resolution.
+29.03 Correct safety, privacy, legal-rights, and important factual errors ahead of cosmetic defects.
+29.04 Publish an errata process and a way for readers to report problems without disclosing personal data publicly.
+29.05 Keep a changelog describing changes that affect reader decisions or the outcome of examples.
+29.06 Recheck external links, software versions, legal rules, and high-volatility facts before each new edition.
+29.07 Choose whether a revision is an unchanged reprint, corrected printing, or substantively revised new edition.
+29.08 Reevaluate identifier and legal-deposit consequences before distributing materially revised products.
+29.09 Archive old versions as necessary without misleading new buyers about the currently supported edition.
+29.10 Be candid about when companion code, charts, or external APIs are no longer maintained.
+
+============================================================================================================
+30 | PRODUCTION WORKFLOW AND MILESTONES
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+30.01 Phase A — discovery: reader research, proposal, comparison matrix, feasibility, and legal/rights screening.
+30.02 Phase B — architecture: book profile, approved outline, chapter dependencies, page or word budgets.
+30.03 Phase C — prototype: fully draft one representative chapter and validate style, depth, and production assumptions.
+30.04 Phase D — source foundation: bibliography manager, rights ledger, companion asset repository, and templates.
+30.05 Phase E — drafting: chapter passes with citations, illustrations, exercise or scene checkpoints, and review notes.
+30.06 Phase F — specialist review: verify technical, scientific, narrative, ethical, or legal risk areas.
+30.07 Phase G — editing: developmental, copyediting, substantive fact checks, and author acceptance.
+30.08 Phase H — production: typeset, create index, export formats, run accessibility and print-quality checks.
+30.09 Phase I — approval: pass the release gates, legal checks, proof review, ISBN/deposit workflow, and final metadata.
+30.10 Phase J — publication: distribute, archive, monitor errata, track sales/support, and plan future editions.
+
+============================================================================================================
+31 | SCHEDULE, WORKLOAD, AND RISK MANAGEMENT
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+31.01 Estimate sections by work units: research, writing, illustrations, testing, rights, editing, and production.
+31.02 Avoid planning page count as if every page requires the same research or editing effort.
+31.03 Reserve explicit review capacity for specialists, copyediting, and unforeseen rework.
+31.04 Identify critical-path dependencies such as permission approvals, external reviews, data access, and print lead times.
+31.05 Maintain weekly completed-versus-planned milestones rather than only a cumulative word count.
+31.06 Create a risk register with likelihood, impact, owner, mitigation, trigger, and residual risk.
+31.07 Use a small finished chapter as a throughput benchmark before setting a full-book deadline.
+31.08 Freeze major conceptual changes before the final copyedit unless an important accuracy problem demands revision.
+31.09 Schedule checks for law, prices, platforms, and version-dependent guidance just before release.
+31.10 Make conservative public publication-date promises until the manuscript has passed technical and rights review.
+
+============================================================================================================
+32 | QUALITY AND RELEASE CRITERIA
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+32.01 P0 BLOCKER: no unresolved fabricated citations, unsupported high-stakes claims, or material factual errors.
+32.02 P0 BLOCKER: no unlicensed copyrighted third-party material, prohibited confidential disclosures, or exposed secrets.
+32.03 P0 BLOCKER: verify applicable legal requirements, print-deposit workflow, and contractual rights before distribution.
+32.04 P0 BLOCKER for runnable examples: security and destructive-action review plus representative fresh-environment execution.
+32.05 P1 MAJOR: chapters and sections satisfy objectives and do not contradict related chapters.
+32.06 P1 MAJOR: the bibliography, data attributions, captions, and rights ledger are complete.
+32.07 P1 MAJOR: print pagination, index, internal links, digital navigation, and accessible content are checked.
+32.08 P1 MAJOR: cover/back-cover marketing and metadata accurately describe the final book.
+32.09 P2 EDITORIAL: final English style, typesetting, and visual consistency corrections are completed.
+32.10 Final sign-off: author, relevant subject reviewer, copyeditor, publisher/production owner, and legal adviser if applicable.
+
+============================================================================================================
+33 | ACCEPTANCE TEMPLATE FOR EACH MANUSCRIPT CHAPTER
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+33.01 Chapter ID, title, planned and actual length, intended audience, and status.
+33.02 One-paragraph purpose; explicit learning or narrative outcomes; dependency on earlier material.
+33.03 Numbered headings and subheadings; summary of arguments, scenes, or demonstrations.
+33.04 Claims requiring verification, supported sources, and unresolved evidence questions.
+33.05 Illustrations, tables, equations, exercises, datasets, code, and credits where relevant.
+33.06 Safety, privacy, licensing, platform-version, and accessibility considerations.
+33.07 Reviewer findings, severity, assigned fixes, and final reviewer decision.
+33.08 Any companion resources are linked to an exact stable version or release tag.
+33.09 The chapter passes spelling/style, citations, caption checks, and cross-references.
+33.10 Actual page or word usage is reconciled with the approved full-book budget.
+
+============================================================================================================
+34 | DOCUMENT PACKAGE AND FILE RETENTION
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+34.01 00_book_profile.md — book-specific facts and optional-module selection.
+34.02 01_outline.md — chapter and subsection content map, with page/word targets.
+34.03 02_manuscript/ — controlled source, chapter drafts, figures, and reusable templates.
+34.04 03_references/ — bibliography, source notes, verification logs, and source archive links.
+34.05 04_rights/ — licences, permissions, contributor agreements, data terms and signed contracts.
+34.06 05_review/ — technical, factual, English-language, accessibility, and proof feedback.
+34.07 06_assets/ — original diagrams and images, alt text, caption manifest, and high-resolution exports.
+34.08 07_companion/ — code, datasets, exercise answers, or reader extras when appropriate.
+34.09 08_production/ — print specs, accessible EPUB/PDF, cover files, ISBN records and proof approvals.
+34.10 09_release/ — published files, change logs, legally required deposits, sales metadata and errata.
+34.11 Keep backups and access permissions; delete unnecessary personal data according to a documented retention policy.
+
+============================================================================================================
+35 | FINAL AUTHOR AND PUBLISHER PREFLIGHT
+CLASSIFICATION: PROJECT QUALITY STANDARD
+------------------------------------------------------------------------------------------------------------
+35.01 Is the reader promise actually fulfilled by the final text and demonstrated examples or narrative arc?
+35.02 Could an independent reviewer reproduce or verify the most important factual claims?
+35.03 Are all citations genuine, complete, correctly attributed, and legally reusable?
+35.04 Are all third-party texts, pictures, source code, datasets, and fonts cleared for the intended formats and territories?
+35.05 Has every relevant expert reviewer signed off and have important disagreements been resolved or disclosed?
+35.06 Do the print and digital products open, navigate, and render correctly on actual devices or physical proofs?
+35.07 Are the imprint, edition, format-specific identifiers, and distribution metadata consistent?
+35.08 Have the Finland-specific legal-deposit, e-book accessibility, copyright, and sales-tax checks been assigned and documented?
+35.09 Do readers have a reliable corrections channel and access to exactly the companion edition they purchased?
+35.10 Has the publisher approved the exact release files, and can the published products be reconstructed from saved sources?
+
+============================================================================================================
+PART B — FINLAND / EU PUBLISHING COMPLIANCE MODULE
+Applies when the publication, distribution, sale, publisher, or customer relationship has a Finnish/EU nexus.
+Verify laws and guidance at publication time. The regulatory material below is dated 21 October 2026.
+============================================================================================================
+
+============================================================================================================
+36 | GOVERNING LAW, PUBLICATION LOCATION, AND APPLICABILITY
+CLASSIFICATION: FINLAND / EU — MIXED LEGAL AND CONDITIONAL CHECKS
+------------------------------------------------------------------------------------------------------------
+36.01 [LEGAL FACT / CONTEXT] Finland has copyright law and a legal-deposit regime; EU rules also matter when publication or sale falls within their scope. [FI03] [FI04]
+36.02 [QUALITY STANDARD] English is the publishing language of this project; use consistent English metadata and accurately record Finland as the place of publication when factually correct.
+36.03 [VERIFY CASE] Confirm who acts as publisher, where each product is printed, and where each format is distributed before assigning legal responsibilities.
+36.04 [VERIFY CASE] A foreign platform acting as seller-of-record may alter VAT, consumer, accessibility, and legal-deposit responsibilities.
+36.05 [VERIFY CASE] Distinguish an individual author selling occasional books from a continuing commercial publishing business.
+36.06 [VERIFY CASE] Confirm whether a publishing/retail activity requires registration, tax declarations, or permissions for the operator's particular status; do not infer eligibility from book authorship alone.
+36.07 [QUALITY STANDARD] Do not describe all editorial recommendations as statutory requirements or all exceptions as universal.
+36.08 [QUALITY STANDARD] Review the latest Finnish/Swedish statutory text and ask qualified counsel if applicability is uncertain.
+
+============================================================================================================
+37 | FINNISH COPYRIGHT AND MORAL RIGHTS
+CLASSIFICATION: FINLAND — COPYRIGHT / RIGHTS
+------------------------------------------------------------------------------------------------------------
+37.01 [LEGAL FACT] The Copyright Act (404/1961) governs authors' protected original works and related rights; read the currently applicable consolidated Finnish/Swedish text. [FI03]
+37.02 [VERIFY CASE] The available Finlex English translation is unofficial and may not include the latest amendments; do not rely on it alone for an important legal conclusion. [FI03]
+37.03 [QUALITY STANDARD] Put a copyright notice and accurate author/publisher identification in the book; the notice does not itself establish the existence of statutory protection.
+37.04 [VERIFY CASE] Respect attribution and integrity interests (moral rights) and the scope of permitted uses of existing works.
+37.05 [VERIFY CASE] Assess lawful quotation purpose and extent individually, rather than applying an invented blanket word limit.
+37.06 [QUALITY STANDARD] Keep grants from coauthors, translators, illustrators, designers, and contractors in signed, auditable form.
+37.07 [QUALITY STANDARD] Separate copyright in book prose from licenses in code, images, data, fonts, and companion files.
+37.08 [VERIFY CASE] Confirm the effect of platform-specific or publisher contracts on royalty rights, translation rights, and sublicensing.
+
+============================================================================================================
+38 | ISBN FROM THE NATIONAL LIBRARY OF FINLAND
+CLASSIFICATION: FINLAND — OFFICIAL ISBN GUIDANCE
+------------------------------------------------------------------------------------------------------------
+38.01 [LEGAL FACT] Finland's national ISBN Agency is based at the National Library of Finland, and assignment of ISBNs is free. [FI01]
+38.02 [LEGAL FACT] ISBN is widely used but is not itself a mandatory statutory identifier and does not validate ownership of copyright. [FI01]
+38.03 [LEGAL FACT] Individual self-publishers are eligible to act as publishers in the ISBN system. [FI01]
+38.04 [LEGAL FACT] Different product formats (such as paperback, PDF, EPUB) and materially changed editions generally require separate ISBNs under agency guidance. [FI01]
+38.05 [QUALITY STANDARD] Apply via the official ISBN agency before production and confirm that the publisher's imprint is identical across the book, application, and metadata.
+38.06 [QUALITY STANDARD] Maintain an ISBN ledger per book, edition, medium, DRM/distribution variant where relevant, and publication date.
+38.07 [QUALITY STANDARD] Never invent an ISBN or recycle a code assigned to a different publication.
+38.08 [VERIFY CASE] Review the agency's current rules for revised editions, electronic versions, platform-provided identifiers, and barcode creation. [FI01]
+
+============================================================================================================
+39 | MANDATORY LEGAL DEPOSIT OF PRINTED BOOKS
+CLASSIFICATION: FINLAND — LEGAL DEPOSIT
+------------------------------------------------------------------------------------------------------------
+39.01 [LEGAL FACT] The Act on Collecting and Preserving Cultural Materials (1433/2007) requires legal deposit of publications distributed in Finland, subject to type-specific rules. [FI04]
+39.02 [LEGAL FACT] The National Library says printed books normally require SIX deposit copies; the rule also covers print-on-demand and noncommercial distribution. [FI04] [FI05]
+39.03 [LEGAL FACT] Where a book is printed in Finland, the printing house generally submits the required copies; when printed abroad or self-printed, the publisher generally submits them. [FI05]
+39.04 [LEGAL FACT] For very small print runs of fewer than 50 copies, the publisher may APPLY for a reduced deposit obligation; a smaller count is not an automatic exemption. [FI05]
+39.05 [LEGAL FACT] Changed or updated editions and distinct print formats can require fresh legal-deposit action; unchanged reprints under the same identifier may not. [FI04] [FI05]
+39.06 [QUALITY STANDARD] Confirm the current packing list, timing, submission instructions, and deposit office details before distribution.
+39.07 [QUALITY STANDARD] Put deposit-copy responsibility, postage, deadlines, evidence, and print-on-demand handling into the publication checklist and printer contract.
+39.08 [VERIFY CASE] If a foreign print-on-demand provider fulfills individual orders into Finland, obtain case-specific guidance on how the deposit obligation applies.
+
+============================================================================================================
+40 | ELECTRONIC LEGAL DEPOSIT AND ONLINE PUBLICATION
+CLASSIFICATION: FINLAND — ELECTRONIC LEGAL DEPOSIT
+------------------------------------------------------------------------------------------------------------
+40.01 [LEGAL FACT] The National Library's electronic collection includes Finnish electronic books and other digital publications. [FI06]
+40.02 [LEGAL FACT] Digital deposits are commonly handled through online shops, aggregators, or distributors; publishers may need to submit directly in other circumstances. [FI06]
+40.03 [LEGAL FACT] Publishers of online publications may be asked to submit digital materials if automatic harvesting does not supply them. [FI07]
+40.04 [QUALITY STANDARD] Record every format (EPUB, PDF, audio) and the responsible distributor/publisher contact.
+40.05 [QUALITY STANDARD] Keep preservation-friendly original files, accurate publication metadata, edition IDs, and accessible exported copies.
+40.06 [VERIFY CASE] Consult the National Library for delivery method, metadata, and scope if the book is sold only through a foreign e-book platform.
+40.07 [QUALITY STANDARD] Do not assume that assigning an ISBN eliminates deposit requirements.
+40.08 [QUALITY STANDARD] Maintain evidence of completed requests, submitted files, and confirmations when applicable.
+
+============================================================================================================
+41 | ACCESSIBLE E-BOOKS AND CONSUMER DIGITAL SERVICES
+CLASSIFICATION: FINLAND / EU — ACCESSIBILITY
+------------------------------------------------------------------------------------------------------------
+41.01 [LEGAL FACT] Finland's Act on the Provision of Digital Services has accessibility obligations covering certain consumer-oriented e-books and e-commerce services from 28 June 2025, subject to scope and transition rules. [FI08]
+41.02 [LEGAL FACT] Relevant e-book requirements include accessible reading/navigation, assistive-technology interoperability, accessibility metadata, and DRM that does not defeat accessibility. [FI08]
+41.03 [LEGAL FACT] Where text and audio coexist, the service-specific guidance addresses synchronized access. [FI08]
+41.04 [VERIFY CASE] Determine whether the author, publisher, distributor, or platform is the relevant service provider and whether any exception or transitional provision applies.
+41.05 [QUALITY STANDARD] Create a semantic, reflowable EPUB where commercially relevant, with correctly marked headings, images, tables, and navigation.
+41.06 [QUALITY STANDARD] Inspect reflow, reading order, assistive technologies, accessibility metadata, and accessibility-statement responsibilities.
+41.07 [QUALITY STANDARD] Use W3C EPUB Accessibility 1.1 as a production reference, not as a claim of legally certified compliance. [ED01]
+41.08 [VERIFY CASE] Review current Traficom guidance and seek accessibility expertise before marketing a product as fully compliant.
+
+============================================================================================================
+42 | VAT TREATMENT FOR BOOKS SOLD IN FINLAND
+CLASSIFICATION: FINLAND — TAX, CONDITIONAL APPLICATION
+------------------------------------------------------------------------------------------------------------
+42.01 [LEGAL FACT] Finnish Tax Administration lists printed and electronic books under the 13.5% reduced VAT category beginning 1 January 2026. [FI09]
+42.02 [VERIFY CASE] Whether the seller must charge VAT depends on VAT registration, transaction location, product classification, and the seller-of-record model.
+42.03 [LEGAL FACT] For small business VAT registration in Finland, the published domestic threshold is EUR 20,000; the current and previous calendar-year tests matter. [FI10]
+42.04 [VERIFY CASE] Do not treat the EUR 20,000 amount as a blanket exemption for all cross-border supplies or types of activity.
+42.05 [VERIFY CASE] Books, magazines, mixed-media bundles, workshops, consulting, and audiobooks may have different VAT treatment or classification; confirm the actual product.
+42.06 [QUALITY STANDARD] Recheck rates before launch, since fixed percentages in a permanent book may become outdated.
+42.07 [VERIFY CASE] For EU cross-border consumer digital sales or distance selling, obtain current guidance on place of supply, OSS schemes, and seller-of-record duties.
+42.08 [QUALITY STANDARD] Track VAT, payment processing, royalties, manufacturing, shipping, refunds, and platform fees separately in finance records.
+
+============================================================================================================
+43 | CONSUMER PROTECTION FOR DIRECT-TO-READER BOOK SALES
+CLASSIFICATION: FINLAND — CONSUMER LAW / ONLINE SALES
+------------------------------------------------------------------------------------------------------------
+43.01 [LEGAL FACT] Finnish consumer guidance generally provides a 14-day withdrawal period for many online goods purchases, with a different start point and conditions for digital content. [FI11]
+43.02 [LEGAL FACT] Starting digital-content delivery within the withdrawal period may extinguish the withdrawal right only when the applicable explicit consent, acknowledgment, and confirmation requirements are satisfied. [FI11]
+43.03 [LEGAL FACT] Finnish Competition and Consumer Authority guidance describes an online withdrawal function requirement starting 19 June 2026 for relevant online contracts. [FI12]
+43.04 [VERIFY CASE] Determine whether the publisher sells directly as trader or a third-party retailer/distributor handles checkout and consumer obligations.
+43.05 [QUALITY STANDARD] Give accurate pre-sale information on formats, accessibility, price, taxes, delivery method, seller identity, refunds, and limitations.
+43.06 [QUALITY STANDARD] Supply clear contact details for defective files, refunds, rights questions, and customer support.
+43.07 [VERIFY CASE] Electronic books and other digital content also fall under consumer-law rules about delivery, defects, and updates in applicable cases. [FI13]
+43.08 [QUALITY STANDARD] Have a qualified reviewer check storefront terms and legal notices before direct commercial launch.
+
+============================================================================================================
+44 | BUSINESS IDENTITY, IMPRINT, AND OPERATING MODEL
+CLASSIFICATION: FINLAND — BUSINESS / IMPRINT
+------------------------------------------------------------------------------------------------------------
+44.01 [QUALITY STANDARD] Establish whether the publishing operation is under a legal entity, a private individual, or a contract publisher.
+44.02 [LEGAL FACT] The Finnish ISBN agency accepts private individuals as publishers; this alone does not decide tax, commercial, or other operating duties. [FI01]
+44.03 [VERIFY CASE] If opening a Finnish company, check the Finnish Patent and Registration Office (PRH) and the Business Information System for relevant registration requirements. [FI14]
+44.04 [QUALITY STANDARD] Use the actual publisher name consistently in the ISBN application, imprint, online listing, invoices, and any contract.
+44.05 [VERIFY CASE] Check chosen company names and trademarks before printing; registration and trademark ownership are separate questions. [FI14]
+44.06 [QUALITY STANDARD] Keep contracts documenting what a third-party printer, wholesaler, or e-book platform actually does for the publisher.
+44.07 [VERIFY CASE] Author earnings, copyright royalties, business revenue, and self-employed activity can be treated differently for Finnish tax and other legal purposes.
+44.08 [QUALITY STANDARD] Keep contracts, receipts, inventory, metadata, and fulfillment records suitable for professional accounting review.
+
+============================================================================================================
+45 | PERSONAL DATA, PORTRAITS, TRADEMARKS, AND DEFAMATION
+CLASSIFICATION: FINLAND / EU — CONDITIONAL RIGHTS AND PRIVACY
+------------------------------------------------------------------------------------------------------------
+45.01 [VERIFY CASE] When personal data are processed in manuscript research, marketing, newsletter subscription, analytics, or sales, assess the GDPR and applicable Finnish law. [EU01]
+45.02 [QUALITY STANDARD] Secure interview records, signed permissions, research notes, and consent or other lawful-basis records when needed.
+45.03 [VERIFY CASE] Actual named people, private allegations, portrait rights, confidential letters, and biographical claims can create legal risks beyond copyright.
+45.04 [QUALITY STANDARD] Fact-check potentially damaging factual allegations to a particularly high standard and record reliable supporting evidence.
+45.05 [QUALITY STANDARD] Keep separate permissions for promotional use of photos, cover blurbs, testimonials, and personal stories.
+45.06 [VERIFY CASE] Legal defenses and exceptions vary by purpose and context; obtain specialist advice for sensitive memoirs, investigative works, or biographies.
+45.07 [QUALITY STANDARD] Avoid publishing personal contact details or private documents when not necessary to the book's public-interest purpose.
+45.08 [QUALITY STANDARD] In technical books, show vendor names accurately without asserting official affiliation; review trademarks and logo rights.
+
+============================================================================================================
+46 | CROSS-BORDER DISTRIBUTION AND PUBLISHER CONTRACTS
+CLASSIFICATION: CROSS-BORDER — CONDITIONAL
+------------------------------------------------------------------------------------------------------------
+46.01 [VERIFY CASE] Finnish rules can interact with the rules of the country of printing, distributor location, retailer tax registration, and audience market.
+46.02 [QUALITY STANDARD] List for every format: publisher of record, printer, platform seller of record, distributor, and delivery territories.
+46.03 [VERIFY CASE] A retailer's ISBN or distribution arrangement may be incompatible with use of an independent imprint or another retailer.
+46.04 [VERIFY CASE] Cross-border sales may require OSS/VAT analysis, customs documentation for physical shipping, or jurisdiction-specific consumer terms.
+46.05 [QUALITY STANDARD] Ensure publishing contracts disclose exclusive versus nonexclusive licensing, translation rights, and distribution territories.
+46.06 [QUALITY STANDARD] Retain accessible copies and source files when permitted, even if an online distributor stops operating.
+46.07 [VERIFY CASE] Check contract choice-of-law and jurisdiction clauses rather than automatically assuming all disputes are governed only by Finnish law.
+46.08 [QUALITY STANDARD] Consult local professional experts when materially changing the publishing model, distributor, or country of sale.
+
+============================================================================================================
+PART C — OPTIONAL BOOK-SPECIFIC MODULES (NOT MANDATORY FOR EVERY BOOK)
+============================================================================================================
+
+============================================================================================================
+47 | OPTIONAL MODULE: TECHNICAL AND SOFTWARE ENGINEERING BOOKS
+CLASSIFICATION: OPTIONAL — TECHNICAL BOOKS
+------------------------------------------------------------------------------------------------------------
+47.01 Maintain a verified environment matrix of operating system, library versions, service region, account edition, SDK, and feature status.
+47.02 Make each executable snippet reproducible with input, output, assertions, least-privilege grants, and safe teardown.
+47.03 Use a release-tagged repository to hold complete code, CI tests, sample data, and change logs.
+47.04 Publish uncertainty around benchmark runs and do not infer performance guarantees from vendor marketing.
+47.05 Add explicit billing controls and warnings before instructions that trigger paid compute, cloud services, or AI inference.
+47.06 Review threat models, dependency security, secret management, licensing, and credentials in every chapter.
+47.07 Separate durable engineering principles from volatile UI workflows and short-lived APIs.
+47.08 Assess the latest official product documentation and release notes immediately before proof approval.
+
+============================================================================================================
+48 | OPTIONAL MODULE: ACADEMIC AND RESEARCH MONOGRAPHS
+CLASSIFICATION: OPTIONAL — ACADEMIC BOOKS
+------------------------------------------------------------------------------------------------------------
+48.01 Write a clear scholarly thesis, research question, method, and contribution against prior literature.
+48.02 Respect academic integrity, authorship policies, quotations, and source reporting.
+48.03 Distinguish original results from related work and from non-peer-reviewed or preliminary results.
+48.04 Obtain ethics approval or documented determination when required for human-subjects or sensitive research.
+48.05 Record method, datasets, code, laboratory procedure, reproducibility limits, and uncertainty.
+48.06 Choose bibliography and referencing conventions appropriate to the discipline and publisher.
+48.07 Seek specialist peer review and state precisely the extent of that review.
+48.08 Avoid claiming a doctoral dissertation or published monograph automatically meets a university's dissertation policy.
+
+============================================================================================================
+49 | OPTIONAL MODULE: TEXTBOOKS AND PROFESSIONAL TRAINING MANUALS
+CLASSIFICATION: OPTIONAL — EDUCATIONAL BOOKS
+------------------------------------------------------------------------------------------------------------
+49.01 Build a prerequisite-to-outcome teaching map, glossary, practice sequence, and reference solutions.
+49.02 Include practical tasks with observable success criteria and different levels of difficulty.
+49.03 Provide worked examples plus counterexamples and common mistakes.
+49.04 Use formative checkpoints so readers can discover misunderstanding before the capstone.
+49.05 Ensure examples do not require expensive or inaccessible software without clear advance notice.
+49.06 Recruit beginner and expert readers for independent learning tests.
+49.07 Provide realistic answer keys, grading rubrics, and solutions that demonstrate reasoning.
+49.08 Measure exercise value and educational effectiveness rather than only total page count.
+
+============================================================================================================
+50 | OPTIONAL MODULE: FICTION AND CREATIVE NONFICTION
+CLASSIFICATION: OPTIONAL — FICTION / NARRATIVE
+------------------------------------------------------------------------------------------------------------
+50.01 Define point of view, narrative voice, tense, setting, theme, conflict, and reader expectations.
+50.02 Maintain a story bible and chronology to preserve characters, ages, geography, and continuity.
+50.03 Build a scene-by-scene map of objectives, obstacles, turning points, and consequences.
+50.04 Separate invented scenes from factual claims in narrative nonfiction; indicate reconstruction responsibly.
+50.05 Use dialogue that reveals character while respecting clarity, rhythm, and attribution.
+50.06 Apply suitable sensitivity, legal, and privacy reviews when real people or real incidents appear.
+50.07 Test pacing, emotional stakes, narrative resolution, and genre consistency with beta readers.
+50.08 Do not force technical-textbook templates such as exercises or code repositories on novels.
+
+============================================================================================================
+51 | OPTIONAL MODULE: BIOGRAPHIES, HISTORY, AND INVESTIGATIVE NONFICTION
+CLASSIFICATION: OPTIONAL — HISTORY / BIOGRAPHY
+------------------------------------------------------------------------------------------------------------
+51.01 Construct a dated source timeline and an evidence map for consequential claims.
+51.02 Differentiate firsthand documents, interviews, secondary reporting, recollection, and speculative reconstruction.
+51.03 Check quotation accuracy, translation fidelity, and archive usage permissions.
+51.04 Handle allegations, private correspondence, and reputational risks with heightened verification.
+51.05 Give readers enough methodological transparency to identify uncertainty and gaps.
+51.06 Resolve conflicting dates, names, and testimonies explicitly rather than silently harmonizing accounts.
+51.07 Use captions and chronology notes to differentiate original historical images from modern interpretations.
+51.08 Where appropriate, obtain professional legal review before publication about identifiable persons.
+
+============================================================================================================
+52 | OPTIONAL MODULE: HEALTH, FINANCE, LAW, AND OTHER REGULATED SUBJECTS
+CLASSIFICATION: OPTIONAL — HIGH-STAKES SUBJECTS
+------------------------------------------------------------------------------------------------------------
+52.01 Define whether the book is descriptive education, professional guidance, or personalized advice.
+52.02 Use qualified domain reviewers and up-to-date local law or clinical guidance, as relevant.
+52.03 State contraindications, limitations, and warnings when the user could reasonably be harmed by misapplication.
+52.04 Substantiate performance and outcome claims with high-quality source evidence and balanced uncertainty.
+52.05 Avoid examples that expose readers to unsafe practices, concealed costs, or privacy violations.
+52.06 Do not rely on general disclaimers as a substitute for correct and responsibly scoped content.
+52.07 Maintain a higher-priority corrections channel for safety- or compliance-critical errors.
+52.08 Recheck high-volatility regulations, thresholds, clinical guidance, and tax rules before reprints.
+
+============================================================================================================
+PART D — COPYABLE WORKFLOW TEMPLATES
+============================================================================================================
+TEMPLATE 1 — BOOK-SPECIFIC PROFILE (fill once per title)
+  Working title and subtitle: ______
+  Author(s) / editor(s): ______
+  Publisher / imprint / publisher of record: ______
+  Genre and subject: ______
+  Primary and secondary readers: ______
+  Reader promise and exclusion boundaries: ______
+  Manuscript language/style variant: ______
+  Planned length (words/pages), trim, formats: ______
+  Country of printing, market of distribution, retailer/seller of record: ______
+  Legal and high-stakes review triggers: ______
+  Reviewer roles and budget: ______
+  Citation system and reference manager: ______
+  Companion materials and licensing: ______
+  ISBN and deposit owner by format: ______
+  Accessibility owner and evidence: ______
+  VAT/accounting model and adviser: ______
+  Editorial freeze date and publication decision gate: ______
+  Actual source and rights ledgers: ______
+
+TEMPLATE 2 — CLAIM AND REFERENCE LEDGER FIELDS
+  claim_id | manuscript_location | exact_claim | claim_type | source_title | author_or_authority | publication_date | source_URL_or_identifier | source_page | accessed_on | supports_claim? | limitations | checked_by | checked_on
+
+TEMPLATE 3 — RIGHTS AND PERMISSIONS LEDGER FIELDS
+  asset_id | type | creator | copyright_owner | origin | license | permitted_formats | territories | languages | commercial_permission | modifications | attribution_text | consent_or_contract | expiry_date | reviewer | final_clearance
+
+TEMPLATE 4 — CHAPTER ACCEPTANCE RECORD
+  Book edition / chapter ID / date: ______
+  Learning or narrative purpose: ______
+  Target / actual length: ______
+  Citations verified? Yes/No, reviewer: ______
+  Relevant calculations / exercises / code tested? Yes/No/NA, evidence: ______
+  Rights and image permissions cleared? Yes/No: ______
+  Safety, privacy, and sensitive-content checks: ______
+  English copyedit and accessibility pass: ______
+  Unresolved blockers and major issues: ______
+  Sign-off names, dates, repository tag: ______
+
+TEMPLATE 5 — FINLAND PRE-PUBLICATION COMPLIANCE RECORD
+  Publisher identity and publication location: ______
+  Product formats: paperback / hardcover / PDF / EPUB / audio / other: ______
+  Current ISBN guidance verified on / ISBN IDs by format: ______
+  Printed in Finland or abroad / actual deposit responsible party: ______
+  Six-copy deposit requirement / reduction approval / submission evidence: ______
+  Digital deposit channel / distributor arrangements / request status: ______
+  E-book accessibility scope, exception or transition review, evidence: ______
+  VAT status, book tax classification, checkout market, seller of record: ______
+  Direct-store consumer disclosure and withdrawal process review: ______
+  Copyright and third-party rights clearance: ______
+  Expert legal/tax review requested and conclusions: ______
+  FINAL PUBLISHING SIGN-OFF / DATE: ______
+
+TEMPLATE 6 — RELEASE CHECKLIST (REQUIRED BEFORE APPROVAL)
+  [ ] Manuscript is complete and the promised scope is met.
+  [ ] All citations, claims, quotations, and numerical charts verified.
+  [ ] All rights, licenses, agreements, photos, fonts, and permissions cleared.
+  [ ] Language, style guide, metadata, glossary, and index checked.
+  [ ] Specialist, copyediting, and independent reader review completed.
+  [ ] Print PDF proof approved and digital files tested in representative readers.
+  [ ] Accessibility requirements and evidence reviewed for each product.
+  [ ] ISBN and legal-deposit responsibilities settled by publication format.
+  [ ] VAT/tax status and customer terms confirmed for the sales model.
+  [ ] Companion materials pinned and reproducible, if relevant.
+  [ ] Product description, cover, and distributor metadata match the finished book.
+  [ ] Public corrections/errata channel and long-term archive in place.
+  [ ] Author and publisher signed the exact final files.
+
+============================================================================================================
+PART E — VERIFIED OFFICIAL AND TECHNICAL REFERENCES
+These are starting references, NOT proof that rules will be unchanged when a future book is released.
+Legal reference check date for this document: 21 October 2026.
+============================================================================================================
+[FI01] National Library of Finland — ISBN agency guidance | https://www.kansalliskirjasto.fi/en/services/finlands-national-isbn-agency/isbn
+[FI03] Finlex — Copyright Act (404/1961), UNOFFICIAL English translation; check current Finnish/Swedish consolidated law | https://finlex.fi/en/legislation/translations/1961/eng/404
+[FI04] National Library of Finland — Printed materials and recordings (legal deposit) | https://www.kansalliskirjasto.fi/en/legal-deposit-services/printed-materials-and-recordings
+[FI05] National Library of Finland — Legal deposit FAQ, responsibility, print-on-demand, small runs | https://www.kansalliskirjasto.fi/en/legal-deposit-services/frequently-asked-questions
+[FI06] National Library of Finland — Electronic legal deposit collection | https://www.kansalliskirjasto.fi/en/legal-deposit-services/online-materials/electronic-legal-deposit-collection
+[FI07] National Library of Finland — Reception of digital legal deposit copies | https://www.kansalliskirjasto.fi/en/services/reception-digital-legal-deposit-copies
+[FI08] Traficom — Service-specific accessibility requirements, including e-books | https://saavutettavuusvaatimukset.fi/en/service-specific-requirements-and-obligations
+[FI09] Finnish Tax Administration — VAT rates effective 2026 | https://vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/
+[FI10] Finnish Tax Administration — Small-business VAT registration threshold and conditions | https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/
+[FI11] Finnish Competition and Consumer Authority — Right of withdrawal in e-commerce | https://www.kkv.fi/en/consumer-affairs/online-stores/right-of-withdrawal-in-e-commerce/
+[FI12] Finnish Competition and Consumer Authority — Online store disclosure and withdrawal function | https://www.kkv.fi/en/consumer-affairs/online-stores/obligation-to-provide-information-in-online-stores/
+[FI13] Finnish Competition and Consumer Authority — Digital content and services | https://www.kkv.fi/en/consumer-affairs/digital-content-and-services/
+[FI14] Finnish Patent and Registration Office — Start a business and business names | https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen.html
+[EU01] European Commission — EU data protection rules | https://commission.europa.eu/law/law-topic/data-protection_en
+[ED01] W3C — EPUB Accessibility 1.1 | https://www.w3.org/TR/epub-a11y-11/
+[ED02] W3C — WCAG 2.2 | https://www.w3.org/TR/WCAG22/
+[ED03] ISO — ISO 690:2021 bibliographic references | https://www.iso.org/standard/72642.html
+[ED04] The Turing Way — Reproducible Research | https://book.the-turing-way.org/reproducible-research/reproducible-research/
+[ED05] Google developer documentation style guide | https://developers.google.com/style/
+
+FINAL APPLICATION RULE
+Use this master policy for EVERY new book. Create a book-specific profile and outline; choose optional subject modules; reverify all laws and dated facts. Never blindly reuse Snowflake content, project length, data sources, or technical examples in an unrelated book.
+END OF UNIVERSAL FINLAND-ORIENTED BOOK-WRITING PRINCIPLES

@@ -1,0 +1,5 @@
+period,resource,category,quantity,unit,unit_rate,rate_currency,rate_status,owner
+2026-10-01,BOOK13_XS,warehouse_compute,2.5,credit,,,assumption,ENERGY
+2026-10-01,INGEST_JOB,serverless_compute,0.75,credit,,,assumption,ENERGY
+2026-10-01,CORTEX_DEMO,ai_services,0.4,credit,,,assumption,AI
+2026-10-01,LAB_STORAGE,storage,2.0,GB-month,,,assumption,ENERGY

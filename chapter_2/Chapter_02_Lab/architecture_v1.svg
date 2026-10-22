@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 490" role="img" aria-labelledby="title desc">
+<title id="title">Finland Energy Analytics Platform — conceptual data architecture</title>
+<desc id="desc">Public or licensed data sources pass through ingestion to a raw table, a UTC and quality validation layer, a curated metrics table, and a BI dashboard. Cloud services coordinate, while optional separate ELT and BI virtual warehouses serve the same managed data.</desc>
+<rect width="1000" height="490" fill="#ffffff"/>
+<text x="42" y="40" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#15334A">Finland Energy Analytics · Architecture v1</text>
+<text x="42" y="65" font-family="Arial,sans-serif" font-size="14" fill="#4a5862">Original teaching schematic · conceptual only · no live infrastructure deployed</text>
+<rect x="50" y="95" width="900" height="60" rx="9" fill="#ecf5f7" stroke="#17779b" stroke-width="2"/>
+<text x="500" y="118" font-family="Arial,sans-serif" text-anchor="middle" font-size="18" font-weight="bold" fill="#15334A">Snowflake cloud services / security / metadata / query coordination</text>
+<text x="500" y="140" font-family="Arial,sans-serif" text-anchor="middle" font-size="13" fill="#4a5862">Control-plane responsibilities: authorize and plan requests; not the data-serving table itself</text>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#15334A">
+ <rect x="38" y="214" width="170" height="85" rx="10" fill="#f2f5f6" stroke="#bacfd6"/>
+ <text x="123" y="245" font-size="16" font-weight="bold">Public data sources</text><text x="123" y="265" font-size="13">API / files / terms</text>
+ <rect x="235" y="214" width="155" height="85" rx="10" fill="#f2f5f6" stroke="#bacfd6"/>
+ <text x="313" y="244" font-size="16" font-weight="bold">Ingestion</text><text x="313" y="263" font-size="13">Batch-first</text>
+ <rect x="418" y="214" width="160" height="85" rx="10" fill="#e3f3f0" stroke="#12888A"/>
+ <text x="498" y="242" font-size="15" font-weight="bold">Managed tables</text><text x="498" y="261" font-size="13">Raw → validated</text><text x="498" y="279" font-size="13">→ curated metrics</text>
+ <rect x="607" y="214" width="161" height="85" rx="10" fill="#f2f5f6" stroke="#bacfd6"/>
+ <text x="688" y="242" font-size="16" font-weight="bold">BI serving</text><text x="688" y="264" font-size="13">Defined KPIs</text>
+ <rect x="794" y="214" width="165" height="85" rx="10" fill="#f2f5f6" stroke="#bacfd6"/>
+ <text x="876" y="242" font-size="16" font-weight="bold">Dashboard</text><text x="876" y="264" font-size="13">Read-only role</text>
+</g>
+<g stroke="#17779b" stroke-width="3" fill="none"><path d="M208 256 L235 256 M390 256 L418 256 M578 256 L607 256 M768 256 L794 256"/></g>
+<g fill="#17779b"><path d="M231 250 l7 6 -7 6z M414 250 l7 6 -7 6z M603 250 l7 6 -7 6z M790 250 l7 6 -7 6z"/></g>
+<rect x="245" y="350" width="220" height="70" rx="10" fill="#ecf5f7" stroke="#17779b"/>
+<text x="355" y="379" font-family="Arial,sans-serif" font-size="17" fill="#15334A" text-anchor="middle" font-weight="bold">ELT warehouse</text>
+<text x="355" y="401" font-family="Arial,sans-serif" font-size="13" fill="#4a5862" text-anchor="middle">Proposed independent compute</text>
+<rect x="550" y="350" width="220" height="70" rx="10" fill="#ecf5f7" stroke="#17779b"/>
+<text x="660" y="379" font-family="Arial,sans-serif" font-size="17" fill="#15334A" text-anchor="middle" font-weight="bold">BI warehouse</text>
+<text x="660" y="401" font-family="Arial,sans-serif" font-size="13" fill="#4a5862" text-anchor="middle">Proposed independent compute</text>
+<path d="M355 350 L430 299 M660 350 L635 299" stroke="#12888a" stroke-width="2" stroke-dasharray="6,5" fill="none"/>
+<text x="500" y="467" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#4a5862">Trust boundaries, account region, source license, and exact privileges to be decided before deployment.</text>
+</svg>

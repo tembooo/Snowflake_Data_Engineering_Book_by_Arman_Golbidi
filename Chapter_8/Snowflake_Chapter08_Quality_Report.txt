@@ -1,0 +1,49 @@
+SNOWFLAKE DATA ENGINEERING — CHAPTER 08 QUALITY REPORT
+Editorial review: 22 October 2026
+Chapter: 08 — Streams, Tasks, and Dynamic Tables
+Author: Arman Golbidi
+
+1. CONTENT AND OUTLINE
+- Scope is exclusively Chapter 08.
+- All nine core sections (8.1 through 8.9), the source-specified 27 numbered subsections, and 8.L.1 through 8.L.4 are represented.
+- Source structure: supplied Chapter 08 master outline and 181-project annotated table of contents.
+- Example external GitHub references are attributed rather than copied. External repositories have NOT been executed and rights for source reuse have NOT been cleared.
+- Original running case: Finland Energy Analytics; all inputs synthetic.
+- Technical documentation reference checkpoint: 22 October 2026.
+
+2. PRINT AND PDF
+- PDF creation engine: XeLaTeX (compilation successful).
+- Page count: exactly 18 pages.
+- Planned and printed footer page sequence: 133 to 150 inclusive.
+- Page geometry: 178 x 254 mm; odd/even mirrored margins, inner=23 mm, outer=17 mm, top/bottom=19 mm.
+- Book body font: Libertinus Serif, 10.75 pt; leading: 13.65 pt (~1.27 ratio).
+- Code font: Libertinus Mono, 8.75 pt.
+- PDF size points: approximately 504.57 x 720.00 pt.
+- Final compile: zero LaTeX overfull-box warnings; all pages rendered for visual review.
+- PDF was rendered to page images and as an 18-page contact sheet; sections, tables, code, diagrams, headers, footers and page-break ordering were inspected.
+
+3. TESTS
+- Offline execution: Python 3.10+ stdlib-only lab. Eleven unit tests run successfully.
+- Actual observed synthetic fixture: 12 delivered rows; 1 invalid quarantined; 1 duplicate delivery; 10 unique accepted events; 7 latest key states including a tombstone; 6 visible latest energy facts; 66.000 MWh accepted energy.
+- A simulated failed processing batch is retried. Procedural reduction equals independently calculated full snapshot, replay is idempotent and older revisions cannot resurrect a tombstone.
+- Generated lab output: output/comparison.json, output/current_rows.csv, output/quarantined_rows.csv.
+- This is a deterministic offline model. It does not simulate Snowflake internals, task scheduling, credits or refresh timing.
+
+4. CLOUD / INTEGRATION STATUS
+- Snowflake SQL templates: NOT EXECUTED in a live account.
+- Actual task-graph invocation and dynamic-table refresh: NOT TESTED.
+- Live cloud credentials, region, account edition, user privileges, warehouse existence and billing: NOT VERIFIED.
+- Cloud output, correctness, performance, cost or latency: NO claims of measured values.
+- Default task is intentionally suspended; cloud cleanup/activation lines are commented out.
+- Author/publisher must complete an independent Snowflake technical acceptance test, licensing review and pre-publication copy-edit.
+
+5. SOURCE CHECKS — FIRST-PARTY DOCUMENTATION
+https://docs.snowflake.com/en/user-guide/streams-intro
+https://docs.snowflake.com/en/user-guide/streams-manage
+https://docs.snowflake.com/en/user-guide/tasks-triggered
+https://docs.snowflake.com/en/sql-reference/sql/merge
+https://docs.snowflake.com/en/user-guide/dynamic-tables/refresh-modes
+https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag
+https://docs.snowflake.com/en/user-guide/dynamic-tables/supported-queries
+
+REPORT STATUS: Layout and offline model checked; NOT an independent publication or cloud-production certification.

@@ -1,0 +1,36 @@
+SNOWFLAKE DATA ENGINEERING - CHAPTER 13
+Quality report | Editorial date 2026-10-22
+===============================================================
+TITLE: Security, Governance, Reliability, and Cost
+AUTHOR: Arman Golbidi
+SCOPE: Chapter 13 only; 22 printed pages, numbering 227-248
+PAGE TRIM: 178 x 254 mm; inner/outer margins 23/17 mm; top/bottom 19 mm
+BODY TYPE: Libertinus Serif 10.75 pt / 13.65 pt leading (ratio 1.27)
+CODE TYPE: Libertinus Mono 8.75 pt in code blocks
+
+CHECKS
+PASS: pages_22
+PASS: trim_178x254mm
+PASS: footer_first_227
+PASS: footer_last_248
+PASS: all_major_sections
+PASS: lab_present
+PASS: all_subtopics
+PASS: lab_subtopics
+PASS: no_overfull_hbox
+PASS: two_pass_compiled
+PASS: 17_offline_unit_tests
+
+OFFLINE EVIDENCE: 6 synthetic energy readings = 66.000 MWh.
+Cost scenario: 2.5 assumed warehouse credits, 0.75 assumed
+serverless credits, 0.4 assumed AI credits = 3.65 assumed credits.
+Storage: 2.0 GB-month (different unit, never added to credits).
+OFFLINE role simulation: 3 expected deny cases; no cloud enforcement.
+
+LIMITATIONS AND REQUIRED RELEASE GATES
+- No SQL was run against a real Snowflake account.
+- No separate login/role access-denial test was run live.
+- Edition-limited masking and row access policies are illustrative, not verified deployed.
+- No real Snowflake billing, pricing, or RPO/RTO measurement is asserted.
+- Third-party project repositories NOT run; licensing and commit pin review pending.
+- Professional technical, legal/privacy and copyediting review required before publication.

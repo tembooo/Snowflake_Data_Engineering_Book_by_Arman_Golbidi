@@ -1,0 +1,1352 @@
+====================================================================================================
+GITHUB PRACTICAL REFERENCE EXPANSION — EDITORIAL REVIEW COPY (21 OCTOBER 2026)
+====================================================================================================
+Book: SNOWFLAKE DATA ENGINEERING — From Fundamentals to Production-Ready Data Pipelines
+Author: Arman Golbidi | Manuscript language: English | Planned publication: Finland
+
+SOURCE PRESERVATION:
+- The FULL original 300-page outline, all chapter headings, all numbered sections and all
+  three-digit subsubsections are kept below in their original sequence.
+- 15 chapters / 134 numbered core sections / 402 numbered subsubsections.
+- The planned printed-book pagination is STILL EXACTLY 300 PAGES. This research catalogue
+  is a development appendix to the outline; it is NOT to be typeset inside the 300-page book.
+- The complete examples belong in a versioned companion GitHub repository. The printed book
+  should explain and reproduce selected core steps, not promise to print 181 projects in 300 pages.
+
+RESEARCH RESULTS AND AUDIT STATUS:
+- 181 UNIQUE GitHub repositories discovered; 234 teaching placements across the book.
+- ALL 134 core book sections have at least one practical reference assigned.
+- Repository names/paths were grounded in GitHub repository search results using archived:false
+  queries or follow-up repository checks on 21 October 2026.
+- R2 means an initial README excerpt was fetched and inspected; R1 means repository existence
+  appeared in GitHub search, but README content was not individually audited here.
+- RUN STATUS for EVERY entry: NOT EXECUTED. A valid GitHub URL or README does not mean a
+  project has passed an end-to-end run. Some projects require live Snowflake credentials,
+  specific account editions/regions, paid cloud services, Docker, or external providers.
+- Repositories include guided mini-projects, full examples, reference implementations,
+  connectors, and infrastructure tools. They are NOT all deployable applications by themselves.
+- No project is claimed production-ready, compatible with 2026 accounts, free of cost, or
+  licensed for commercial book republication until these points are checked individually.
+- 'Teaching application' describes our proposed way to use the repo, not an external promise.
+- Repository URLs can be retargeted or deleted by their owners: pin a commit at chapter-draft time.
+- Practical references and full URLs appear directly below the relevant numbered section AND
+  again in the complete numbered directory after the end of the original outline.
+
+VIABILITY GATES BEFORE ANY REPOSITORY BECOMES AN ACTUAL BOOK LAB:
+  [ ] Repository still exists, is not archived, and owner/branch have been rechecked.
+  [ ] The README contains a demonstrable setup or executable example, not only marketing.
+  [ ] License, reuse and redistribution rights permit the actual excerpts and teaching assets.
+  [ ] All dependencies, Python/dbt/Snowflake versions, region/edition/features are pinned.
+  [ ] Infrastructure/permissions and expected credits/storage/AI billing are documented.
+  [ ] No real API tokens or customer-private data; clean-room synthetic/public input is available.
+  [ ] Follow setup -> run -> test/assert -> clean-up on a fresh test account; retain logs.
+  [ ] Record failures and patch or replace the project instead of silently claiming it works.
+  [ ] Use an ORIGINAL author-written lesson and implementation, citing the repository.
+  [ ] Save a known-good Git commit SHA, test date, license record and accepted screenshot.
+
+QUALITY PRIORITY:
+A project with a verified small example, safe cost controls, and permission to reuse it is
+better for a printed technical book than an impressive repository that cannot be reproduced.
+
+
+
+====================================================================================================
+IV. COMPLETE UNIQUE GITHUB REPOSITORY DIRECTORY — FULL URLS
+====================================================================================================
+Unique repositories: 181 | Teaching placements: 234 | Covered sections: 134/134
+Sort order: first appearance in the teaching outline; stable identifiers P001, P002, etc.
+Notice: these are validated discovery links, not claims of successfully executed solutions.
+
+[P001] modern-data-engineering-snowflake
+  Repository: Snowflake-Labs/modern-data-engineering-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/modern-data-engineering-snowflake
+  Primary book section: 1.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P002] sfguide-getting-started-with-iceberg-tables
+  Repository: Snowflake-Labs/sfguide-getting-started-with-iceberg-tables
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-iceberg-tables
+  Primary book section: 1.2 | Other teaching sections: 2.9, 6.7
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P003] sfguide-getting-started-with-hybrid-tables-performance-testing
+  Repository: Snowflake-Labs/sfguide-getting-started-with-hybrid-tables-performance-testing
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-hybrid-tables-performance-testing
+  Primary book section: 1.3 | Other teaching sections: 4.5, 12.4
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P004] sfguide-getting-started-from-zero-to-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-from-zero-to-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-from-zero-to-snowflake
+  Primary book section: 1.4 | Other teaching sections: 3.1
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P005] sfguide-data-apps-demo
+  Repository: Snowflake-Labs/sfguide-data-apps-demo
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-apps-demo
+  Primary book section: 1.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P006] sfguide-snowflake-northstar-data-engineering
+  Repository: Snowflake-Labs/sfguide-snowflake-northstar-data-engineering
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-snowflake-northstar-data-engineering
+  Primary book section: 1.5 | Other teaching sections: 5.4, 15.1
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P007] sfguide-getting-started-with-time-series-using-snowflake-streaming-sis-ml-notebooks
+  Repository: Snowflake-Labs/sfguide-getting-started-with-time-series-using-snowflake-streaming-sis-ml-notebooks
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-time-series-using-snowflake-streaming-sis-ml-notebooks
+  Primary book section: 1.6 | Other teaching sections: 7.1
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P008] sfguide-recommender-pipeline
+  Repository: Snowflake-Labs/sfguide-recommender-pipeline
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-recommender-pipeline
+  Primary book section: 1.6 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P009] advanced-data-engineering-snowflake
+  Repository: Snowflake-Labs/advanced-data-engineering-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/advanced-data-engineering-snowflake
+  Primary book section: 1.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P010] sfguide-ai-powered-predictive-grid-maintenance
+  Repository: Snowflake-Labs/sfguide-ai-powered-predictive-grid-maintenance
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-ai-powered-predictive-grid-maintenance
+  Primary book section: 1.8 | Other teaching sections: 14.6
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P011] green-energy-iot-de-project
+  Repository: nbaubek/green-energy-iot-de-project
+  Full GitHub URL: https://github.com/nbaubek/green-energy-iot-de-project
+  Primary book section: 1.8 | Other teaching sections: 15.2
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P012] sfguide-data-engineering-with-notebooks
+  Repository: Snowflake-Labs/sfguide-data-engineering-with-notebooks
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-engineering-with-notebooks
+  Primary book section: 2.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P013] sfguide-getting-started-with-pandas-on-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-with-pandas-on-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-pandas-on-snowflake
+  Primary book section: 2.2 | Other teaching sections: 9.8, 12.5
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P014] snowflake-cli
+  Repository: snowflakedb/snowflake-cli
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-cli
+  Primary book section: 2.3 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P015] sfguide-snowflake-python-api
+  Repository: Snowflake-Labs/sfguide-snowflake-python-api
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-snowflake-python-api
+  Primary book section: 2.4 | Other teaching sections: 9.6
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P016] sfguide-getting-started-snowflake-python-api
+  Repository: Snowflake-Labs/sfguide-getting-started-snowflake-python-api
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-snowflake-python-api
+  Primary book section: 2.4 | Other teaching sections: 3.3, 3.5
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P017] query_performance_deep_dive
+  Repository: sfc-gh-bokon/query_performance_deep_dive
+  Full GitHub URL: https://github.com/sfc-gh-bokon/query_performance_deep_dive
+  Primary book section: 2.5 | Other teaching sections: 12.1
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P018] sfguide-snowpark-python-top-three-tips-for-optimal-performance
+  Repository: Snowflake-Labs/sfguide-snowpark-python-top-three-tips-for-optimal-performance
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-snowpark-python-top-three-tips-for-optimal-performance
+  Primary book section: 2.6 | Other teaching sections: 9.8, 12.2, 12.6
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P019] snowflake_timetravel_table
+  Repository: edx/snowflake_timetravel_table
+  Full GitHub URL: https://github.com/edx/snowflake_timetravel_table
+  Primary book section: 2.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P020] sfguide-getting-started-with-snowflake-managed-mcp-and-bedrock-agentcore
+  Repository: Snowflake-Labs/sfguide-getting-started-with-snowflake-managed-mcp-and-bedrock-agentcore
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowflake-managed-mcp-and-bedrock-agentcore
+  Primary book section: 2.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P021] sfguide-getting-started-with-openflow-spcs
+  Repository: Snowflake-Labs/sfguide-getting-started-with-openflow-spcs
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-openflow-spcs
+  Primary book section: 2.8 | Other teaching sections: 7.8
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P022] sfguide-build-data-application-with-hybrid-tables
+  Repository: Snowflake-Labs/sfguide-build-data-application-with-hybrid-tables
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-build-data-application-with-hybrid-tables
+  Primary book section: 2.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P023] sfguide-getting-started-with-snowpark-in-worksheets-notebooks
+  Repository: Snowflake-Labs/sfguide-getting-started-with-snowpark-in-worksheets-notebooks
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowpark-in-worksheets-notebooks
+  Primary book section: 3.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P024] terraform-snowflake-rbac-infra
+  Repository: Infostrux-Solutions/terraform-snowflake-rbac-infra
+  Full GitHub URL: https://github.com/Infostrux-Solutions/terraform-snowflake-rbac-infra
+  Primary book section: 3.4 | Other teaching sections: 13.2
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P025] snowflake-cli-templates
+  Repository: snowflakedb/snowflake-cli-templates
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-cli-templates
+  Primary book section: 3.5 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P026] snowflake-cli-action
+  Repository: snowflakedb/snowflake-cli-action
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-cli-action
+  Primary book section: 3.5 | Other teaching sections: 10.7
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P027] snowflake-connector-python
+  Repository: snowflakedb/snowflake-connector-python
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-connector-python
+  Primary book section: 3.6 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P028] sfguide-getting-started-with-snowflake-devops
+  Repository: Snowflake-Labs/sfguide-getting-started-with-snowflake-devops
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowflake-devops
+  Primary book section: 3.7 | Other teaching sections: 10.7, 15.11
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P029] cicd-snowflake-with-terraform-demo
+  Repository: sfc-gh-sekim/cicd-snowflake-with-terraform-demo
+  Full GitHub URL: https://github.com/sfc-gh-sekim/cicd-snowflake-with-terraform-demo
+  Primary book section: 3.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P030] snowflake-usage-app
+  Repository: streamlit/snowflake-usage-app
+  Full GitHub URL: https://github.com/streamlit/snowflake-usage-app
+  Primary book section: 3.8 | Other teaching sections: 11.7, 13.8
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P031] dbt-snowflake-monitoring
+  Repository: get-select/dbt-snowflake-monitoring
+  Full GitHub URL: https://github.com/get-select/dbt-snowflake-monitoring
+  Primary book section: 3.8 | Other teaching sections: 13.7
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P032] sfguide-terraform-sample
+  Repository: Snowflake-Labs/sfguide-terraform-sample
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-terraform-sample
+  Primary book section: 3.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P033] terraform-provider-snowflake
+  Repository: snowflakedb/terraform-provider-snowflake
+  Full GitHub URL: https://github.com/snowflakedb/terraform-provider-snowflake
+  Primary book section: 3.9 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P034] snowflake-terraform-boostrap
+  Repository: Hiflylabs/snowflake-terraform-boostrap
+  Full GitHub URL: https://github.com/Hiflylabs/snowflake-terraform-boostrap
+  Primary book section: 3.9 | Other teaching sections: 10.9
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P035] sfguide-getting-started-with-data-analytics-with-sql-python
+  Repository: Snowflake-Labs/sfguide-getting-started-with-data-analytics-with-sql-python
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-data-analytics-with-sql-python
+  Primary book section: 4.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P036] dbt-tpch
+  Repository: clausherther/dbt-tpch
+  Full GitHub URL: https://github.com/clausherther/dbt-tpch
+  Primary book section: 4.2 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P037] sfguide-data-engineering-pipelines-with-pandas-on-snowflake
+  Repository: Snowflake-Labs/sfguide-data-engineering-pipelines-with-pandas-on-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-engineering-pipelines-with-pandas-on-snowflake
+  Primary book section: 4.3 | Other teaching sections: 5.8
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P038] sfguide-getting-started-with-time-series-analytics-with-pricing-data-on-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-with-time-series-analytics-with-pricing-data-on-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-time-series-analytics-with-pricing-data-on-snowflake
+  Primary book section: 4.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P039] snowflake-dbt-tpch-medallion
+  Repository: Jb-Analytics/snowflake-dbt-tpch-medallion
+  Full GitHub URL: https://github.com/Jb-Analytics/snowflake-dbt-tpch-medallion
+  Primary book section: 4.6 | Other teaching sections: 15.6
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P040] modern-elt-demo
+  Repository: Data-Engineer-Camp/modern-elt-demo
+  Full GitHub URL: https://github.com/Data-Engineer-Camp/modern-elt-demo
+  Primary book section: 4.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P041] snowflake-healthcare-data-engineering
+  Repository: osmacero/snowflake-healthcare-data-engineering
+  Full GitHub URL: https://github.com/osmacero/snowflake-healthcare-data-engineering
+  Primary book section: 4.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P042] datavault4dbt-snowflake-demo
+  Repository: ScalefreeCOM/datavault4dbt-snowflake-demo
+  Full GitHub URL: https://github.com/ScalefreeCOM/datavault4dbt-snowflake-demo
+  Primary book section: 4.7 | Other teaching sections: 10.5
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P043] sfguide-building-retail-analytics-de-pipeline
+  Repository: Snowflake-Labs/sfguide-building-retail-analytics-de-pipeline
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-building-retail-analytics-de-pipeline
+  Primary book section: 4.8 | Other teaching sections: 5.7, 10.2
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P044] dbt-snowflake-utils
+  Repository: Montreal-Analytics/dbt-snowflake-utils
+  Full GitHub URL: https://github.com/Montreal-Analytics/dbt-snowflake-utils
+  Primary book section: 4.9 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P045] dbt_constraints
+  Repository: Snowflake-Labs/dbt_constraints
+  Full GitHub URL: https://github.com/Snowflake-Labs/dbt_constraints
+  Primary book section: 4.9 | Other teaching sections: 10.4
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P046] sfguide-getting-started-with-snowflake-connector-for-google-analytics
+  Repository: Snowflake-Labs/sfguide-getting-started-with-snowflake-connector-for-google-analytics
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowflake-connector-for-google-analytics
+  Primary book section: 5.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P047] sfguide-getting-started-with-api-enrichment-framework
+  Repository: Snowflake-Labs/sfguide-getting-started-with-api-enrichment-framework
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-api-enrichment-framework
+  Primary book section: 5.1 | Other teaching sections: 5.6
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P048] sfguide-twitter-auto-ingest
+  Repository: Snowflake-Labs/sfguide-twitter-auto-ingest
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-twitter-auto-ingest
+  Primary book section: 5.2 | Other teaching sections: 7.2
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P049] terraform-snowflake-file-format
+  Repository: subhamay-bhattacharyya-tf/terraform-snowflake-file-format
+  Full GitHub URL: https://github.com/subhamay-bhattacharyya-tf/terraform-snowflake-file-format
+  Primary book section: 5.2 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P050] terraform-snowflake-storage-integration-aws
+  Repository: Snowflake-Labs/terraform-snowflake-storage-integration-aws
+  Full GitHub URL: https://github.com/Snowflake-Labs/terraform-snowflake-storage-integration-aws
+  Primary book section: 5.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P051] terraform-snowflake-snowpipe
+  Repository: Infostrux-Solutions/terraform-snowflake-snowpipe
+  Full GitHub URL: https://github.com/Infostrux-Solutions/terraform-snowflake-snowpipe
+  Primary book section: 5.3 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P052] End-to-End-Snowflake-Data-Pipeline
+  Repository: AvinashAnalytics/End-to-End-Snowflake-Data-Pipeline
+  Full GitHub URL: https://github.com/AvinashAnalytics/End-to-End-Snowflake-Data-Pipeline
+  Primary book section: 5.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P053] sfguide-data-engineering-with-coco
+  Repository: Snowflake-Labs/sfguide-data-engineering-with-coco
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-engineering-with-coco
+  Primary book section: 5.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P054] aws-snowflake-etl
+  Repository: camposvinicius/aws-snowflake-etl
+  Full GitHub URL: https://github.com/camposvinicius/aws-snowflake-etl
+  Primary book section: 5.8 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P055] sfguide-alert-hub
+  Repository: Snowflake-Labs/sfguide-alert-hub
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-alert-hub
+  Primary book section: 5.9 | Other teaching sections: 8.8, 13.9, 15.10
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P056] terraform-snowflake-snowpipe-aws
+  Repository: Snowflake-Labs/terraform-snowflake-snowpipe-aws
+  Full GitHub URL: https://github.com/Snowflake-Labs/terraform-snowflake-snowpipe-aws
+  Primary book section: 5.9 | Other teaching sections: 7.3
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P057] streamlit-data-loader-explorer
+  Repository: sfc-gh-kmotokubota/streamlit-data-loader-explorer
+  Full GitHub URL: https://github.com/sfc-gh-kmotokubota/streamlit-data-loader-explorer
+  Primary book section: 5.9 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P058] sfguide-getting-started-with-document-ai
+  Repository: Snowflake-Labs/sfguide-getting-started-with-document-ai
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-document-ai
+  Primary book section: 6.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P059] sfguide-gaining-insights-from-unstructured-data-with-cortex-ai
+  Repository: Snowflake-Labs/sfguide-gaining-insights-from-unstructured-data-with-cortex-ai
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-gaining-insights-from-unstructured-data-with-cortex-ai
+  Primary book section: 6.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P060] Snowflake-Json-DataPipeline
+  Repository: kromozome2003/Snowflake-Json-DataPipeline
+  Full GitHub URL: https://github.com/kromozome2003/Snowflake-Json-DataPipeline
+  Primary book section: 6.3 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P061] Automated-json-pipeline-snowflake-streams-tasks
+  Repository: atharvadevne123/Automated-json-pipeline-snowflake-streams-tasks
+  Full GitHub URL: https://github.com/atharvadevne123/Automated-json-pipeline-snowflake-streams-tasks
+  Primary book section: 6.3 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P062] sfguide-extracting-insights-from-multimodal-customer-data
+  Repository: Snowflake-Labs/sfguide-extracting-insights-from-multimodal-customer-data
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-extracting-insights-from-multimodal-customer-data
+  Primary book section: 6.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P063] sfguide-extracting-insights-from-video-with-multimodal-ai-analysis
+  Repository: Snowflake-Labs/sfguide-extracting-insights-from-video-with-multimodal-ai-analysis
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-extracting-insights-from-video-with-multimodal-ai-analysis
+  Primary book section: 6.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P064] sfguide-monitor-schema-drift-in-data-shares-with-sharewatch
+  Repository: Snowflake-Labs/sfguide-monitor-schema-drift-in-data-shares-with-sharewatch
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-monitor-schema-drift-in-data-shares-with-sharewatch
+  Primary book section: 6.6 | Other teaching sections: 13.5
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P065] sfguide-data-crawler
+  Repository: Snowflake-Labs/sfguide-data-crawler
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-crawler
+  Primary book section: 6.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P066] sfguide-document-ai-invoice-reconciliation
+  Repository: Snowflake-Labs/sfguide-document-ai-invoice-reconciliation
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-document-ai-invoice-reconciliation
+  Primary book section: 6.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P067] sfguide-document-ai-pipeline-automation-in-snowflake
+  Repository: Snowflake-Labs/sfguide-document-ai-pipeline-automation-in-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-document-ai-pipeline-automation-in-snowflake
+  Primary book section: 6.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P068] snowpipe-streaming-sdk-examples
+  Repository: snowflakedb/snowpipe-streaming-sdk-examples
+  Full GitHub URL: https://github.com/snowflakedb/snowpipe-streaming-sdk-examples
+  Primary book section: 7.4 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P069] sfguide-getting-started-with-snowpipe-streaming-apache-iceberg-snowflake-open-catalog
+  Repository: Snowflake-Labs/sfguide-getting-started-with-snowpipe-streaming-apache-iceberg-snowflake-open-catalog
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowpipe-streaming-apache-iceberg-snowflake-open-catalog
+  Primary book section: 7.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P070] snowflake-kafka-connector
+  Repository: snowflakedb/snowflake-kafka-connector
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-kafka-connector
+  Primary book section: 7.4 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P071] snowflake-ingest-python
+  Repository: snowflakedb/snowflake-ingest-python
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-ingest-python
+  Primary book section: 7.5 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P072] snowflake-ingest-java
+  Repository: snowflakedb/snowflake-ingest-java
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-ingest-java
+  Primary book section: 7.5 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P073] sfguide-kafka-interactive-tables-streaming
+  Repository: Snowflake-Labs/sfguide-kafka-interactive-tables-streaming
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-kafka-interactive-tables-streaming
+  Primary book section: 7.6 | Other teaching sections: 15.4
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P074] aws-dms-s3-snowflake-cdc-snowpipe
+  Repository: machkuma/aws-dms-s3-snowflake-cdc-snowpipe
+  Full GitHub URL: https://github.com/machkuma/aws-dms-s3-snowflake-cdc-snowpipe
+  Primary book section: 7.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P075] simstreamer
+  Repository: Snowflake-Labs/simstreamer
+  Full GitHub URL: https://github.com/Snowflake-Labs/simstreamer
+  Primary book section: 7.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P076] Real_Time_Streaming_Kafka_Airflow_DBT_Snowflake_ELK-Stack
+  Repository: Murataydinunimi/Real_Time_Streaming_Kafka_Airflow_DBT_Snowflake_ELK-Stack
+  Full GitHub URL: https://github.com/Murataydinunimi/Real_Time_Streaming_Kafka_Airflow_DBT_Snowflake_ELK-Stack
+  Primary book section: 7.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P077] openflow-structured-data-pipeline-demo
+  Repository: Snowflake-Labs/openflow-structured-data-pipeline-demo
+  Full GitHub URL: https://github.com/Snowflake-Labs/openflow-structured-data-pipeline-demo
+  Primary book section: 7.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P078] sfguide-getting-started-openflow-postgresql-cdc
+  Repository: Snowflake-Labs/sfguide-getting-started-openflow-postgresql-cdc
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-openflow-postgresql-cdc
+  Primary book section: 7.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P079] Summit2025-DE214
+  Repository: Snowflake-Labs/Summit2025-DE214
+  Full GitHub URL: https://github.com/Snowflake-Labs/Summit2025-DE214
+  Primary book section: 7.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P080] Real-Time-Heart-Rate-ELT-Pipeline-Kafka-Streaming-to-Snowflake-with-Airbyte-dbt-Dagster-Tableau
+  Repository: JeetThakore/Real-Time-Heart-Rate-ELT-Pipeline-Kafka-Streaming-to-Snowflake-with-Airbyte-dbt-Dagster-Tableau
+  Full GitHub URL: https://github.com/JeetThakore/Real-Time-Heart-Rate-ELT-Pipeline-Kafka-Streaming-to-Snowflake-with-Airbyte-dbt-Dagster-Tableau
+  Primary book section: 7.9 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P081] sfguide-intro-to-cdc-using-snowflake-postgres-connector-dynamic-tables
+  Repository: Snowflake-Labs/sfguide-intro-to-cdc-using-snowflake-postgres-connector-dynamic-tables
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-intro-to-cdc-using-snowflake-postgres-connector-dynamic-tables
+  Primary book section: 8.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P082] snowflake-incremental-dw
+  Repository: kovinaveenkumar/snowflake-incremental-dw
+  Full GitHub URL: https://github.com/kovinaveenkumar/snowflake-incremental-dw
+  Primary book section: 8.1 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P083] sproc-to-create-streams
+  Repository: Snowflake-Labs/sproc-to-create-streams
+  Full GitHub URL: https://github.com/Snowflake-Labs/sproc-to-create-streams
+  Primary book section: 8.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P084] sfguide-getting-started-with-task-graphs
+  Repository: Snowflake-Labs/sfguide-getting-started-with-task-graphs
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-task-graphs
+  Primary book section: 8.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P085] snowflake-streams-tasks-etl
+  Repository: subhamay-bhattacharyya/snowflake-streams-tasks-etl
+  Full GitHub URL: https://github.com/subhamay-bhattacharyya/snowflake-streams-tasks-etl
+  Primary book section: 8.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P086] snowflake-scd1-pipeline
+  Repository: Alan-Webb-1/snowflake-scd1-pipeline
+  Full GitHub URL: https://github.com/Alan-Webb-1/snowflake-scd1-pipeline
+  Primary book section: 8.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P087] sfguide-declarative-pipelines-dynamic-tables
+  Repository: Snowflake-Labs/sfguide-declarative-pipelines-dynamic-tables
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-declarative-pipelines-dynamic-tables
+  Primary book section: 8.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P088] sfguide-build-autonomous-pipelines-for-ai-agents
+  Repository: Snowflake-Labs/sfguide-build-autonomous-pipelines-for-ai-agents
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-build-autonomous-pipelines-for-ai-agents
+  Primary book section: 8.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P089] getting-started-with-dynamic-tables
+  Repository: Snowflake-Labs/getting-started-with-dynamic-tables
+  Full GitHub URL: https://github.com/Snowflake-Labs/getting-started-with-dynamic-tables
+  Primary book section: 8.6 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P090] sfguide-deploying-pipelines-with-snowflake-and-dbt-labs
+  Repository: Snowflake-Labs/sfguide-deploying-pipelines-with-snowflake-and-dbt-labs
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-deploying-pipelines-with-snowflake-and-dbt-labs
+  Primary book section: 8.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P091] emerging-solutions-toolbox
+  Repository: Snowflake-Labs/emerging-solutions-toolbox
+  Full GitHub URL: https://github.com/Snowflake-Labs/emerging-solutions-toolbox
+  Primary book section: 8.8 | Other teaching sections: 10.8
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P092] snowflake-dynamic-table-pipeline
+  Repository: subhamay-bhattacharyya/snowflake-dynamic-table-pipeline
+  Full GitHub URL: https://github.com/subhamay-bhattacharyya/snowflake-dynamic-table-pipeline
+  Primary book section: 8.9 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P093] dbt-streams-tasks
+  Repository: AidanHarveyNelson/dbt-streams-tasks
+  Full GitHub URL: https://github.com/AidanHarveyNelson/dbt-streams-tasks
+  Primary book section: 8.9 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P094] sfguide-getting-started-snowpark-python
+  Repository: Snowflake-Labs/sfguide-getting-started-snowpark-python
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-snowpark-python
+  Primary book section: 9.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P095] snowpark-python-template
+  Repository: Snowflake-Labs/snowpark-python-template
+  Full GitHub URL: https://github.com/Snowflake-Labs/snowpark-python-template
+  Primary book section: 9.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P096] snowflake-sqlalchemy
+  Repository: snowflakedb/snowflake-sqlalchemy
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-sqlalchemy
+  Primary book section: 9.2 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P097] sfguide-data-engineering-with-snowpark-python-intro
+  Repository: Snowflake-Labs/sfguide-data-engineering-with-snowpark-python-intro
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-engineering-with-snowpark-python-intro
+  Primary book section: 9.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P098] snowpark-python
+  Repository: snowflakedb/snowpark-python
+  Full GitHub URL: https://github.com/snowflakedb/snowpark-python
+  Primary book section: 9.3 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P099] python-snowpark-formula1
+  Repository: dbt-labs/python-snowpark-formula1
+  Full GitHub URL: https://github.com/dbt-labs/python-snowpark-formula1
+  Primary book section: 9.3 | Other teaching sections: none
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P100] snowpark-python-demos
+  Repository: Snowflake-Labs/snowpark-python-demos
+  Full GitHub URL: https://github.com/Snowflake-Labs/snowpark-python-demos
+  Primary book section: 9.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P101] sfguide-UDF-UDTF-examples
+  Repository: Snowflake-Labs/sfguide-UDF-UDTF-examples
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-UDF-UDTF-examples
+  Primary book section: 9.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P102] sfguide-external-functions-examples
+  Repository: Snowflake-Labs/sfguide-external-functions-examples
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-external-functions-examples
+  Primary book section: 9.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P103] sfguide_snowpark_on_jupyter
+  Repository: Snowflake-Labs/sfguide_snowpark_on_jupyter
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide_snowpark_on_jupyter
+  Primary book section: 9.6 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P104] sftutorial-snowpark-testing
+  Repository: Snowflake-Labs/sftutorial-snowpark-testing
+  Full GitHub URL: https://github.com/Snowflake-Labs/sftutorial-snowpark-testing
+  Primary book section: 9.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P105] snowpark-devops
+  Repository: Snowflake-Labs/snowpark-devops
+  Full GitHub URL: https://github.com/Snowflake-Labs/snowpark-devops
+  Primary book section: 9.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P106] sfguide-data-engineering-with-snowpark-python
+  Repository: Snowflake-Labs/sfguide-data-engineering-with-snowpark-python
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-data-engineering-with-snowpark-python
+  Primary book section: 9.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P107] sfguide-getting-started-dataengineering-ml-snowpark-python
+  Repository: Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python
+  Primary book section: 9.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P108] etl-elt-airflow-snowflake
+  Repository: astronomer/etl-elt-airflow-snowflake
+  Full GitHub URL: https://github.com/astronomer/etl-elt-airflow-snowflake
+  Primary book section: 10.1 | Other teaching sections: 15.7
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P109] getting-started-with-dbt-on-snowflake
+  Repository: Snowflake-Labs/getting-started-with-dbt-on-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/getting-started-with-dbt-on-snowflake
+  Primary book section: 10.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P110] snowflake_dbt_partner_demo
+  Repository: dbt-labs/snowflake_dbt_partner_demo
+  Full GitHub URL: https://github.com/dbt-labs/snowflake_dbt_partner_demo
+  Primary book section: 10.3 | Other teaching sections: none
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P111] snowflake_sko_hol_2026
+  Repository: dbt-labs/snowflake_sko_hol_2026
+  Full GitHub URL: https://github.com/dbt-labs/snowflake_sko_hol_2026
+  Primary book section: 10.3 | Other teaching sections: none
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P112] dbt-core
+  Repository: dbt-labs/dbt-core
+  Full GitHub URL: https://github.com/dbt-labs/dbt-core
+  Primary book section: 10.4 | Other teaching sections: none
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P113] dbt-incremental-stream
+  Repository: arnoN7/dbt-incremental-stream
+  Full GitHub URL: https://github.com/arnoN7/dbt-incremental-stream
+  Primary book section: 10.5 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P114] airflow-covid-data
+  Repository: astronomer/airflow-covid-data
+  Full GitHub URL: https://github.com/astronomer/airflow-covid-data
+  Primary book section: 10.6 | Other teaching sections: none
+  Project classification: Ecosystem maintainer example / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P115] prefect-dataplatform
+  Repository: anna-geller/prefect-dataplatform
+  Full GitHub URL: https://github.com/anna-geller/prefect-dataplatform
+  Primary book section: 10.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P116] AirflowSnowflakeDBTQuickstart
+  Repository: astronautyates/AirflowSnowflakeDBTQuickstart
+  Full GitHub URL: https://github.com/astronautyates/AirflowSnowflakeDBTQuickstart
+  Primary book section: 10.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P117] data-eng-bench
+  Repository: Snowflake-Labs/data-eng-bench
+  Full GitHub URL: https://github.com/Snowflake-Labs/data-eng-bench
+  Primary book section: 10.8 | Other teaching sections: 12.8
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P118] dbt-dataquality
+  Repository: Divergent-Insights/dbt-dataquality
+  Full GitHub URL: https://github.com/Divergent-Insights/dbt-dataquality
+  Primary book section: 10.8 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P119] schemachange
+  Repository: Snowflake-Labs/schemachange
+  Full GitHub URL: https://github.com/Snowflake-Labs/schemachange
+  Primary book section: 10.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P120] sfguide-getting-started-with-devops-data-projects-in-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-with-devops-data-projects-in-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-devops-data-projects-in-snowflake
+  Primary book section: 10.9 | Other teaching sections: 15.3
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P121] sfguide-end-to-end-analytics-with-snowflake-and-power-bi
+  Repository: Snowflake-Labs/sfguide-end-to-end-analytics-with-snowflake-and-power-bi
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-end-to-end-analytics-with-snowflake-and-power-bi
+  Primary book section: 11.1 | Other teaching sections: 15.8
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P122] dbt_semantic_view
+  Repository: Snowflake-Labs/dbt_semantic_view
+  Full GitHub URL: https://github.com/Snowflake-Labs/dbt_semantic_view
+  Primary book section: 11.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P123] semantic-model-generator
+  Repository: Snowflake-Labs/semantic-model-generator
+  Full GitHub URL: https://github.com/Snowflake-Labs/semantic-model-generator
+  Primary book section: 11.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P124] snowflake-connector-net
+  Repository: snowflakedb/snowflake-connector-net
+  Full GitHub URL: https://github.com/snowflakedb/snowflake-connector-net
+  Primary book section: 11.3 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P125] sfguide-marketplace-data-app
+  Repository: Snowflake-Labs/sfguide-marketplace-data-app
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-marketplace-data-app
+  Primary book section: 11.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P126] Snowflake-PowerBI
+  Repository: mattfeks/Snowflake-PowerBI
+  Full GitHub URL: https://github.com/mattfeks/Snowflake-PowerBI
+  Primary book section: 11.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P127] SNOWFLAKE_POWERBI
+  Repository: Jalpa-08/SNOWFLAKE_POWERBI
+  Full GitHub URL: https://github.com/Jalpa-08/SNOWFLAKE_POWERBI
+  Primary book section: 11.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P128] snowflake-semantic-views-powerbi
+  Repository: alexfrancisross/snowflake-semantic-views-powerbi
+  Full GitHub URL: https://github.com/alexfrancisross/snowflake-semantic-views-powerbi
+  Primary book section: 11.5 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P129] Customer_Insights_with_Snowflake_and_PowerBI
+  Repository: BalajiKottana/Customer_Insights_with_Snowflake_and_PowerBI
+  Full GitHub URL: https://github.com/BalajiKottana/Customer_Insights_with_Snowflake_and_PowerBI
+  Primary book section: 11.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P130] sfguide-using-snowflake-cortex-and-streamlit-with-geospatial-data
+  Repository: Snowflake-Labs/sfguide-using-snowflake-cortex-and-streamlit-with-geospatial-data
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-using-snowflake-cortex-and-streamlit-with-geospatial-data
+  Primary book section: 11.6 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P131] shopify-snowflake-powerbi
+  Repository: saundarypareek-analytics/shopify-snowflake-powerbi
+  Full GitHub URL: https://github.com/saundarypareek-analytics/shopify-snowflake-powerbi
+  Primary book section: 11.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P132] streamlit-page-analytics
+  Repository: Snowflake-Labs/streamlit-page-analytics
+  Full GitHub URL: https://github.com/Snowflake-Labs/streamlit-page-analytics
+  Primary book section: 11.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P133] sfguide-horizon-intra-organization-sharing
+  Repository: Snowflake-Labs/sfguide-horizon-intra-organization-sharing
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-horizon-intra-organization-sharing
+  Primary book section: 11.8 | Other teaching sections: 13.5
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P134] sfguide-intra-company-data-sharing-with-the-snowflake-internal-marketplace
+  Repository: Snowflake-Labs/sfguide-intra-company-data-sharing-with-the-snowflake-internal-marketplace
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-intra-company-data-sharing-with-the-snowflake-internal-marketplace
+  Primary book section: 11.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P135] Query-Performance-Streamlit-App-in-Snowflake-Notebooks
+  Repository: deept-agl/Query-Performance-Streamlit-App-in-Snowflake-Notebooks
+  Full GitHub URL: https://github.com/deept-agl/Query-Performance-Streamlit-App-in-Snowflake-Notebooks
+  Primary book section: 12.2 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P136] snowflake-de-clustering-mv
+  Repository: subhamay-bhattacharyya/snowflake-de-clustering-mv
+  Full GitHub URL: https://github.com/subhamay-bhattacharyya/snowflake-de-clustering-mv
+  Primary book section: 12.3 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P137] snowflake-de-query-optimization
+  Repository: subhamay-bhattacharyya/snowflake-de-query-optimization
+  Full GitHub URL: https://github.com/subhamay-bhattacharyya/snowflake-de-query-optimization
+  Primary book section: 12.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P138] query_performance_deep_dive
+  Repository: sfc-gh-hbarile/query_performance_deep_dive
+  Full GitHub URL: https://github.com/sfc-gh-hbarile/query_performance_deep_dive
+  Primary book section: 12.6 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P139] SnowflakeCTEAnalyzer
+  Repository: dataengineerankur/SnowflakeCTEAnalyzer
+  Full GitHub URL: https://github.com/dataengineerankur/SnowflakeCTEAnalyzer
+  Primary book section: 12.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P140] dbx-sf-benchmark
+  Repository: henbh/dbx-sf-benchmark
+  Full GitHub URL: https://github.com/henbh/dbx-sf-benchmark
+  Primary book section: 12.8 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P141] snowflake-finops-optimization
+  Repository: Bravarthan/snowflake-finops-optimization
+  Full GitHub URL: https://github.com/Bravarthan/snowflake-finops-optimization
+  Primary book section: 12.8 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P142] sfguide-getting-started-with-horizon-data-governance-in-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-with-horizon-data-governance-in-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-horizon-data-governance-in-snowflake
+  Primary book section: 13.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P143] terraform-snowflake-role
+  Repository: getindata/terraform-snowflake-role
+  Full GitHub URL: https://github.com/getindata/terraform-snowflake-role
+  Primary book section: 13.2 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P144] terraforming-snowflake
+  Repository: Faire/terraforming-snowflake
+  Full GitHub URL: https://github.com/Faire/terraforming-snowflake
+  Primary book section: 13.2 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P145] sfguide-vault-snowflakepasswords
+  Repository: Snowflake-Labs/sfguide-vault-snowflakepasswords
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-vault-snowflakepasswords
+  Primary book section: 13.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P146] securing-your-snowflake-account
+  Repository: sfc-gh-jbellegarde/securing-your-snowflake-account
+  Full GitHub URL: https://github.com/sfc-gh-jbellegarde/securing-your-snowflake-account
+  Primary book section: 13.3 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P147] snowflake-security-demo
+  Repository: aballingall/snowflake-security-demo
+  Full GitHub URL: https://github.com/aballingall/snowflake-security-demo
+  Primary book section: 13.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P148] governance-studio
+  Repository: sfc-gh-fthomsen/governance-studio
+  Full GitHub URL: https://github.com/sfc-gh-fthomsen/governance-studio
+  Primary book section: 13.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P149] sfguide-native-apps-limited-access-data
+  Repository: Snowflake-Labs/sfguide-native-apps-limited-access-data
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-native-apps-limited-access-data
+  Primary book section: 13.6 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P150] dbt-snowflake-cost-monitoring
+  Repository: wisemuffin/dbt-snowflake-cost-monitoring
+  Full GitHub URL: https://github.com/wisemuffin/dbt-snowflake-cost-monitoring
+  Primary book section: 13.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P151] example-snowflake-cost-monitoring
+  Repository: Matatika/example-snowflake-cost-monitoring
+  Full GitHub URL: https://github.com/Matatika/example-snowflake-cost-monitoring
+  Primary book section: 13.7 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P152] ai-cost-governance
+  Repository: sfc-gh-sochandra/ai-cost-governance
+  Full GitHub URL: https://github.com/sfc-gh-sochandra/ai-cost-governance
+  Primary book section: 13.8 | Other teaching sections: 15.9
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P153] sfguide_failover_scripts
+  Repository: Snowflake-Labs/sfguide_failover_scripts
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide_failover_scripts
+  Primary book section: 13.9 | Other teaching sections: none
+  Project classification: Snowflake-Labs reference / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P154] SnowAlert
+  Repository: snowflakedb/SnowAlert
+  Full GitHub URL: https://github.com/snowflakedb/SnowAlert
+  Primary book section: 13.10 | Other teaching sections: none
+  Project classification: Official Snowflake connector / SDK / tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P155] sfguide-application-control-framework
+  Repository: Snowflake-Labs/sfguide-application-control-framework
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-application-control-framework
+  Primary book section: 13.10 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P156] sfguide-getting-started-machine-learning
+  Repository: Snowflake-Labs/sfguide-getting-started-machine-learning
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-machine-learning
+  Primary book section: 14.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P157] sfguide-getting-started-with-cortex-ai-functions
+  Repository: Snowflake-Labs/sfguide-getting-started-with-cortex-ai-functions
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-ai-functions
+  Primary book section: 14.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P158] sfguide-getting-started-with-cortex-agents
+  Repository: Snowflake-Labs/sfguide-getting-started-with-cortex-agents
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-agents
+  Primary book section: 14.2 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P159] sfguide-building-cortex-aisql-powered-callcentre-analytics
+  Repository: Snowflake-Labs/sfguide-building-cortex-aisql-powered-callcentre-analytics
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-building-cortex-aisql-powered-callcentre-analytics
+  Primary book section: 14.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P160] sfguide-customer-reviews-analytics-using-snowflake-cortex
+  Repository: Snowflake-Labs/sfguide-customer-reviews-analytics-using-snowflake-cortex
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-customer-reviews-analytics-using-snowflake-cortex
+  Primary book section: 14.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P161] sfguide-prompt-engineering-and-llm-evaluation
+  Repository: Snowflake-Labs/sfguide-prompt-engineering-and-llm-evaluation
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-prompt-engineering-and-llm-evaluation
+  Primary book section: 14.3 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P162] sfguide-ask-questions-to-your-documents-using-rag-with-snowflake-cortex-search
+  Repository: Snowflake-Labs/sfguide-ask-questions-to-your-documents-using-rag-with-snowflake-cortex-search
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-ask-questions-to-your-documents-using-rag-with-snowflake-cortex-search
+  Primary book section: 14.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P163] sfguide-getting-started-with-cortex-analyst
+  Repository: Snowflake-Labs/sfguide-getting-started-with-cortex-analyst
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-analyst
+  Primary book section: 14.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P164] sfguide-getting-started-with-cortex-analyst-in-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-with-cortex-analyst-in-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-analyst-in-snowflake
+  Primary book section: 14.4 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P165] sfguide-intro-to-machine-learning-with-snowflake-ml-for-python
+  Repository: Snowflake-Labs/sfguide-intro-to-machine-learning-with-snowflake-ml-for-python
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-intro-to-machine-learning-with-snowflake-ml-for-python
+  Primary book section: 14.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P166] sfguide-intro-to-feature-store-using-snowflake-notebooks
+  Repository: Snowflake-Labs/sfguide-intro-to-feature-store-using-snowflake-notebooks
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-intro-to-feature-store-using-snowflake-notebooks
+  Primary book section: 14.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P167] sfguide-getting-started-with-snowflake-feature-store
+  Repository: Snowflake-Labs/sfguide-getting-started-with-snowflake-feature-store
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowflake-feature-store
+  Primary book section: 14.5 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P168] sfguide-build-custom-model-to-detect-anomalies-on-production-floor
+  Repository: Snowflake-Labs/sfguide-build-custom-model-to-detect-anomalies-on-production-floor
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-build-custom-model-to-detect-anomalies-on-production-floor
+  Primary book section: 14.6 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P169] sfguide-getting-started-with-predictive-maintenance
+  Repository: Snowflake-Labs/sfguide-getting-started-with-predictive-maintenance
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-predictive-maintenance
+  Primary book section: 14.6 | Other teaching sections: 15.2
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P170] sfguide-getting-started-with-cortex-agent-evaluations
+  Repository: Snowflake-Labs/sfguide-getting-started-with-cortex-agent-evaluations
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-agent-evaluations
+  Primary book section: 14.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P171] sfguide-getting-started-with-ml-observability-in-snowflake
+  Repository: Snowflake-Labs/sfguide-getting-started-with-ml-observability-in-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-ml-observability-in-snowflake
+  Primary book section: 14.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P172] sfguide-develop-and-manage-ml-models-with-feature-store-and-model-registry
+  Repository: Snowflake-Labs/sfguide-develop-and-manage-ml-models-with-feature-store-and-model-registry
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-develop-and-manage-ml-models-with-feature-store-and-model-registry
+  Primary book section: 14.7 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P173] cortex-cost-governance
+  Repository: sfc-gh-tdahlberg/cortex-cost-governance
+  Full GitHub URL: https://github.com/sfc-gh-tdahlberg/cortex-cost-governance
+  Primary book section: 14.8 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P174] sfguide-getting-started-with-ai-observability
+  Repository: Snowflake-Labs/sfguide-getting-started-with-ai-observability
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-ai-observability
+  Primary book section: 14.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P175] sfguide-getting-started-with-cortex-ai-demo-framework
+  Repository: Snowflake-Labs/sfguide-getting-started-with-cortex-ai-demo-framework
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-ai-demo-framework
+  Primary book section: 14.8 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P176] sfguide-telecom-network-operations-analytics
+  Repository: Snowflake-Labs/sfguide-telecom-network-operations-analytics
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-telecom-network-operations-analytics
+  Primary book section: 15.1 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P177] iot-streaming-pipeline
+  Repository: Achyuth-Prabhakar/iot-streaming-pipeline
+  Full GitHub URL: https://github.com/Achyuth-Prabhakar/iot-streaming-pipeline
+  Primary book section: 15.4 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P178] Snowflake-E-Commerce-Medallion-Architecture-Project
+  Repository: dabbiruavinash/Snowflake-E-Commerce-Medallion-Architecture-Project
+  Full GitHub URL: https://github.com/dabbiruavinash/Snowflake-E-Commerce-Medallion-Architecture-Project
+  Primary book section: 15.5 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P179] Snowflake-ETL-Pipeline-Bronze-Silver-Gold-Data-Modeling-Analytics
+  Repository: saadbelaouad/Snowflake-ETL-Pipeline-Bronze-Silver-Gold-Data-Modeling-Analytics
+  Full GitHub URL: https://github.com/saadbelaouad/Snowflake-ETL-Pipeline-Bronze-Silver-Gold-Data-Modeling-Analytics
+  Primary book section: 15.5 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P180] Redfin-Analytics-DE-Pipeline-Airflow-AWS-Snowflake-PowerBI
+  Repository: harshitha0912ml/Redfin-Analytics-DE-Pipeline-Airflow-AWS-Snowflake-PowerBI
+  Full GitHub URL: https://github.com/harshitha0912ml/Redfin-Analytics-DE-Pipeline-Airflow-AWS-Snowflake-PowerBI
+  Primary book section: 15.8 | Other teaching sections: none
+  Project classification: Third-party / community example or tool
+  Audit: R1 — repository indexed; NOT RUN; permissions/licensing NOT CLEARED.
+
+[P181] sfguide-root-cause-analysis-for-vehicle-product-quality-with-snowflake
+  Repository: Snowflake-Labs/sfguide-root-cause-analysis-for-vehicle-product-quality-with-snowflake
+  Full GitHub URL: https://github.com/Snowflake-Labs/sfguide-root-cause-analysis-for-vehicle-product-quality-with-snowflake
+  Primary book section: 15.12 | Other teaching sections: none
+  Project classification: Snowflake-Labs guided demo / sample
+  Audit: R2 — README excerpt inspected; NOT RUN; permissions/licensing NOT CLEARED.
+
+
+====================================================================================================
+V. GUIDANCE FOR USING THE PROJECT DIRECTORY IN A FINLAND-PUBLISHED BOOK
+====================================================================================================
+1. This directory does not transfer copyright ownership of any software, README, image,
+   diagram, tutorial text, data set, logo, or proprietary documentation to the book author.
+   Verify each license and permission before reproducing; a hyperlink alone does not confer
+   the right to reprint code, screenshots, text, or assets in a commercial English-language book.
+2. Prefer independently written lab instructions and independently implemented sample code,
+   with attribution and careful compliance with applicable third-party licenses.
+3. Projects built for other regions or cloud providers may require adaptation for a Finnish
+   author's available Snowflake account, cost controls and data residency constraints.
+4. Supply free or low-cost fallbacks where the tutorial relies on paid AI, cloud credentials,
+   integrations, proprietary connectors, or unavailable preview features.
+5. Use the separate universal English-language publishing-principles file for specific
+   Finland/EU copyright, consumer, e-book accessibility, tax and legal-deposit checks.
+6. In the COMPANION repository, create projects-index.md mapping each project ID to the
+   original repository, license review, tested commit, runbook, test evidence and cleanup.
+7. Do not treat the planned 300-page allocation as pages for this research directory;
+   these links and extensive exercises are supplementary reference material.
+8. Track fresh-repository audits as scheduled milestones; GitHub existence was checked on
+   21 October 2026, not guaranteed as of the book's eventual printing date.
+
+TO BE DONE BEFORE PUBLISHING ANY CHAPTER: end-to-end tests for chosen labs, license review,
+actual expected outputs, current Snowflake compatibility, feature and cost verification,
+and editorial peer review. NO such end-to-end tests were performed in this project search.

@@ -1,0 +1,14 @@
+-- Conceptual Power BI measure definitions; NOT executed in Power BI.
+-- FactGeneration: interval_utc, technology_key, energy_mwh
+-- FactConsumption: interval_utc, geography_key, consumption_mwh
+Generation MWh = SUM('FactGeneration'[energy_mwh])
+Consumption MWh = SUM('FactConsumption'[consumption_mwh])
+Net Position MWh =
+    IF( ISBLANK([Generation MWh]) || ISBLANK([Consumption MWh]),
+        BLANK(), [Generation MWh] - [Consumption MWh] )
+Wind Generation MWh =
+    CALCULATE([Generation MWh], KEEPFILTERS('DimTechnology'[technology] = "Wind"))
+Wind Share of Generation =
+    DIVIDE([Wind Generation MWh], CALCULATE([Generation MWh], REMOVEFILTERS('DimTechnology')))
+-- Format percentages as percent, not as raw 0-1 values.
+-- DAX semantics and syntax require validation in actual Power BI Desktop.

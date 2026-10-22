@@ -1,0 +1,57 @@
+SNOWFLAKE DATA ENGINEERING — CHAPTER 09 QUALITY RECORD
+Editorial check: 22 October 2026
+Author: Arman Golbidi
+Chapter: 09 — Data Engineering with Snowpark Python
+Status: COMPLETE EDITORIAL DRAFT; NOT A CLOUD-VALIDATED RELEASE
+
+MANUSCRIPT AND LAYOUT
+- XeLaTeX compilation: PASSED.
+- Pages: exactly 20 physical PDF pages.
+- Printed book folios: 151 to 170 inclusive.
+- Trim: 178 x 254 mm (verified PDF dimensions, rounding less than 0.02 mm).
+- Main font: 10.75 pt Libertinus Serif; target baselineskip 13.65 pt (ratio 1.27).
+- Code: 8.75 pt monospaced (typeset leading 10.7 pt).
+- Inside margin: 23 mm; outside: 17 mm; top/bottom: 19 mm.
+- All chapter sections 9.1 through 9.9 and 9.L: PRESENT.
+- All 27 numbered topic subsections and four lab topic subsections: PRESENT.
+- Independent PDF geometry + pagination QA: PASSED.
+- Overfull box messages from last LaTeX compile: NONE.
+- Visual contact-sheet inspection: COMPLETED. Final print production proof still recommended.
+
+OFFLINE LAB
+- Python: standard library, interpreter 3.10+ expected.
+- Tests actually run here: 12 / 12 PASSED (unittest).
+- Synthetic rows delivered: 12.
+- Invalid rows rejected: 2 (invalid revision and negative quantity).
+- Duplicate delivery skipped: 1.
+- Distinct accepted logical events: 9.
+- Final current visible energy readings: 6.
+- Latest-state tombstones: 1.
+- Sum: 66.000 MWh.
+- Result files: output/silver_energy.csv, output/quarantine.csv, output/summary.json.
+
+UNVERIFIED AND RELEASE BLOCKERS
+- Snowpark DataFrame operation run against a real Snowflake account: NOT EXECUTED.
+- Python UDF/procedure registration against Snowflake: NOT EXECUTED.
+- Integration with the six fact rows and technology dimension: NOT EXECUTED.
+- Snowflake edition, region, credits, warehouse size and Python runtime behaviour: NOT MEASURED.
+- Commercial reuse rights and commit/version pinning for linked external GitHub repos: NOT CLEARED.
+- Author-independent technical review, final English copyediting and accessibility review: PENDING.
+- No real customer data, credentials or runtime performance numbers were used.
+
+OFFICIAL REFERENCES CHECKED AT THE EDITORIAL SNAPSHOT
+https://docs.snowflake.com/en/developer-guide/snowpark/python/working-with-dataframes
+https://docs.snowflake.com/en/developer-guide/snowpark/python/creating-session
+https://docs.snowflake.com/en/developer-guide/snowpark/python/testing-locally
+https://docs.snowflake.com/en/developer-guide/snowpark/python/creating-sprocs
+https://docs.snowflake.com/en/developer-guide/snowpark/reference/python/latest/snowpark/api/snowflake.snowpark.DataFrame.explain
+
+RERUN INSTRUCTIONS
+cd lab
+python snowpark_pipeline.py
+python -m unittest -v test_snowpark.py
+
+DISCLAIMER
+A cleanly compiling chapter is not evidence of a Snowflake cloud integration test.
+This deliverable is an authored book manuscript and deterministic companion lab,
+not a production-ready cloud deployment.

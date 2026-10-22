@@ -1,0 +1,55 @@
+{
+  "training_days": 21,
+  "validation_days": 7,
+  "test_days": 7,
+  "test_mae_seasonal_mwh": 1.0643,
+  "test_mae_last_value_mwh": 3.25,
+  "validation_residual_threshold_mwh": 0.85,
+  "flagged_test_indices": [
+    34
+  ],
+  "predictions": [
+    {
+      "date_index": 28,
+      "actual_mwh": 9.7,
+      "seasonal_prediction_mwh": 9.35,
+      "is_flagged": false
+    },
+    {
+      "date_index": 29,
+      "actual_mwh": 11.7,
+      "seasonal_prediction_mwh": 11.55,
+      "is_flagged": false
+    },
+    {
+      "date_index": 30,
+      "actual_mwh": 10.5,
+      "seasonal_prediction_mwh": 10.55,
+      "is_flagged": false
+    },
+    {
+      "date_index": 31,
+      "actual_mwh": 8.7,
+      "seasonal_prediction_mwh": 8.35,
+      "is_flagged": false
+    },
+    {
+      "date_index": 32,
+      "actual_mwh": 12.7,
+      "seasonal_prediction_mwh": 12.55,
+      "is_flagged": false
+    },
+    {
+      "date_index": 33,
+      "actual_mwh": 7.5,
+      "seasonal_prediction_mwh": 7.55,
+      "is_flagged": false
+    },
+    {
+      "date_index": 34,
+      "actual_mwh": 15.7,
+      "seasonal_prediction_mwh": 9.35,
+      "is_flagged": true
+    }
+  ]
+}

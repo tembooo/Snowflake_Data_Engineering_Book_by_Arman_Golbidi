@@ -1,0 +1,12 @@
+[
+  {
+    "file_row": 12,
+    "event_id": "f-011",
+    "reason": "revision must be positive"
+  },
+  {
+    "file_row": 13,
+    "event_id": "f-012",
+    "reason": "non-finite or negative energy"
+  }
+]

@@ -1,0 +1,12 @@
+contract_name: energy_current_v1
+status: synthetic_teaching_fixture
+owner: student_data_platform_team
+business_key: [provider, technology, interval_utc]
+unit: MWh
+timezone: UTC
+revision_policy: highest_valid_positive_revision
+on_conflicting_revision: quarantine_and_block_publication
+on_delete: remove_current_state_only
+reject: [invalid_revision, negative_energy, invalid_utc_timestamp, missing_key]
+change_approval: requires_data_owner_review
+cloud_execution_status: NOT_RUN

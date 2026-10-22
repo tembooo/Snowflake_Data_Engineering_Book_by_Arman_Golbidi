@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "snowflake-chapter09-energy-lab"
+version = "0.1.0"
+description = "Original synthetic energy-data lab for Chapter 9"
+requires-python = ">=3.10"
+dependencies = []
+[project.optional-dependencies]
+cloud = ["snowflake-snowpark-python>=1.18,<2"]
+localtest = ["snowflake-snowpark-python[localtest]>=1.18,<2"]
+[tool.pytest.ini_options]
+testpaths = ["."]

@@ -1,0 +1,9 @@
+-- Chapter 5 cleanup. Review object ownership and retain necessary evidence.
+-- ALL destructive statements are deliberately commented out.
+-- Do not paste these into a shared or production environment.
+-- ALTER WAREHOUSE <your-disposable-warehouse> SUSPEND;
+-- DROP VIEW IF EXISTS ch05_accepted_energy;
+-- DROP VIEW IF EXISTS ch05_rejected_energy;
+-- DROP TABLE IF EXISTS bronze_energy;
+-- DROP STAGE IF EXISTS stg_energy;
+-- DROP FILE FORMAT IF EXISTS ff_energy_csv;

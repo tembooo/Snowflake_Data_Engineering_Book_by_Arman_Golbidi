@@ -1,0 +1,52 @@
+[
+  {
+    "offset": 0,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 1,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 2,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 3,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 4,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 5,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 6,
+    "result": "quarantined",
+    "committed": true
+  },
+  {
+    "offset": 7,
+    "result": "accepted",
+    "committed": true
+  },
+  {
+    "offset": 8,
+    "result": "transient_failure",
+    "committed": false
+  },
+  {
+    "offset": 8,
+    "result": "accepted",
+    "committed": true
+  }
+]

@@ -1,0 +1,130 @@
+================================================================================
+MASTER IMAGE-GENERATION PROMPT — BACK BOOK COVER (ENGLISH)
+================================================================================
+PROJECT: Snowflake Data Engineering — From Fundamentals to Production-Ready Data Pipelines
+AUTHOR: Arman Golbidi
+OUTPUT: ONE finished BACK-COVER image, portrait, WITHOUT front cover or spine
+VISUAL REFERENCES: (A) the user's original photo of the author seated at Helsinki Cathedral and (B), ideally, the approved finished FRONT-cover artwork from this same book
+BOOK: English-language, planned 300-page technical paperback with matte finish
+TRIM: 178 mm (width) × 254 mm (height), approximately 7 × 10 inches
+
+IMPORTANT SOURCE-GROUNDING NOTE:
+This cover belongs specifically to the Snowflake Data Engineering manuscript, NOT to a generic data-engineering book. The current 15-chapter blueprint addresses Snowflake SQL and architecture; batch, semi-structured, and streaming data; Snowpipe, Streams, Tasks and Dynamic Tables; Snowpark Python; dbt and ETL/ELT; Power BI integration; performance, security, governance, and cost management; Cortex AI and ML; and a Finland energy-data-platform capstone. A separate research directory lists 181 discovered GitHub repositories mapped to 134 core sections; those resources have not been comprehensively run, reviewed for licensing, or turned into fully taught labs yet. Do not suggest official Snowflake affiliation.
+
+YOUR TASK
+Create a breathtaking but extremely legible, luxurious, professionally typeset BACK COVER for a real technical paperback. Make it feel designed together with the matching front cover, as if created by a leading international publisher's in-house design team. It must contain refined book-jacket copy, a helpful learning-outcomes section, target readers, an accurate short author bio, companion-resources treatment, and reserved QR/barcode zones.
+
+1. FORMAT, PROPORTIONS, AND OUTPUT
+- Exactly ONE flat BACK-COVER image, not a 3D mockup, not a whole wraparound cover and not a spread.
+- Trim dimensions: 178 × 254 mm; portrait trim aspect ratio approximately 0.7008.
+- Target resolution: 300 dpi, approximately 2102 × 3000 pixels at trim size.
+- If the printer requests 3.175 mm bleed on all outer edges, prepare a separate bleed-inclusive version at approximately 2177 × 3075 pixels, allowing background only (not text) to extend to bleed.
+- Keep typography comfortably inside a 12–15 mm minimum safety inset from the eventual cut edges; move farther inward as the final barcode, QR code, and binding-adjacent design require.
+- Aim for a professional 7 × 10 in back-cover layout with readable short paragraphs and enough open breathing room, not a wall of impossibly tiny letters.
+- Note: 10.5–11 pt body type, 8.5–9 pt code, interior line spacing 1.25–1.35 and interior margins 22–25 mm inner / 16–18 mm outer relate to INSIDE pages. They are not mandatory back-cover type sizes. Use legible cover-copy sizes instead (ideally roughly 9.5–11 pt equivalent at print trim, preferably larger where space permits).
+- Do not incorporate a spine here; the real print-ready full-cover PDF will later be assembled from front + spine + back using the actual printer's final page count/paper stock template.
+
+2. CONTINUITY WITH THE FRONT COVER
+- Use the exact SAME LOCATION AS THE REFERENCE: Helsinki Cathedral in Helsinki, Finland, and the same broad granite steps and neoclassical façade seen behind the seated author in the supplied photograph.
+- Preserve its realistic architecture, domes, façade, stone texture, outdoor atmosphere, and gray dramatic sky where visible.
+- Environmental/background photo remains COMPLETELY BLACK-AND-WHITE / GRAYSCALE, precisely matching the original reference's selective-color approach.
+- On the BACK cover, emphasize the cathedral's stairs and subtle architecture as a low-contrast backdrop; no large repeated portrait is necessary because back-cover copy needs priority. If a small author headshot is used beside the bio, it MUST come from the same supplied author portrait with the person's original natural colors and exact identity preserved. Do not invent a replacement headshot or unrelated person.
+- Use subtle charcoal/ink-navy panels, gradients or a lightly translucent dark layer behind text where needed, while allowing the photograph to show elegantly through.
+- Reuse the front cover's typographic design language, restrained teal/steel-blue rules, and sophisticated grayscale/color balance.
+- The selective-color principle still applies: architecture stays black and white. Only a genuine photograph of the author (if shown) may carry natural photographic color. Graphic accents may use muted blue/teal.
+
+3. BACK-COVER TEXT — USE THIS BOOK-SPECIFIC ENGLISH COPY
+The words below are the intended content. Use EXACT SPELLINGS for technical terms. Keep typography consistent, allow selective visual shortening ONLY if absolutely essential for readability, and never hallucinate ISBNs, credentials, endorsements, or unverifiable outcomes.
+
+TITLE HEADER:
+"SNOWFLAKE DATA ENGINEERING"
+
+BOLD OPENING TAGLINE:
+"From Snowflake fundamentals to reliable, production-oriented data pipelines."
+
+OPENING DESCRIPTION:
+"Modern data engineering is not just about loading tables. It means making deliberate decisions about architecture, data quality, performance, security, reliability, and cost. This practical guide shows how those decisions connect in the Snowflake data platform."
+
+SECOND DESCRIPTION PARAGRAPH:
+"Progress from Snowflake architecture and SQL to ingestion, transformation, orchestration, analytics, and AI. Each chapter connects concepts with engineering trade-offs, guided exercises, common failure modes, and companion GitHub resources. A running Finland energy-analytics capstone brings the pieces together in an end-to-end data-platform design."
+
+SECTION HEADING:
+"WHAT YOU WILL LEARN"
+
+FIVE SHORT BULLETS (exact subject matter, straightforward reader benefits):
+"• Design Snowflake architectures and analytical data models."
+"• Ingest and process batch, JSON, and streaming data."
+"• Build pipelines with Snowpipe, Streams, Tasks, Dynamic Tables, Snowpark Python, and dbt."
+"• Integrate Power BI and optimize performance, governance, security, and cost."
+"• Explore Snowflake Cortex AI and a Finland energy-data capstone."
+
+SECTION HEADING:
+"WHO THIS BOOK IS FOR"
+
+AUDIENCE TEXT:
+"Aspiring and practicing data engineers, analytics engineers, BI developers, and software engineers. No previous Snowflake experience is required; basic SQL knowledge helps."
+
+PROMINENT, COMPACT COMPANION RESOURCES STRIP:
+"15 CHAPTERS  •  GUIDED LABS  •  181 CURATED GITHUB REPOSITORY REFERENCES"
+
+SMALL PRINT IN RESOURCES AREA IF SPACE ALLOWS:
+"Selected walkthroughs in print; extended examples and referenced projects in companion materials."
+
+SECTION HEADING:
+"ABOUT THE AUTHOR"
+
+AUTHOR BIO:
+"Arman Golbidi is a data engineer with experience in Azure, Python, SQL, Power BI, and analytics. He holds an MSc in Data-Centric Engineering from LUT University, Finland, and has worked across applied data platforms and machine learning."
+
+INDEPENDENT-BOOK NOTICE (small but genuinely readable):
+"An independent educational publication. Not affiliated with or endorsed by Snowflake Inc."
+
+PLACEHOLDER LABEL AT RESERVED QR POSITION:
+"PROJECT RESOURCES"
+"[INSERT VERIFIED QR CODE]"
+
+BARCODE ZONE IN LOWER RIGHT:
+"[RESERVED FOR ISBN / BARCODE]"
+
+4. MATERIAL-CORRECTNESS CHECK
+- The 181-source directory is a set of discovered GitHub repository REFERENCES, with 234 teaching placements mapped across 134 core book sections, not a verified statement that all 181 projects have been independently executed or taught in full.
+- The front-cover working slogan "180+ REAL-WORLD PROJECTS" may be retained as a visual mockup until the actual teaching and testing meet that promise. For publication, the two covers should describe the same independently verifiable offer. If the completed book includes only selected complete labs and a directory of 181 references, advertise "180+ CURATED GITHUB PROJECT REFERENCES" (with 180+ visually prominent) instead of "180+ PROJECTS TAUGHT".
+- The 300-page plan is a manuscript target, not proven final print pagination. The booklet is planned to have 15 chapters; preserve this number if the final manuscript still does.
+- Do not say "fully tested," "guaranteed free," "all production-ready," "official Snowflake guide," "approved by Snowflake," or "endorsed by LUT University".
+- Do not add a fabricated publisher mark, ISBN digits, author quote, editorial recommendation, awards, ranking, pricing, publication year, or domain name.
+- Use no trademarked Snowflake logo unless explicitly authorized. The text term Snowflake is used descriptively to identify the technology discussed.
+
+5. EDITORIAL LAYOUT HIERARCHY — BUILD A REAL BACK COVER
+Top 10–15%: concise high-contrast title header and tagline.
+Upper-mid: 2 short description paragraphs, comfortable reading width.
+Middle: "WHAT YOU WILL LEARN" section with five tidy bullets, clean line wraps and generous line spacing.
+Lower-middle: audience statement, compact 15-chapters/resources strip, then short "ABOUT THE AUTHOR" bio.
+Bottom: sober independent-publication notice, a reserved QR area near lower-left (or wherever balanced), and a genuine PRINT-SERVICE-SAFE empty area at lower-right for the eventual ISBN/barcode.
+
+- Build every block on a disciplined typographic grid, with clear font weight contrasts and logical section spacing.
+- Keep lines short enough that they can be read without strain at physical 178 × 254 mm scale.
+- Avoid tiny text covering the entire cathedral image. The photograph should support the words, not fight them.
+- Use editorial section labels, subtle horizontal rules, small constrained icons only if necessary.
+- The barcode reservation MUST remain free of decoration or AI-generated bars/numbers. Leave a practical light, high-contrast rectangular empty zone approximately 51 × 31 mm, or adjust to the selected printer's actual barcode template, inside the print-safe bottom-right area.
+- The QR reservation MUST contain no fictitious or nonfunctional AI-drawn QR patterns. Leave an approximately 23–28 mm square quiet area with the label "PROJECT RESOURCES" for a genuine future code generated from the verified repository URL. If real links are not provided, the QR position remains blank.
+- Reserve adequate separation between any QR and barcode so both can eventually scan cleanly.
+- For a tighter design, the author biography and resources can be set side by side or in a controlled lower third, provided all copy remains readable.
+
+6. VISUAL FINISH AND BRANDING
+- Sophisticated, minimalist, credible international technical-book cover; balanced black/white tonal photography, matte appearance, subdued blue-teal accents.
+- The background must unmistakably be Helsinki Cathedral, not a substituted generic monument.
+- Keep camera geometry natural and architectural lines straight; do not force surreal shapes or futuristic machinery onto the cathedral.
+- Optionally insert a very small, elegant source → ingestion → transformation → Snowflake data platform → analytics line diagram as a section divider. This is decorative only, not a fake factual chart.
+- Use professional modern sans-serif typography, strong dark/light contrast, careful tracking and kerning, and a subtle premium finish.
+- No excessively busy visual effects, loud sticker clusters, huge author photograph, arbitrary additional product logos, fake QR or ISBN, or illegible tiny type.
+
+7. QUALITY ASSURANCE BEFORE OUTPUT
+- All visible text MUST be English, correctly spelled and in logical order.
+- Especially protect spellings: "Snowflake", "Snowpipe", "Snowpark", "Streams", "Tasks", "Dynamic Tables", "Cortex AI", "Power BI", "dbt", "LUT University", and "Arman Golbidi".
+- Keep every short bullet aligned with consistent indentation and hanging punctuation.
+- Avoid overlapping letters, unreadable fonts, image artifacts, cut-off paragraphs and edge collisions.
+- Do not create a spine, front cover, book mockup or promotional poster as the output.
+- If image-generation text rendering is unreliable, create a clear photographic back-cover ARTWORK TEMPLATE with correctly positioned text zones; final copy should then be applied with editable vector typography in layout software rather than printing garbled AI lettering.
+- This is a visual concept, NOT by itself a validated print-production PDF. The final joined cover must be proofed with the printer's trim, bleed, binding/spine, stock, barcode, color-profile and export specifications.
+
+GENERATE THE MATCHING BACK COVER NOW USING THE ORIGINAL REFERENCE PHOTO AND, IF AVAILABLE, THE APPROVED FRONT-COVER DESIGN.

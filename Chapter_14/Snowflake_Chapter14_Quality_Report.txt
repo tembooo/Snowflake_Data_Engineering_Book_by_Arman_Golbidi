@@ -1,0 +1,46 @@
+SNOWFLAKE DATA ENGINEERING - CHAPTER 14
+QUALITY CONTROL REPORT | 22 October 2026
+Author: Arman Golbidi
+
+STATUS OF OUTPUT
+- Chapter: 14 - Snowflake Cortex AI and Machine Learning.
+- PDF: Snowflake_Data_Engineering_Chapter_14.pdf
+- Source: Snowflake_Data_Engineering_Chapter_14.tex
+- Printing: exactly 16 PDF pages; visible book folios 249 through 264.
+- Physical trim: 178 x 254 mm, verified in PyMuPDF.
+- Typesetting: XeLaTeX, two compilation passes.
+- English main body: Libertinus Serif 10.75 pt with 13.65 pt baseline (1.27 ratio).
+- Code: Libertinus Mono at 8.75 pt listing style; inline terms may use body-size mono.
+- Margins: inner 23 mm; outer 17 mm; top/bottom 19 mm.
+- All sections 14.1-14.8, subsections 14.1.1-14.8.3 and 14.L.1-14.L.4 are present.
+- Final compile: zero overfull hbox warnings, no LaTeX errors.
+- 16-page contact-sheet and PDF page block inspection performed.
+
+OFFLINE LAB VERIFICATION
+- Code: lab/ml_baseline.py using Python standard library only.
+- 35 synthetic UTC-day observations, separate from prior chapter's 6-row/66.000-MWh fixture.
+- Train 21, validation 7, test 7 days.
+- Seasonal naive MAE 1.0643 MWh; last-value MAE 3.2500 MWh.
+- Validation residual threshold 0.8500 MWh; injected final-day anomaly flagged.
+- Sixteen Python unittest tests passed (see data/offline_test_results.txt).
+- No internet, cloud, Snowflake account, Snowflake credentials or paid AI used.
+- AI prompts in ai_eval_cases.csv are human-authored test prompts, not scored model output.
+- Optional AI SQL is commented and NOT executed.
+
+PUBLICATION GATES REMAINING
+- Snowflake feature, model, account-region, RBAC, privacy and billing checks are date- and account-dependent.
+- No live Snowflake SQL, Cortex inference, Cortex Search, Analyst, forecasting or anomaly service tested.
+- Source repositories P156-P175 in supplied index are external teaching leads; not executed
+  or independently license-cleared for commercial reproduction.
+- No measured token/credit charge or measured Snowflake performance claim made.
+- Specialist technical copyedit and permission/right reviews needed before commercial release.
+
+AUTHORITATIVE DOCUMENTATION CHECKED (22 OCTOBER 2026)
+- https://docs.snowflake.com/en/sql-reference/functions/ai_complete
+- https://docs.snowflake.com/en/sql-reference/functions/ai_classify
+- https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference
+- https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview
+- https://docs.snowflake.com/en/sql-reference/classes/forecast/commands/create-forecast
+- https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-func-cost-management
+
+This report distinguishes verified local/test results from account-dependent cloud features.

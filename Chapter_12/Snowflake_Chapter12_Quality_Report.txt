@@ -1,0 +1,36 @@
+CHAPTER 12 — DOCUMENT AND LAB QUALITY REPORT
+Project: Snowflake Data Engineering: From Fundamentals to Production-Ready Data Pipelines
+Author: Arman Golbidi
+Date: 22 October 2026
+
+LAYOUT VERIFIED
+XeLaTeX compilation succeeded; 18 physical PDF pages.
+Printed page numbers: 209 through 226 inclusive.
+Trim size: 178 x 254 mm (within 0.01 mm).
+Source typography: Libertinus Serif 10.75 pt / 13.65 pt leading (ratio 1.270); code 8.75 pt.
+Margins: inside 23mm; outside 17mm; top/bottom 19mm.
+No Overfull hbox warnings in final XeLaTeX log.
+Rendered 18-page contact sheet was visually inspected; text and diagrams were legible.
+Sections 12.1--12.8 and 12.L, with numbered subsections, present.
+
+LAB VALIDATION VERIFIED
+python offline_validate.py: PASS
+python -m unittest discover -v: 16/16 PASS
+Six-row seed: 66.000 MWh. Seven-day 42-row expansion: 462.000 MWh.
+Seven days: equivalent filter semantics confirmed offline.
+CSV SHA-256 manifest verified.
+Illustrative benchmark CSV rows explicitly marked synthetic_illustration.
+Snowflake query IDs and actual warehouse credits: intentionally BLANK.
+
+NOT YET VERIFIED
+No Snowflake SQL executed against a live account.
+No Query History or Query Profile runtime capture performed.
+No performance or credit savings measured in Snowflake.
+External GitHub references NOT executed and rights/licenses NOT cleared.
+Version/edition/region availability and documentation should be re-checked prior to publication.
+Final human technical/copyedit/print proofs not completed.
+
+CONCLUSION
+Original complete editorial manuscript with independently compilable LaTeX,
+print-dimensioned PDF and reproducible no-cloud lab artifacts.
+It is NOT proof of production deployment nor of actual cloud performance gains.

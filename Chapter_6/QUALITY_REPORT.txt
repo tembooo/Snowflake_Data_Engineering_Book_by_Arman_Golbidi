@@ -1,0 +1,35 @@
+SNOWFLAKE DATA ENGINEERING — CHAPTER 06 — RELEASE CANDIDATE QA
+Title: JSON and Semi-Structured Data
+Author: Arman Golbidi
+Review date: 22 October 2026
+
+FORMATTING AND MANUSCRIPT
+- English manuscript, Chapter 6 ONLY.
+- Exact print trim: 178 x 254 mm.
+- Body: 10.75 pt, baseline 13.65 pt (ratio 1.2698).
+- Code: 8.75 pt, baseline 10.7 pt.
+- Inner/outer margins: 23/17 mm. Top/bottom: 19/19 mm.
+- XeLaTeX compilation completed successfully, 16 physical pages.
+- Running printed page numbers 97 through 112, matching the master 300-page outline.
+- All nine chapter segments included: 6.1–6.8 and 6.L.
+- All 24 numbered subsubsections (6.1.1–6.8.3) and four lab components included.
+- Compiled log showed zero overfull horizontal boxes.
+- Contact-sheet review performed for all 16 pages.
+
+LAB AND TESTING
+- Synthetic data; no copyrighted real-world energy data embedded.
+- Input lines: 4 (2 valid envelopes, 1 semantic violation, 1 malformed JSON).
+- Accepted measurements: 6; accepted total: 97.500 MWh.
+- Six Python unittest cases passed in an offline execution.
+- All generated Python fixtures and SQL fragments are original chapter companion materials.
+- Snowflake SQL: NOT EXECUTED against a live account; needs integration testing
+  and permissions/edition verification before publication.
+- External GitHub repositories: referenced for study, NOT independently executed;
+  license/redistribution review needed before copying third-party content.
+
+RELEASE GATES BEFORE COMMERCIAL PUBLICATION
+1. Run SQL scripts in a new disposable Snowflake schema and retain query IDs.
+2. Review account edition/region and all documented feature constraints.
+3. Perform technical/editorial review; independently recheck examples and citations.
+4. Pin/review any third-party repository versions and licenses.
+5. Re-typeset with all other chapters and verify continuous pagination and index.

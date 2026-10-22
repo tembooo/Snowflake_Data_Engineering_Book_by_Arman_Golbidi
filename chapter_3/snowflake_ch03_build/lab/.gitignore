@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+*.p8
+*.pem
+*.key
+__pycache__/
+.pytest_cache/
+evidence/*.log

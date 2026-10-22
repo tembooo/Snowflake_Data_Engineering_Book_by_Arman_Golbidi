@@ -1,0 +1,15 @@
+# Copy to a PRIVATE profiles.yml outside Git and confirm authentication and grants.
+# Interactive externalbrowser is inappropriate for unattended GitHub Actions.
+finland_energy_ch10:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('DBT_SNOWFLAKE_USER') }}"
+      authenticator: externalbrowser
+      role: "{{ env_var('DBT_SNOWFLAKE_ROLE') }}"
+      database: "{{ env_var('DBT_SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ env_var('DBT_SNOWFLAKE_WH') }}"
+      schema: CH10_DEV
+      threads: 2

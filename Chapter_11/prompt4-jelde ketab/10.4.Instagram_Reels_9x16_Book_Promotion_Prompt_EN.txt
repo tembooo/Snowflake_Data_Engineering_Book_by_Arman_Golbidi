@@ -1,0 +1,46 @@
+MASTER IMAGE-GENERATION PROMPT 02 — INSTAGRAM REELS COVER / STORY VISUAL (9:16)
+
+PROJECT: SNOWFLAKE DATA ENGINEERING — From Fundamentals to Production-Ready Data Pipelines
+AUTHOR: ARMAN GOLBIDI
+OUTPUT: ONE STATIC VERTICAL promotional image suitable for an Instagram Reel cover, Reels thumbnail, or Story background. This is NOT a video-generation request.
+CANVAS: 9:16 portrait, target 2160 x 3840 px for a high-quality master (export also at 1080 x 1920 px if needed).
+REQUIRED REFERENCE IMAGES: The user-supplied finished FRONT cover “10.3.Front.png” and BACK cover “10.4.Back.png”. Treat these as exact artwork assets, not concepts to be repainted. Show BOTH in the final composition.
+
+CREATIVE GOAL
+Create a cinematic, scroll-stopping, high-end BOOK REVEAL graphic that appeals to data engineers, cloud engineers, analytics engineers, and technical readers. The image should have the refined visual DNA of the actual Snowflake Data Engineering front/back cover: black-and-white Helsinki Cathedral and broad granite stairs, charcoal/navy atmospheric shadows, cyan data-flow accents, premium matte book finish, and a naturally colored author visible ONLY as part of his actual front-cover photograph.
+
+VERTICAL STAGING AND VISUAL STORY
+- Top zone (roughly 250–480 px on a 1080 x 1920 export): restrained introduction with “BOOK PREVIEW” and large readable book name.
+- Central hero zone (roughly y = 450–1400 px): show the front paperback BIG, upright and slightly tilted to expose realistic thickness; its title, “180+” callout and author name must remain recognizably readable. Show the back cover to the side and slightly behind, as the paired matching book surface. Neither cover may be clipped at the boundaries.
+- Behind the books, use a natural, photorealistic grayscale architectural photograph or gracefully continued grayscale scenery corresponding to Helsinki Cathedral in the supplied artwork. Allow cathedral domes, stairs and cloud texture without visually competing with the books.
+- Add a restrained cool-cyan studio rim light around book edges and elegant soft shadows on an implied matte stone plane. No glowing fantasy objects.
+- Lower-middle informational zone (approximately y = 1320–1540 px): a short strong benefits strip.
+- Protect UI-safe zones: avoid placing ANY essential words or objects close to the right-hand Reels action column or bottom caption/navigation region. As practical guidance on a 1080 x 1920 canvas, place must-read copy primarily within x = 95–840 px and y = 250–1490 px; keep the very bottom 350–400 px relatively simple and free of must-read text. Adapt if the destination platform shows a different crop.
+- Anticipate center-cropped grid preview: ensure the FRONT cover and book name remain identifiable within a centered 3:4 or square-like preview crop, to the extent practical without sacrificing the full 9:16 composition.
+
+EXACT NEW PROMOTIONAL TEXT, NOT TO BE CONFUSED WITH THE COVER'S PRINTED TEXT
+Top eyebrow: “BOOK PREVIEW”
+Title, in two strong lines: “SNOWFLAKE” / “DATA ENGINEERING”
+Subheading: “From Fundamentals to Production-Ready Data Pipelines”
+Large concise focus point: “180+”
+Accurate qualifier immediately adjacent, smaller but clear: “CURATED GITHUB PROJECT REFERENCES”
+Compact feature line: “15 Chapters  •  Practical Labs  •  Snowpark Python  •  dbt”
+Author name: “ARMAN GOLBIDI”
+If constrained by space, remove the optional compact feature line first; retain the book title, 180+ qualifier, and author.
+
+CLAIM VALIDATION RULE
+The supplied cover artwork includes “180+ REAL-WORLD PROJECTS.” Do not alter the supplied bitmap. However, the research directory currently shows 181 discovered GitHub repository REFERENCES, not proof that 180+ complete projects were independently taught and end-to-end-tested. Accordingly, keep all NEW overlay claims precise: “180+ CURATED GITHUB PROJECT REFERENCES.” Do not say “180+ FULLY TAUGHT PROJECTS,” “180+ GUARANTEED RUNNING LABS,” or “BUY NOW.” Do not invent a release date, bookstore, URL, or endorsement. Snowflake is the book topic, not the publisher or sponsor.
+
+IMAGE FIDELITY AND QUALITY CONTROL
+- Maintain the submitted front/book-back artwork unaltered in wording, colors, architecture, proportions and the photographed author's face. The front cover image is not authorization to generate a new person.
+- Maintain a physical book aspect ratio of 178:254. Keep realistic paper edges and an understated matte paperback effect; if a spine is visible, keep it plain or unlettered, since no validated spine design was supplied.
+- The original back cover contains a visually depicted QR code/barcode. Do not generate a replacement, invent an ISBN, or claim it is functional. Keep that small printed region out of emphasis and reserve future final QR and barcode insertion for validated source files.
+- Keep high contrast, sharp cover art, consistent typographic line spacing and polished editorial layout. Avoid cramped titles and tiny footnotes.
+- Color palette: black/white grayscale environment, muted natural subject colors on the book, cyan #4CCFF4 highlights, deep navy #0E2638 shadows, white text.
+- No marketing badges about sales, rankings, reviews, or official partnerships.
+
+NEGATIVE PROMPT
+No video frames, no animated motion blur, no fake Instagram interface, no reels icons, no invented partner logos, no portrait outside the book, no distorted faces, no broken text, no colorful cathedral, no oversized fake barcode, no white border, no unrelated buildings, no awkward extra book copies, no too-small title, and no cut-off shoes within the actual front-cover image.
+
+FINAL INSTRUCTION
+Create ONE finished 9:16 portrait STATIC image ready to use as an Instagram Reel promotional cover. The front and back of the uploaded book should appear together as premium physical paperback visuals, with strong hierarchy and safe placement for mobile UI overlays.

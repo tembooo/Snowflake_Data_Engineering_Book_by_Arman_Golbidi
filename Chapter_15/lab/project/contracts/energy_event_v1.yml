@@ -1,0 +1,23 @@
+contract: energy-event/v1
+classification: SYNTHETIC
+producer: DEMO_GRID (invented teaching provider)
+grain: one provider, technology and UTC interval; multiple revisions permitted
+fields:
+  - {name: EVENT_ID, type: string, required: true}
+  - {name: PROVIDER, type: string, required: true}
+  - {name: TECHNOLOGY, type: string, required: true}
+  - {name: INTERVAL_UTC, type: ISO-8601 UTC Z timestamp, required: true}
+  - {name: REVISION, type: positive integer, required: true}
+  - {name: ENERGY_MWH, type: nonnegative finite decimal, required: true}
+  - {name: OPERATION, type: 'UPSERT|DELETE', required: true}
+revision_policy: largest valid revision wins; conflicting same-revision contents reject release
+replay_policy: identical delivered events deduplicated
+logical_delete: DELETE requires zero MWh and hides business key, does not mean measured zero
+expected_original_fixture:
+  input_rows: 12
+  duplicate_deliveries: 1
+  invalid_rows: 2
+  tombstoned_keys: 1
+  visible_rows: 6
+  sum_mwh: '66.000'
+  fixture_sha256: 6cfb7fd61e878c29e19315c3db8b796db6af858a37527ad3b4d6c3c3a3f9b616

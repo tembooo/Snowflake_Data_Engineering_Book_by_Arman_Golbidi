@@ -1,0 +1,16 @@
+{
+  "delivered": 12,
+  "duplicate_deliveries": 1,
+  "rejected": 2,
+  "tombstoned_keys": 1,
+  "visible_rows": 6,
+  "total_mwh": "66.000",
+  "unit": "MWh",
+  "fixture_sha256": "6cfb7fd61e878c29e19315c3db8b796db6af858a37527ad3b4d6c3c3a3f9b616",
+  "data_classification": "SYNTHETIC",
+  "live_snowflake_executed": false,
+  "release_gate": {
+    "status": "ACCEPT",
+    "violations": []
+  }
+}
