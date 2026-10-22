@@ -1,24 +1,48 @@
-\documentclass{article}
-\usepackage[paperwidth=178mm,paperheight=254mm,margin=0mm]{geometry}
-\usepackage{pdfpages}
-\usepackage{hyperref}
-\hypersetup{pdfauthor={Arman Golbidi},pdftitle={Snowflake Data Engineering: From Fundamentals to Production-Ready Data Pipelines}}
+% SNOWFLAKE DATA ENGINEERING — print-preserving compiled book with front matter
+% Run: xelatex -interaction=nonstopmode -halt-on-error Snowflake_Data_Engineering_WITH_PREFACE_AND_TOC.tex
+% Requires frontmatter/*.tex, chapters/chapter_01.pdf ... chapter_15.pdf,
+% and covers/front.pdf and covers/back.pdf. Original chapter PDFs are UNMODIFIED.
+\documentclass[11pt,twoside]{article}
+\usepackage[paperwidth=178mm,paperheight=254mm,inner=23mm,outer=17mm,top=19mm,bottom=19mm,headheight=5mm,headsep=4mm,footskip=9mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{LibertinusSerif-Regular.otf}[BoldFont=LibertinusSerif-Bold.otf,ItalicFont=LibertinusSerif-Italic.otf,BoldItalicFont=LibertinusSerif-BoldItalic.otf]
+\setsansfont{LibertinusSans-Regular.otf}[BoldFont=LibertinusSans-Bold.otf,ItalicFont=LibertinusSans-Italic.otf]
+\usepackage[english]{babel}
+\usepackage{microtype,needspace,xcolor,pdfpages,hyperref}
+\definecolor{navy}{HTML}{15334A}
+\definecolor{steelblue}{HTML}{17779B}
+\definecolor{cyanink}{HTML}{168AAA}
+\definecolor{inkgray}{HTML}{4A5862}
+\hypersetup{colorlinks=true,urlcolor=steelblue,linkcolor=steelblue,
+  pdfauthor={Arman Golbidi},
+  pdftitle={Snowflake Data Engineering: From Fundamentals to Production-Ready Data Pipelines},
+  pdfsubject={Full manuscript with preface and detailed table of contents}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.5pt plus 0.7pt minus 0.4pt}
+\emergencystretch=2em
+\raggedbottom
+\AtBeginDocument{\color{navy}\fontsize{10.75}{13.65}\selectfont}
 \begin{document}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{covers/front.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_01.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_02.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_03.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_04.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_05.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_06.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_07.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_08.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_09.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_10.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_11.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_12.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_13.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_14.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{chapters/chapter_15.pdf}
-\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{covers/back.pdf}
+\includepdf[pages=1,pagecommand={}]{covers/front.pdf}
+\pagestyle{empty}
+\input{frontmatter/preface.tex}
+\input{frontmatter/contents.tex}
+\clearpage
+% Entire content is imported from the chapter PDFs: NO original pages re-typeset.
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_01.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_02.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_03.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_04.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_05.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_06.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_07.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_08.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_09.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_10.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_11.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_12.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_13.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_14.pdf}
+\includepdf[pages=-,pagecommand={}]{chapters/chapter_15.pdf}
+\includepdf[pages=1,pagecommand={}]{covers/back.pdf}
 \end{document}
